@@ -1,0 +1,1 @@
+docpadConfig = require("./_docpad.js"); module.exports = docpadConfig
