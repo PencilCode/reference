@@ -1,7 +1,7 @@
 {
-  "name": "less-livereload-jade-htmlfive.docpad",
+  "name": "html5-boilerplate-less-jade-livereload.docpad",
   "version": "0.1.0",
-  "description": "New basic starting point for docpad project using HTML 5, less and jade.",
+  "description": "Bare essentials for building a modern website with best practices using jade and less. livereload used to aid development.",
   "engines": {
     "node": "0.10",
     "npm": "1.3"
