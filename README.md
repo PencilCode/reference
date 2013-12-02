@@ -9,7 +9,7 @@ Bare essentials for building a modern website with best practices using jade and
 1. Clone the project and run the server
 
 	``` bash
-	git clone git://github.com/jheytompkins/html5-boilerplate-jade-less-livereload.docpad.git
+	git clone git://github.com/jh3y/html5-boilerplate-jade-less-livereload.docpad.git
 	cd html5-boilerplate-jade-less-livereload.docpad
 	npm install
 	docpad run
