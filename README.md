@@ -1,6 +1,7 @@
 # Pencil Code Reference
 
-This is a [DocPad](https://github.com/bevry/docpad) project.
+This is a [DocPad](https://github.com/bevry/docpad) project
+containing the reference material for the Pencil Code website.
 
 ## Getting Started
 
