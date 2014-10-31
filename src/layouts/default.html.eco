@@ -13,7 +13,7 @@
 <%- @getBlock('styles').add(@site.styles).toHTML() %>
 
 </head>
-<body>
+<body class="<%- @document.bodyclass or 'reference' %>">
 <%- @content %>
 
 <%- @getBlock('scripts').add(@site.scripts).toHTML() %>

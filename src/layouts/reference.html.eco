@@ -1,0 +1,6 @@
+---
+layout: default
+---
+<h1><%= @document.title %> <small><%= @document.description %></small></h1>
+
+<%- @content %>
