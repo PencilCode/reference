@@ -1,8 +1,8 @@
 ---
 layout: default
 ---
-<a href="/" class="topbar">Pencil Code Reference
-<span class="inline-right">back to top</span></a>
+<a href="/" class="bottombar">Pencil Code Reference
+<span class="inline-right">back to index</span></a>
 
 <h1><%= @document.title %> <small><%= @document.description %></small></h1>
 

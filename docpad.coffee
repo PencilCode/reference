@@ -43,6 +43,7 @@ docpadConfig = {
       # The website's scripts
       scripts: [
         '//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js'
+        '//pencilcode.net/lib/pencilcodeguide.js'
         '/js/plugins.js'
         '/js/jumbocode.js'
         '/js/demo.js'

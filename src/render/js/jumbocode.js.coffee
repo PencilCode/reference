@@ -1,7 +1,10 @@
 $ ->
   $('code.jumbo,pre.jumbo').each (j) ->
     jumbo = $(this)
-    jumbo.parent('p').css('text-align', 'center')
+    p = jumbo.parent('p')
+    if not p.length
+      p = jumbo.wrap('<p>').parent('p')
+    p.css('text-align', 'center')
     jumbo.find('span[data-dfn]').each ->
       span = $(this)
       span.css
