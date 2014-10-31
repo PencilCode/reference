@@ -1,1 +1,60 @@
-@import "../../files/less/core";
+@import "../../static/less/core";
+
+body, td, th {
+  font-family: Lato;
+}
+body {
+  padding: 0 12px;
+}
+label {
+  user-select: none;
+  -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none;
+}
+
+input.collapse {
+  display: none;
+}
+input.collapse + label:before {
+  display: inline-block;
+  width: 25px;
+  content: '\25b6\00a0';
+  text-align: right;
+}
+input.collapse + label:active:before {
+  color: red
+}
+input.collapse + label:after {
+  content: 'click to open';
+  display: block;
+  margin-top: -2px;
+  margin-left: 25px;
+  color: silver;
+  font-size: 50%
+}
+input.collapse + label:hover:after {
+  color: dimgray;
+}
+input.collapse + label + div {
+  padding-left: 25px;
+  transition: max-height 0.5s;
+  overflow: hidden;
+  max-height:0;
+}
+input.collapse:checked + label:before {
+  content: '\25bc\00a0'
+}
+input.collapse:checked + label:after {
+  display: none
+}
+input.collapse:checked + label + div {
+  padding-bottom: 25px;
+  max-height: none;
+}
+.h2 { font-size: 1.5em; font-weight: bold; }
+.h3 { font-size: 1.17em; font-weight: bold; }
+.h4 { font-weight: bold; }
+
+.reference ul { margin-top: 0; margin-bottom: 0; }
+.reference h2, .reference h3, .reference h4,
+.reference h5, .reference h6 { margin-bottom: 0 }
+

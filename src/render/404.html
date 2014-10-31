@@ -1,0 +1,16 @@
+---
+layout: default
+---
+<h1>Oops!</h1>
+
+<p>Couldn't find a page here!
+
+<p><a href="/">Back to the top!</a>  <span id="countdown"></span>
+
+<script>
+var count = 10;
+setInterval(function() {
+  $('#countdown').text('(' + count-- + ')');
+  if (count < 0) { window.location.href = '/'; }
+}, 1000);
+</script>
