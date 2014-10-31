@@ -13,7 +13,7 @@ It draws the dot under the turtle.
 pause 1
 dot red
 pause 1
-label 'red &rarr;', 'left'
+label 'red circle &rarr;', 'left'
 pause 1
 speed 0.2
 animate
@@ -24,16 +24,16 @@ Dot accepts an optional second argument, which is the diameter of the
 dot in pixels.  Remember that arguments need to be separated by
 a comma.
 
-<code default class="jumbo">dot <span data-dfn="color">fuchsia</span><span data-note="comma">,</span>&nbsp;<span data-dfn="size">100</span></code>
+<code default class="jumbo">dot <span data-dfn="color">skyblue</span><span data-note="comma">,</span>&nbsp;<span data-dfn="size">100</span></code>
 
 <script type="demo">
 pause 2
-dot fuchsia, 100
+dot skyblue, 100
 pause 1
 speed Infinity
 plan ->
   ht()
-  slide -50, 15
+  jump -50, 15
   pen black, 0.7
   bk 30
   jump 0, 15
@@ -43,10 +43,11 @@ plan ->
   jump 0, 15
   bk 30
   pen null
-  slide -50, 10
+  slide -50, 15
   st()
 pause 1
 speed 0.2
 animate
   opacity: .3
 </script>
+

@@ -13,7 +13,7 @@ It draws the box under the turtle.
 pause 1
 box blue
 pause 1
-label 'blue &rarr;', 'left'
+label 'blue square &rarr;', 'left'
 pause 1
 speed 0.2
 animate
@@ -24,16 +24,16 @@ Dot accepts an optional second argument, which is the side length of the
 box in pixels.  Remember that arguments need to be separated by
 a comma.
 
-<code default class="jumbo">box <span data-dfn="color">violet</span><span data-note="comma">,</span>&nbsp;<span data-dfn="size">100</span></code>
+<code default class="jumbo">box <span data-dfn="color">wheat</span><span data-note="comma">,</span>&nbsp;<span data-dfn="size">100</span></code>
 
 <script type="demo">
 pause 2
-box violet, 100
+box wheat, 100
 pause 1
 speed Infinity
 plan ->
   ht()
-  slide -50, 15
+  jump -50, 15
   pen black, 0.7
   bk 30
   jump 0, 15
@@ -43,7 +43,7 @@ plan ->
   jump 0, 15
   bk 30
   pen null
-  slide -50, 10
+  slide -50, 15
   st()
 pause 1
 speed 0.2
