@@ -68,8 +68,8 @@ click ->
 <h3>Colors and Fonts</h3>
 
 Instead of a size, the last argument to <b>label</b> can be a
-<a href="css.html">CSS style object</a>.  Any CSS styles can be used.
-If there are more than one, the block of object properties should be
+<a href="css.html">CSS style object</a>.  Any CSS style properties
+can be used.  If there are more than one, the block of properties should be
 indetned.
 
 <pre class="jumbo">label <span data-dfnup="first argument">'Simple'</span>,
