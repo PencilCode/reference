@@ -35,9 +35,9 @@ docpadConfig = {
 
       # The website's styles
       styles: [
-        '/css/style.css'
         '/css/vendor/normalize.css'
         '/css/vendor/main.css'
+        '/css/style.css'
       ]
 
       # The website's scripts

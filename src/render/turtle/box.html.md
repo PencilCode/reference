@@ -28,6 +28,8 @@ click ->
     go()
 </script>
 
+<h3>Bigger Boxes</h3>
+
 <b>box</b> accepts an optional second argument, which is the side
 length of the box in pixels.  Remember that arguments need to be
 separated by a comma.
