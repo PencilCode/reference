@@ -10,11 +10,8 @@ It draws the box under the turtle.
 <code class="jumbo">box <span data-dfn="color">blue</span></code>
 
 <script type="demo" height=99>
-pause 1
-go = ->
-  speed 1
-  cs()
-  css opacity: 0.67
+demo ->
+  pause 1
   dot red
   pause 1
   label 'red circle &rarr;', 'left'
@@ -22,10 +19,6 @@ go = ->
   speed 0.2
   animate
     opacity: .3
-go()
-click ->
-  if not turtle.is ':animated'
-    go()
 </script>
 
 <h3>Bigger Boxes</h3>
@@ -37,10 +30,8 @@ separated by a comma.
 <code default class="jumbo">box <span data-dfn="color">wheat</span><span data-note="comma">,</span>&nbsp;<span data-dfn="size">100</span></code>
 
 <script type="demo">
-go = ->
-  speed 1
-  cs()
-  css opacity: 0.67
+demo ->
+  pause 1
   box wheat, 100
   pause 2
   plan ->
@@ -59,9 +50,4 @@ go = ->
     remove p
   speed 0.2
   animate opacity: .3
-pause 1
-go()
-click ->
-  if not turtle.is ':animated'
-    go()
 </script>

@@ -4,7 +4,8 @@ $ ->
     height = $(this).attr('height') || 149
     width = $(this).attr('width') || 199
     caption = $(this).attr('caption') || 'see a demo'
-    showdemo = ->
+    showdemo = (e) ->
+      if e then e.preventDefault()
       linkheight = link.height()
       frame = $('<iframe class="demo">')
         .replaceAll(link)
@@ -27,6 +28,33 @@ $ ->
               line-height: 100%;
             }
             </style>
+            <script>
+            function setup(how) {
+              speed(Infinity);
+              how();
+              speed(1);
+              setup.again = how;
+            }
+            function demo(how) {
+              pause(1);
+              how();
+              function go() {
+                speed(Infinity);
+                pen(null);
+                cs();
+                home();
+                css({opacity: 0.67});
+                if (setup.again) setup.again();
+                speed(1);
+                how();
+              }
+              click(function() {
+                if (!turtle.is(':animated')) {
+                  go();
+                }
+              });
+            }
+            </script>
             </head>
             <body><script
               src="//pencilcode.net/turtlebits.js"
@@ -34,6 +62,7 @@ $ ->
             ><script type="text/coffeescript">#{code}</script></body></html>
           """
           this.contentWindow.document.close()
+          this.scrollIntoView();
           next()
     link = $('<a class="demo" href="#demo' + j + '">' + caption + '</a>')
       .insertBefore(this)

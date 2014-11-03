@@ -96,10 +96,7 @@ label 'Styling!',
 </pre>
 
 <script type="demo" width=249>
-pause 2
-go = ->
-  cs()
-  speed 1
+demo ->
   pause 1
   css opacity: 0.67
   label 'Styling!',
@@ -110,9 +107,5 @@ go = ->
   speed 0.2
   animate
     opacity: .3
-go()
-click ->
-  if not turtle.is ':animated'
-    go()
 </script>
 

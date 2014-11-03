@@ -10,10 +10,8 @@ It draws the dot under the turtle.
 <code class="jumbo">dot <span data-dfn="color">red</span></code>
 
 <script type="demo" height=99>
-go = ->
-  speed 1
-  cs()
-  css opacity: 0.67
+demo ->
+  pause 1
   dot red
   pause 1
   label 'red circle &rarr;', 'left'
@@ -21,11 +19,6 @@ go = ->
   speed 0.2
   animate
     opacity: .3
-pause 1
-go()
-click ->
-  if not turtle.is ':animated'
-    go()
 </script>
 
 <h3>Bigger Dots</h3>
@@ -37,12 +30,9 @@ a comma.
 <code default class="jumbo">dot <span data-dfn="color">skyblue</span><span data-note="comma">,</span>&nbsp;<span data-dfn="size">100</span></code>
 
 <script type="demo">
-go = ->
-  speed 1
-  cs()
-  css opacity: 0.67
+demo ->
+  pause 1
   dot skyblue, 100
-  speed Infinity
   pause 2
   plan ->
     p = new Pencil
@@ -60,10 +50,5 @@ go = ->
     remove p
   speed 0.2
   animate opacity: .3
-pause 1
-go()
-click ->
-  if not turtle.is ':animated'
-    go()
 </script>
 

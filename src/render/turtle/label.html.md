@@ -9,21 +9,13 @@ layout: reference
 <code class="jumbo">label <span data-dfnup="quote">'</span><span data-dfn="text">You are here.</span><span data-dfnup="quote">'</span></code>
 
 <script type="demo" height=99>
-pause 1
-go = ->
-  speed 1
-  cs()
-  css opacity: 0.67
+demo ->
   pause 1
   label "You are here.", fontFamily: 'serif'
   pause 1
   speed 0.2
   animate
     opacity: .3
-go()
-click ->
-  if not turtle.is ':animated'
-    go()
 </script>
 
 The text of a label is a <a href="/coffeescript/strings.html">string</a>, so it should be
@@ -37,11 +29,7 @@ Remember the comma.
 <code class="jumbo">label <span data-dfn="string">'Hi'</span><span data-note="comma">,</span>&nbsp;<span data-dfn="size">100</span></code>
 
 <script type="demo" width=249>
-pause 2
-go = ->
-  speed 1
-  cs()
-  css opacity: 0.67
+demo ->
   pause 1
   label "Hi", fontFamily: 'serif', fontSize: 100
   pause 1
@@ -60,10 +48,6 @@ go = ->
   speed 0.2
   animate
     opacity: .3
-go()
-click ->
-  if not turtle.is ':animated'
-    go()
 </script>
 
 <h3>Colors and Fonts</h3>
@@ -82,17 +66,16 @@ properties, the block of properties should be indented.
 </pre>
 
 <script type="demo" width=249>
-pause 2
-go = ->
-  cs()
-  speed 1
+demo ->
   pause 1
-  css opacity: 0.67
   label "Simple", fontFamily: 'Arial', fontWeight: 'bold',
     color: orange, fontSize: 50
   pause 2
   plan ->
     p = new Pencil
+    p.moveto 0, 30
+    p.label 'Arial bold font'
+    p.pause 1
     p.jumpto 75, 25
     p.pen black, .7
     p.moveto 80, 25
@@ -103,18 +86,14 @@ go = ->
     p.rt 90
     p.label '50 pixels'
     p.turnto 0
-    p.moveto 0, 30
-    p.label 'Arial bold font'
+    p.pause 1
     p.moveto 0, -35
     p.label 'orange color'
+    sync p, turtle
     remove p
   speed 0.2
   animate
     opacity: .3
-go()
-click ->
-  if not turtle.is ':animated'
-    go()
 </script>
 
 <h3>Rotated Labels</h3>
@@ -129,11 +108,7 @@ label <span data-dfn="no style given">'Vertical'</span>
 </pre>
 
 <script type="demo">
-pause 2
-go = ->
-  speed 1
-  cs()
-  home()
+demo ->
   pause 1
   lt 90
   pause 1
@@ -142,10 +117,6 @@ go = ->
   speed 0.2
   animate
     opacity: .3
-go()
-click ->
-  if not turtle.is ':animated'
-    go()
 </script>
 
 <h3>Labels on the Side</h3>
@@ -164,13 +135,9 @@ label 'B', <span data-dfn="special property name">labelSide</span>: '<span data-
 </pre>
 
 <script type="demo">
-pause 2
-go = ->
-  speed Infinity
-  cs()
+setup ->
   moveto -50, 0
-  turnto 0
-  speed 1
+demo ->
   pause 1
   rt 90
   pause 1
@@ -184,10 +151,6 @@ go = ->
   speed 0.2
   animate
     opacity: .3
-go()
-click ->
-  if not turtle.is ':animated'
-    go()
 </script>
 
 The labelSide property should be a space-separated string including one or
