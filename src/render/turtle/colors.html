@@ -71,7 +71,7 @@ color: gray;
 var colors = [
   "aliceblue",
   "antiquewhite",
-  "aqua",
+  /*"aqua",*/
   "aquamarine",
   "azure",
   "beige",
@@ -182,6 +182,7 @@ var colors = [
   "plum",
   "powderblue",
   "purple",
+  "rebeccapurple",
   "red",
   "rosybrown",
   "royalblue",
@@ -289,9 +290,19 @@ for (var k = 0; k < result[0].length; k++) {
   html.push('<tr>');
   for (var j = 0; j < result.length; j++) {
     var d = result[j][k];
+    var popup = d.color + ' = ' + rgbToHex.apply(null, d.rgb) + ' = ' +
+       'rgb(' + d.rgb[0] + ',' + d.rgb[1] + ',' + d.rgb[2] + ')';
+    var label = d.color;
+    if (label == 'cyan') {
+      label = 'aqua / cyan';
+      popup = 'aqua = ' + popup;
+    }
+    if (/gray/.test(label)) {
+      popup = popup.replace('=', '= ' + label.replace('gray', 'grey') + ' =');
+    }
     html.push('<td><div class="popup" style="background-color:' + d.color +
-        '" title="' + d.color + ' = ' + rgbToHex.apply(null, d.rgb) + '">' +
-        '<span class="popup">' + d.color + '</span></div></td>');
+        '" title="' + popup + '">' +
+        '<span class="popup">' + label + '</span></div></td>');
   }
   html.push('</tr>');
 }
@@ -322,11 +333,13 @@ window.addEventListener('click', function(e) {
       range.moveToElementText(div);
       range.select();
     }
+    document.getElementById('example').innerHTML = 'For example, ' +
+      div.getAttribute('title').replace(/(#[a-f0-9]*)/, "'$1'") + '.';
   } else {
     document.body.style.backgroundColor = '';
     document.body.style.color = '';
+    document.getElementById('example').innerHTML = '';
   }
-  e.target.select();
 });
 </script>
 
@@ -336,6 +349,8 @@ window.addEventListener('click', function(e) {
 <a href="box.html">box</a>,
 <a href="box.html">fill</a>,
 or when using CSS properties.
-Colors can also be created using numbers, using 
+Colors can also be created using numbers, using
 the <a href="rgb.html">rgb</a> and <a href="hsl.html">hsl</a>
 functions.
+
+<p><span id="example"></span>
