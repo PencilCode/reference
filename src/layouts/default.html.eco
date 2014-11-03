@@ -9,7 +9,7 @@
 <meta name="description" content="<%= @getPreparedDescription() %>" />
 <meta name="keywords" content="<%= @getPreparedKeywords() %>" />
 
-<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Lato:400|Source+Code+Pro:400">
+<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Lato:400,700|Source+Code+Pro:400">
 <%- @getBlock('styles').add(@site.styles).toHTML() %>
 
 </head>

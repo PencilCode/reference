@@ -36,27 +36,36 @@ While camelCaps is the most common spelling seen for long names
 in code on the Web, there are other captialization conventions that
 are often seen.
 
-| Context                       | Convention           | Example            |
-|-------------------------------|----------------------|--------------------|
-| Turtle library functions      | lowercase            | jumpto             |
-| Standard event names          | lowercase            | mousemove          |
-| Javascript functions          | lowerCamelCase       | toString           |
-| Javascript classes            | UpperCamelCase       | RegExp             |
-| HTML properties               | camelCase            | tagName            |
-| Constant values               | UPPER_CASE           | SQRT1_2            |
+| Context                            | Convention        | Example          |
+|------------------------------------|-------------------|------------------|
+| Turtle functions                   | lowercase         | jumpto           |
+| Javascript/Coffee functions        | lowerCamelCase    | toString         |
+| Javascript/Coffee classes          | UpperCamelCase    | RegExp           |
+| Constant values                    | UPPER_UNDERSCORE  | SQRT1_2          |
+| Special floating point numbers     | UpperCamelCase    | Infinity         |
+| HTML tags and attributes           | lowercase         | onclick          |
+| DOM event names                    | lowercase         | mousemove        |
+| DOM properties                     | lowerCamelCase    | tagName          |
+| DOM value for element.tagName      | UPPERCASE         | CANVAS           |
+| CSS property names and values      | lower-case-hyphen | font-size        |
+| C++, python, ruby names            | lower_underscore  | out_of_range     |
+
+Wikipedia has a whole article about
+<a href="http://en.wikipedia.org/wiki/Naming_convention_(programming)"
+   target=_blank>naming conventions in different programming languages</a>.
 
 <h3>Inconsistencies</h3>
 
-There are some oddball capitalizations, such as the special
-numeric values <b>Infinity</b> and <b>NaN</b>.
+There ocassional oddball exceptions; for example in CSS, different
+values for the "white-space" property include "pre-wrap"
+(hyphenated, as usual) and "nowrap" (no hyphens, an exception).
 
-There are also disagreements and inconsistencies, such as how to deal
-with acronyms.
+Some inconsistencies have to do with acronyms:
 
 <code class="jumbo">encode<span data-dfn="acronym">URI</span><span data-dfnup="capitalized">Component</span></code>
 
-Acronyms are usually fully-capitalized, but not always.  In this standard
-function name, we see two approaches within the same name:
+In camelCase names, acronyms are usually fully-capitalized, but not always.
+In this standard function name, we see two approaches within the same name:
 
 <code class="jumbo"><span data-dfn="all-caps">XML</span><span data-dfnup="another acronym">Http</span>Request</code>
 
@@ -74,7 +83,7 @@ names are all-lowercase-hyphenated.
 When CSS style properties are referenced in Javascript and CoffeeScript
 where hyphens are not allowed, the convention is to convert the names
 to camelCaps in a uniform way: every letter after a hyphen is
-capitalized.
+capitalized, even if the hyphen comes at the start.
 
 | CSS property name       | Property name in JS or Coffee |
 |-------------------------|-------------------------------|
@@ -84,9 +93,9 @@ capitalized.
 | text-decoration         | textDecoration                |
 | -webkit-user-select     | WebkitUserSelect              |
 
-When CSS property names are used, for example, within the jQuery
+When CSS property names are used in script, (like in the jQuery
 <b>css</b> function or the turtle <a href="label.html">label</a>
-function, they are used in the camelCaps form.
+function), they are used in the camelCaps form.
 
 <pre class="jumbo">
 label 'Styling!',

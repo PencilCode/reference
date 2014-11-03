@@ -61,15 +61,41 @@ demo ->
 
 If the turtle is turned, it will move in the direction it points.
 
-<pre class="jumbo" data-before="pen purple"><span data-dfn="turn the turtle">rt 135</span>
+<pre class="jumbo" data-before="pen purple"><span data-dfn="turn the turtle">rt 45</span>
 
-fd <span data-dfn="short">50</span></pre>
+fd <span data-dfn="shorter">75</span></pre>
 
 <script type="demo">
+setup ->
+  bk 25
+p = new Pencil
 demo ->
+  plan ->
+    p.home()
+    p.pen black, .7
+    p.jumpto 0, -30
+    p.moveto 0, -20
+    p.jumpto -5, -25
+    p.moveto 5, -25
+    p.pen null
+    p.jumpto 0, -25
+    label 'home', 'left'
   pause 1
-  rt 135
+  rt 45
   pause 1
-  fd 50
+  fd 75
   pause 1
+  plan ->
+    p.jumpto 0, -25
+    p.rt 45
+    p.jump 10
+    p.pen black, .7
+    p.move 5
+    p.fd 75
+    p.move -5
+    p.pen null
+    p.move 20, -75/2
+    p.lt 90
+    p.label '75 pixels'
+
 </script>
