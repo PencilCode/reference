@@ -32,8 +32,9 @@ quoted.  The string may contain <a href="html.html">HTML</a>.
 <h3>Bigger Labels</h3>
 
 <b>label</b> can create a larger label with an optional second argument.
+Remember the comma.
 
-<code class="jumbo">label <span data-dfn="string">'Hg'</span><span data-note="comma">,</span>&nbsp;<span data-dfn="size">100</span></code>
+<code class="jumbo">label <span data-dfn="string">'Hi'</span><span data-note="comma">,</span>&nbsp;<span data-dfn="size">100</span></code>
 
 <script type="demo" width=249>
 pause 2
@@ -42,7 +43,7 @@ go = ->
   cs()
   css opacity: 0.67
   pause 1
-  label "Hg", fontFamily: 'serif', fontSize: 100
+  label "Hi", fontFamily: 'serif', fontSize: 100
   pause 1
   plan ->
     p = new Pencil
@@ -69,14 +70,15 @@ click ->
 
 Instead of a size, the last argument to <b>label</b> can be a
 <a href="css.html">CSS style object</a>.  Any CSS style properties
-can be used.  If there are more than one, the block of properties should be
-indetned.
+can be used, with a colon after the style name spelled in
+<a href="camel.html">camelCaps</a> style.  If there are several
+properties, the block of properties should be indented.
 
 <pre class="jumbo">label <span data-dfnup="first argument">'Simple'</span>,
 <span data-dfnright="css style object">  fontFamily: 'Arial'
   fontWeight: 'bold'
   fontSize: 50
-  <span data-dfn="property">color</span>: <span data-dfn="value">orange</span></span>
+ <span data-note="indent"> </span><span data-dfn="property">color</span><span data-note="colon">:</span> <span data-dfn="value">orange</span></span>
 </pre>
 
 <script type="demo" width=249>
@@ -123,7 +125,7 @@ rotated label, just rotate the turtle first.
 
 <pre class="jumbo">
 lt <span data-dfnup="degrees">90</span>
-label <span data-dfn="no style given">'Population'</span>
+label <span data-dfn="no style given">'Vertical'</span>
 </pre>
 
 <script type="demo">
@@ -131,10 +133,11 @@ pause 2
 go = ->
   speed 1
   cs()
+  home()
   pause 1
   lt 90
   pause 1
-  label "Population", fontFamily: 'serif'
+  label "Vertical", fontFamily: 'serif'
   pause 1
   speed 0.2
   animate
