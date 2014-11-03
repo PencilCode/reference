@@ -60,7 +60,7 @@ $ ->
                 how();
               }
               click(function() {
-                if (!turtle.is(':animated')) {
+                if (!turtle.queue().length) {
                   go();
                 }
               });
