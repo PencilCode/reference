@@ -1,3 +1,14 @@
+elementInViewport = (el) ->
+  if typeof jQuery == 'function' and el instanceof jQuery
+    el = el.get(0)
+  rect = el.getBoundingClientRect()
+  return (
+      rect.top >= 0 &&
+      rect.left >= 0 &&
+      rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+      rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+  )
+
 $ ->
   $('script[type=demo]').each (j) ->
     code = $(this).text()
@@ -62,7 +73,8 @@ $ ->
             ><script type="text/coffeescript">#{code}</script></body></html>
           """
           this.contentWindow.document.close()
-          this.scrollIntoView();
+          if not elementInViewport(this)
+            this.scrollIntoView();
           next()
     link = $('<a class="demo" href="#demo' + j + '">' + caption + '</a>')
       .insertBefore(this)
