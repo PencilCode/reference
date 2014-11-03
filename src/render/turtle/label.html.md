@@ -82,13 +82,13 @@ indetned.
 <script type="demo" width=249>
 pause 2
 go = ->
-  speed 1
   cs()
+  speed 1
   pause 1
   css opacity: 0.67
   label "Simple", fontFamily: 'Arial', fontWeight: 'bold',
     color: orange, fontSize: 50
-  pause 1
+  pause 2
   plan ->
     p = new Pencil
     p.jumpto 75, 25
@@ -100,6 +100,11 @@ go = ->
     p.jumpto 90, 0
     p.rt 90
     p.label '50 pixels'
+    p.turnto 0
+    p.moveto 0, 30
+    p.label 'Arial bold font'
+    p.moveto 0, -35
+    p.label 'orange color'
     remove p
   speed 0.2
   animate

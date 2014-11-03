@@ -42,26 +42,25 @@ go = ->
   cs()
   css opacity: 0.67
   dot skyblue, 100
-  pause 1
   speed Infinity
+  pause 2
   plan ->
-    ht()
-    jump -50, 15
-    pen black, 0.7
-    bk 30
-    jump 0, 15
-    move 50
-    label '100 px', 'top'
-    move 50
-    jump 0, 15
-    bk 30
-    pen null
-    move -50, 15
-    st()
-  pause 1
+    p = new Pencil
+    p.jump -50, 15
+    p.pen black, 0.7
+    p.bk 30
+    p.jump 0, 15
+    p.move 50
+    p.label '100 px', 'top'
+    p.move 50
+    p.jump 0, 15
+    p.bk 30
+    p.pen null
+    p.move -50, 15
+    remove p
   speed 0.2
   animate opacity: .3
-pause 2
+pause 1
 go()
 click ->
   if not turtle.is ':animated'
