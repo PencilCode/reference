@@ -50,13 +50,13 @@ go = ->
     pen black, 0.7
     bk 30
     jump 0, 15
-    slide 50
+    move 50
     label '100 px', 'top'
-    slide 50
+    move 50
     jump 0, 15
     bk 30
     pen null
-    slide -50, 15
+    move -50, 15
     st()
   pause 1
   speed 0.2
