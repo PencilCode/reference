@@ -1,4 +1,4 @@
-$('code.jumbo,pre.jumbo').each (j) ->
+$('code.jumbo,pre.jumbo,code.examp,pre.examp').each (j) ->
   jumbo = $(this)
   p = jumbo.parent('p')
   if not p.length
