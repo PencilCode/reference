@@ -7,7 +7,7 @@ layout: reference
 
 <style>
 table.colortable {
-border-spacing: 5px;
+border-collapse: collapse;
 display: inline-table;
 box-sizing: border-box;
 width: 100%;
@@ -23,7 +23,7 @@ font-size: 12px;
 text-align: center;
 padding: 2px;
 width: 14.28%;
-height: 20px;
+height: 26px;
 max-width: 68px;
 overflow: hidden;
 position: relative;
@@ -240,6 +240,8 @@ data.sort(sortByPerceivedlight);
 function sortByHue(a, b) {
   var hspa = rgbToHsp.apply(null, a.rgb),
       hspb = rgbToHsp.apply(null, b.rgb);
+  // if (hspa[1] == 0 && hspb[1]) { return -1; }
+  // if (hspb[1] == 0 && hspa[1]) { return 1; }
   if (hspa[0] != hspb[0]) { return hspa[0] - hspb[0]; }
   if (hspa[1] != hspb[1]) { return hspa[1] - hspb[1]; }
   return hspb[2] - hspa[2];
@@ -249,29 +251,27 @@ function rgbToHex(r, g, b) {
   return "#" + ((1 << 24) + (r << 16) + (g << 8) + b).toString(16).slice(1);
 }
 
-function rgbToHsp(r, g, b){
+function rgbToHsp(r, g, b) {
   r /= 255, g /= 255, b /= 255;
-  var rl = 0.7 * (2 * r - 1),
-      gl = 1.0 * (2 * g - 1),
-      bl = 0.5 * (2 * b - 1);
-  var max = Math.max(r, g, b), min = Math.min(r, g, b);
-  var maxl = Math.max(rl, gl, bl), minl = Math.min(rl, gl, bl),
-      midl = (rl + gl + bl) - maxl - minl;
-  var h, s, l = (maxl + minl);
+  var luminance = 0.299 * r + 0.587 * g + 0.114 * b;
+  var max = Math.max(r, g, b),
+      min = Math.min(r, g, b);
+  var hue, saturation;
 
-  if(max == min){
-    h = s = 0; // achromatic
-  }else{
+  if (max == min){
+    hue = saturation = 0; // achromatic
+  } else {
     var d = max - min;
-    s = (max + min) < 1 ? d / (1 - max - min) : d / (max + min);
-    switch(max){
-      case r: h = (g - b) / d + (g < b ? 6 : 0); break;
-      case g: h = (b - r) / d + 2; break;
-      case b: h = (r - g) / d + 4; break;
+    saturation = (max + min) < 1 ? d / (1 - max - min) : d / (max + min);
+    switch (max) {
+      case r: hue = (g - b) / d + (g < b ? 6 : 0); break;
+      case g: hue = (b - r) / d + 2; break;
+      case b: hue = (r - g) / d + 4; break;
     }
-    h /= 6;
+    hue /= 6
+    hue = hue;
   }
-  return [h, s, l];
+  return [hue, saturation, luminance];
 }
 
 
@@ -335,7 +335,8 @@ window.addEventListener('click', function(e) {
     }
     document.getElementById('example').innerHTML = 'For example, ' +
       div.getAttribute('title').replace(/(#[a-f0-9]*)/, "'$1'") + '.';
-  } else {
+  } else if (e.target == document.body ||
+             e.target == document.documentElement) {
     document.body.style.backgroundColor = '';
     document.body.style.color = '';
     document.getElementById('example').innerHTML = '';
