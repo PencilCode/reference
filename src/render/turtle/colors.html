@@ -3,7 +3,7 @@ title: color names
 layout: reference
 ---
 
-<p>The CSS standard has 140 named colors.
+<p>The CSS standard has 140 named colors (150 counting duplicates).
 
 <style>
 table.colortable {
@@ -28,6 +28,7 @@ max-width: 68px;
 overflow: hidden;
 position: relative;
 padding: 0;
+background: transparent;
 }
 table.colortable tr td:last-of-type,
 table.colortable tr td:nth-last-of-type(2) {
@@ -115,7 +116,7 @@ var colors = [
   "firebrick",
   "floralwhite",
   "forestgreen",
-  "fuchsia",
+  /*"fuchsia",*/
   "gainsboro",
   "ghostwhite",
   "gold",
@@ -210,12 +211,14 @@ var colors = [
   "white",
   "whitesmoke",
   "yellow",
-  "yellowgreen"
+  "yellowgreen",
+  "transparent"
 ];
 
 function parseColor(c) {
-  var rgb = /rgb\(\s*(\d+)\s*,\s*(\d+)\s*,\s*(\d+)\s*\)/.exec(c);
-  return rgb.slice(1).map(parseFloat);
+  var rgb = /rgba?\(\s*(\d+)\s*,\s*(\d+)\s*,\s*(\d+)\s*(?:,\s*(\d+)\s*)?\)/
+            .exec(c);
+  return rgb.slice(1, rgb[4] ? 5 : 4).map(parseFloat);
 }
 
 var data = [];
@@ -229,7 +232,11 @@ document.body.style.color = '';
 
 function perceivedlight(rgb) {
   var hsp = rgbToHsp.apply(null, rgb);
-  return hsp[2];
+  var result = hsp[2];
+  if (rgb.length == 4) {
+    result = result * rgb[3] + (1 - rgb[3]);
+  }
+  return result;
 }
 
 function sortByPerceivedlight(a, b) {
@@ -241,6 +248,9 @@ var rotate = function(c) {
 }
 
 function sortByHue(a, b) {
+  if (a.rgb.length != b.rgb.length) {
+    return a.rgb.length - b.rgb.length;
+  }
   var hspa = rgbToHsp.apply(null, a.rgb),
       hspb = rgbToHsp.apply(null, b.rgb);
   if (hspa[1] == 0 && hspb[1]) { return -1; }
@@ -288,11 +298,12 @@ var sizes = [
   // Instead, we arrange things in a prettier way by
   // manually choosing the number of each color in each column.
   [2,2,1,1,1,1,1], // 9 grays
-  [0,1,3,3,2,3,3], // 15 purples
-  [3,3,3,3,4,7,6], // 29 blues
-  [4,4,4,5,5,3,4], // 29 greens
-  [8,7,6,2,3,2,1], // 29 yellows
-  [3,3,3,6,5,4,5]  // 29 reds
+  [0,1,2,2,3,3,3], // 14 purples
+  [3,3,4,3,3,7,6], // 29 blues
+  [4,4,3,6,5,3,4], // 29 greens
+  [8,8,5,2,3,2,1], // 29 yellows
+  [2,2,5,6,5,4,5], // 29 reds
+  [1,0,0,0,0,0,0]  // one transparent
 ];
 var huegroups = sizes.length;
 data.sort(sortByHue);
@@ -305,6 +316,7 @@ for (var j = 0; j < huegroups; ++j) {
   }
     console.log(huesize);
   var group = data.slice(index, index + huesize);
+  console.log(group);
   index += huesize;
   group.sort(sortByPerceivedlight);
   var subindex = 0;
@@ -322,13 +334,17 @@ for (var k = 0; k < result[0].length; k++) {
   html.push('<tr>');
   for (var j = 0; j < result.length; j++) {
     var d = result[j][k];
+    if (!d) continue;
     var popup = d.color + ' = ' + rgbToHex.apply(null, d.rgb) + ' = ' +
        'rgb(' + d.rgb[0] + ',' + d.rgb[1] + ',' + d.rgb[2] + ')';
     var label = d.color;
-    if (label == 'cyan') {
+    if (label == 'transparent') {
+      popup = 'transparent = rgba(0,0,0,0)';
+    } else if (label == 'cyan') {
       popup = 'aqua = ' + popup;
-    }
-    if (/gray/.test(label)) {
+    } else if (label == 'magenta') {
+      popup = 'fuchsia = ' + popup;
+    } else if (/gray/.test(label)) {
       popup = popup.replace('=', '= ' + label.replace('gray', 'grey') + ' =');
     }
     html.push('<td><div class="popup" style="background-color:' + d.color +
@@ -365,7 +381,7 @@ window.addEventListener('click', function(e) {
       range.select();
     }
     document.getElementById('example').innerHTML =
-      div.getAttribute('title').replace(/(#[a-f0-9]*)/, "'$1'") + '.';
+      div.getAttribute('title').replace(/(#[a-f0-9]*)/, "'$1'");
   } else if (e.target == document.body ||
              e.target == document.documentElement) {
     document.body.style.backgroundColor = '';
