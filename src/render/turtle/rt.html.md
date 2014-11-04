@@ -143,5 +143,5 @@ demo ->
 
 <h3>Drawing Curves</h3>
 
-`rt can also be used to draw curves by using a second argument.
+rt can also be used to draw curves by using a second argument.
 Read the reference page on <a href="curves.html">curves</a>.
