@@ -83,18 +83,20 @@ the turtle.
 <b>lt</b> turns left from the turtle&apos;s point of view, so
 if the turtle is facing downward, when it turns left from its
 point of view, it will end up facing right from your point of
-view.  The demo below can be clicked a few times to show the idea.
+view.  The demo below can be clicked a few times to show different
+starting directions.
 
 <pre class="jumbo">
 turnto random 360
 pen orange
 fd 100
-lt 90
+lt 100
 fd 100
 </pre>
 
 
-<script type="demo" height=299 width=349>
+<script type="demo" height=299 width=399>
+angle = 100
 demo ->
   d = random 360
   if d < 90 or d > 270 # if upright, retry
@@ -104,7 +106,7 @@ demo ->
   speed 1
   turnto d
   fd 100
-  lt 90
+  lt angle
   fd 100
   pause 1
   plan ->
@@ -115,9 +117,9 @@ demo ->
     p.fd 70
     p.jump 0, -40
     p.lt 90
-    p.lt 90, 30
+    p.lt angle, 30
     p.pen null
-    p.lt -45, 30
+    p.lt -angle/2, 30
     octant = switch
       when d < 22.5 or d > 360 - 22.5
         "top left"
@@ -135,7 +137,7 @@ demo ->
         "bottom left"
       when d < 7 * 45 + 22.5
         "left"
-    p.label '90&deg; left', octant
+    p.label angle + '&deg; left', octant
     remove p
 </script>
 
