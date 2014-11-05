@@ -52,3 +52,9 @@ demo ->
   animate opacity: .3
 </script>
 
+<h3>Other Shapes</h3>
+
+<p>Move the turtle using <a href="fd.html">fd</a> to draw dots in
+different places.  Use <a href="box.html">box</a> to draw a box
+instead of a dot. Other shapes can be drawn using
+<a href="pen.html">pen</a>.

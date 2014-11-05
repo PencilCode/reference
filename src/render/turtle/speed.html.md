@@ -74,11 +74,10 @@ demo ->
 <h3>Default Speed</h3>
 
 The starting default speed for turtles is one move per second.
-The program below does not specify a speed, so the turtle
-moves at a regular turtle pace, taking one second to draw each
-dot, and another second to move forward each time.
+The program below does not specify a speed, so it takes on second to
+draw each dot, and one second to move forward each time.
 Since the program repeats two motions 8 times, the turtle takes
-8&times;2=16 seoncds total to complete its animation.
+8&times;2=16 seconds total to complete its animation.
 
 <pre class="examp">
 for [1..8]
@@ -112,7 +111,7 @@ turtles, used when they have not set their own speed.
 speed Infinity
 a = (new Turtle for [0..8])
 for t, j in a
-  t.moveto -50, j*25 - 100
+  t.moveto 0, j*25 - 100
   t.rt 90
   if j > 0
     t.speed j
@@ -141,6 +140,7 @@ demo ->
         fontFamily:'monospace'
         labelSide:'left'
         padding:15
+      t.pause 2
       if j > 0
         t.speed j
       for [1..8]
