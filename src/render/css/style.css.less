@@ -1,4 +1,5 @@
 @import "../../static/less/core";
+@import "../../static/main.css";
 
 body, td, th {
   font-family: Lato;
@@ -26,25 +27,31 @@ input.collapse + label:before {
   content: '\25b6\00a0';
   text-align: right;
 }
+input.collapse + label + div {
+  padding-bottom: 25px;
+}
 input.collapse + label:active:before {
   color: red
 }
 input.collapse + label:after {
   content: 'click to open';
   display: block;
-  margin-top: -2px;
+  margin-top: 0;
   margin-left: 25px;
   color: silver;
-  font-size: 50%
+  font-size: 50%;
+  height: 0;
 }
 input.collapse + label:hover:after {
   color: dimgray;
 }
 input.collapse + label + div {
   padding-left: 25px;
-  transition: max-height 0.5s;
+  transition: max-height 0.5s, opacity 0.25s, visibility 0.5s;
   overflow: hidden;
   max-height:0;
+  opacity: 0;
+  visibility: hidden;
 }
 input.collapse:checked + label:before {
   content: '\25bc\00a0'
@@ -53,8 +60,9 @@ input.collapse:checked + label:after {
   display: none
 }
 input.collapse:checked + label + div {
-  padding-bottom: 25px;
-  max-height: none;
+  max-height: 1000px;
+  opacity: 1;
+  visibility: visible;
 }
 .h2 { font-size: 1.5em; font-weight: bold; }
 .h3 { font-size: 1.17em; font-weight: bold; }
