@@ -101,3 +101,11 @@ demo ->
     p.label '75 pixels'
 
 </script>
+
+<h3>Turtle Distances</h3>
+
+<b>bk 100</b> moves about an inch on a typical screen, because
+most computers fit about 100 pixels in an inch.  The graph paper
+background is equivalent to a 1/4 inch grid: it has one square per
+25 pixels.
+
