@@ -270,11 +270,11 @@ HTML5 Canvas and SVG standards.
 
 <h3>Pretty Paths</h3>
 
-When tracing out a path using an animated turtle, the path is continuously
+When tracing out a colored path with a, the path is continuously
 drawn with one end at the turtle.
 
 This can sometimes result in overdrawing.  For example, if you have a
-line-cap style like <b>square</b> that extends beyond your the
+line-cap style like <b>square</b> that extends beyond the
 line-join shape for a sharp angle, extra pixels can stick out if
 you draw the path continuously.
 
@@ -283,11 +283,11 @@ out an invisible path, then using the [fill](fill.html) command
 to draw the whole path at once.  With <b>fill</b>, you specify
 the line drawing options by name:
 
-<pre class="jumbo">
-pen <span data-dfnup="invisible path">path</span>
-fd 100
+<pre class="examp">
+pen <span data-dfnup="invisible pen">path</span>
+<span data-dfnright="trace path">fd 100
 rt 120
-fd 100
+fd 100</span>
 fill
 <span data-dfnright="line options">  strokeStyle: green
   lineWidth: 25
@@ -328,5 +328,6 @@ demo ->
     p.label "pretty corner", 'top'
 </script>
 
-[fill](fill.html) can also be used to fill shapes with solid colors.
+[fill](fill.html) can also be used to fill shapes with solid colors using
+the default <b>fillStyle</b> property.
 
