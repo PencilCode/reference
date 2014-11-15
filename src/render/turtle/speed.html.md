@@ -74,10 +74,10 @@ demo ->
 <h3>Default Speed</h3>
 
 The starting default speed for turtles is one move per second.
-The program below does not specify a speed, so it takes on second to
-draw each dot, and one second to move forward each time.
-Since the program repeats two motions 8 times, the turtle takes
-8&times;2=16 seconds total to complete its animation.
+The program below does not specify a speed, so it takes one second to
+draw each dot, and another second to move forward between
+each dot.  Since the program repeats those two motions 8 times, the
+turtle takes 8&times;2=16 seconds total to complete its animation.
 
 <pre class="examp">
 for [1..8]
@@ -156,15 +156,13 @@ Each turtle is a jQuery object that animates using the jQuery animation queue.
 When you tell a turtle to take a sequence of motions, it makes a list
 of all the motions right away, but it does not do them until later.
 When your program finishes running, the turtle starts working through
-its list, using some time for each command.
-
-The list of motions for each turtle is called its "jQuery animation queue".
-jQuery has a system called $.fx that manages the smooth motion of
-queued animation commands.
+its list, using some time for each command.  Each turtle has
+its own list, and its own speed.
 
 That means that a program that creates a 20-second animation is
-actually done running almost instantly!  The turtle walks through
-the motions after the program is done sending all its commands.
+actually done running almost instantly, because all it needs to do
+is give the turtle a list of commands!  The turtle walks through
+the motions after the program is done sending all the commands.
 You can see the effect writing output to the screen using a function
 that runs immediately without using the jQuery animation queue,
 like <b>write</b>:
@@ -246,16 +244,16 @@ turtle motion occurs immediately, as soon as you run it (as long
 as there is nothing else already ahead of it in the queue).
 
 When making an interactive program where you need to be
-aware of the turtle position, you are likely to want to
+aware of the turtle position at any instant, you are likely to want to
 use <b>speed Infinity</b> at the beginning of your program.  That way
-every turtle movement command happens instantly, and you can know where
-the turtle is going to be at all times.  This technique
+every turtle movement command happens immediately, and you can know
+where the turtle is going to be right away.  This technique
 is often used with the <a href="tick.html">tick</a> command,
 which lets you create your own animation frames.
 
 If you use a turtle speed that is slower than Infinity, jQuery will
-be moving turtles on its own time.  That can sometimes
-have surprising effects.
+move turtles on its own time, some time after you have requested
+the motion.  That can sometimes have surprising effects.
 
 <p>For example, <b>speed 10000000</b> does not actually go any faster than
 <b>speed 100</b>.  That is because the master jQuery animation timer uses
