@@ -12,9 +12,9 @@ It draws the box under the turtle.
 <script type="demo" height=99>
 demo ->
   pause 1
-  dot red
+  box blue
   pause 1
-  label 'red circle &rarr;', 'left'
+  label 'blue square &rarr;', 'left'
   pause 1
   speed 0.2
   animate
