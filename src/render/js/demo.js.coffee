@@ -41,14 +41,9 @@ $ ->
             </style>
             <script>
             function setup(how) {
-              speed(Infinity);
-              how();
-              speed(1);
               setup.again = how;
             }
             function demo(how) {
-              pause(1);
-              how();
               function go() {
                 speed(Infinity);
                 pen(null);
@@ -56,9 +51,15 @@ $ ->
                 home();
                 css({opacity: 0.67});
                 if (setup.again) setup.again();
+                pause(1);
                 speed(1);
                 how();
+                pause(1);
+                done(function() {
+                  $('body').append('<a style="display:block;position:fixed;right:5px;bottom:5px">click to replay</a>');
+                });
               }
+              go();
               click(function() {
                 if (!turtle.queue().length) {
                   go();
