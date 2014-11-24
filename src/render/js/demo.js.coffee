@@ -103,3 +103,14 @@ $ ->
       .insertBefore(this)
       .wrap('<p style="text-align:center"></p>')
       .on 'click', showdemo
+
+$ ->
+  $('script[type=figure]').each (j) ->
+    code = $(this).text()
+    height = $(this).attr('height') || 149
+    width = $(this).attr('width') || 199
+    frame = $('<iframe class="demo">')
+      .css({height: height, width:width})
+      .insertBefore(this)
+      .wrap('<p style="text-align:center"></p>')
+    writeDemoFrame frame.get(0), code
