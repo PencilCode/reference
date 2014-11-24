@@ -15,6 +15,10 @@ Each unit is a pixel, and each graph paper grid square is 25 units.
 The traditional mathematical coordinate axis are used, centered
 at the middle with x increasing to the right and y increasing upward.
 
+A vector represented as an array of two numbers can be used.
+<code>moveto [x, y]</code> is treated the same as
+<code>moveto x, y</code>.
+
 <script type="figure" width=299 height=249>
 turtle.css opacity: 0.3
 p = new Pencil
@@ -33,13 +37,13 @@ p.jumpto 0, 250
 p.moveto 0, -250
 p.jumpto -250, 0
 p.moveto 250, 0
-p.jumpto 100, 75
+p.jumpto 105, 110
 p.label 'x > 0,&emsp;y > 0'
-p.jumpto 100, -75
+p.jumpto 105, -110
 p.label 'x > 0,&emsp;y < 0'
-p.jumpto -100, 75
+p.jumpto -105, 110
 p.label 'x < 0,&emsp;y > 0'
-p.jumpto -100, -75
+p.jumpto -105, -110
 p.label 'x < 0,&emsp;y < 0'
 p.jumpto 50, 0
 p.cross()
@@ -85,7 +89,7 @@ pen peru
 moveto 50, 50
 moveto -75, -25
 moveto 0, -50
-moveto -126, 100
+moveto <span data-dfn="x">-125</span>, <span data-dfn="y">100</span>
 </pre>
 
 <script type="demo" width=299 height=249>
@@ -131,9 +135,9 @@ demo ->
 ### Using HTML Coordinates
 
 The native coordinate system supported by HTML follows a different
-convention: it places the (x, y) origin at the upper-left corner of
-the page.  <code>x</code> increases to the right, but
-<code>y</code> is inverted: <code>y</code> increases going down.
+convention: it places the (pageX, pageY) origin at the upper-left corner
+of the page.  <code>pageX</code> increases to the right, but
+<code>pageY</code> is inverted: <code>pageY</code> increases going down.
 
 <script type="figure" width=299 height=249>
 turtle.css opacity: 0.3
@@ -171,7 +175,6 @@ p.cross()
 p.label '200', 'bottom'
 p.jumpto pageX: 250, pageY: 0
 p.cross()
-p.label '250', 'bottom'
 p.jumpto pageX: 0, pageY: 50
 p.cross()
 p.label '50', 'right'
@@ -184,20 +187,24 @@ p.label '150', 'right'
 p.jumpto pageX: 0, pageY: 200
 p.cross()
 p.label '200', 'right'
-p.jumpto pageX: 290, pageY: 0
-p.label 'x', 'bottom'
-p.jumpto pageX: 0, pageY: 240
-p.label 'y', 'right'
+p.jumpto pageX: 275, pageY: -3
+p.label 'pageX', 'bottom'
+p.jumpto pageX: -3, pageY: 240
+p.label 'pageY', 'right'
 </script>
 
-<code>moveto</code> supports native HTML coorenates by accepting
-any object that has <code>pageX</code> and <code>pageY</code> properties.
+<code>moveto</code> supports native HTML coordinates if they are passed
+with the <code>pageX</code> and <code>pageY</code> properties.  Note
+that HTML mouse events all have pageX and pageY properties, so
+<code>moveto lastclick</code> will move to the location of the last
+mouse click.
 
 <pre class="examp">
 moveto pageX: 50, pageY: 100
 pen slateblue
 moveto pageX: 150, pageY: 200
 moveto pageX: 250, pageY: 100
+moveto lastclick
 </pre>
 
 <script type="demo" width=299 height=249>
@@ -220,8 +227,63 @@ setup ->
   p.jumpto pageX: 50, pageY: 0.5
 demo ->
   moveto pageX: 50, pageY: 100
+  label 'pageX: 50<br>pageY: 100', 'top'
   pen slateblue
   moveto pageX: 150, pageY: 200
+  label 'pageX: 150, pageY: 200', 'bottom'
   moveto pageX: 250, pageY: 100
+  label 'pageX: 250<br>pageY: 100', 'top'
+  plan ->
+    if lastclick.pageX and lastclick.pageY
+      moveto lastclick
+      label 'lastclick', if lastclick.pageY > 100 then 'bottom' else 'top'
 </script>
 
+### Other Locations
+
+<code>moveto</code> will also move to any element or jQuery object or
+any other object that supports a pagexy() method that returns page
+coordinates.  For example <code>moveto otherturtle</code> will move
+to the location of another turtle.
+
+Here is a summary of some types of locations that
+<code>moveto</code> understands.
+
+| example       | motion                                                       |
+|---------------|--------------------------------------------------------------|
+| <code>moveto x, y</code> | move to (x, y) in traditional mathematical y-up coordinates. |
+| <code>moveto [x, y]</code> | same as <code>moveto x, y</code> |
+| <code>moveto pageX: px, pageY: py</code> | move using HTML page coordinates. |
+| <code>moveto lastmouse</code> | move to the location of the last mouse event.|
+| <code>moveto otherturtle</code> | move to another turtle. |
+| <code>moveto $('#spot')</code> | move to the element with id spot. |
+| <code>moveto document</code> | move to the center of the document. |
+| <code>moveto window</code> | move to the center of the visible window. |
+
+### Limiting Motion
+
+When passing a single location object to <code>moveto</code>, it supports
+an optional second argument limiting the distance of the motion.  When the
+second argument is given, the turtle will move towards the location, but
+no farther than the limiting distance in pixels.
+
+The following program will move the turtle towards the last mouse event
+twice per second, but will move no more than 10 pixels each time.
+
+<pre class="examp">
+pen green
+tick 2, ->
+  moveto lastmouse, <span data-dfn="limiting distance">10</span>
+</pre>
+
+<script type="demo" width=299 height=249>
+setup ->
+  tick null
+demo ->
+  pen green
+  tick 2, ->
+    moveto lastmouse, 10
+</script>
+
+In all these uses, <code>moveto</code> moves the turtle without changing
+its direction.
