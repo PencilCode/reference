@@ -2,6 +2,9 @@
 # It is simply a CoffeeScript Object which is parsed by CSON
 docpadConfig = {
 
+  # Collapse src directory.
+  srcPath: ''
+
   # =================================
   # Template Data
   # These are variables that will be accessible via our templates
