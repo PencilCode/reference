@@ -10,9 +10,9 @@ The turtle starts in the middle of the window, at (x, y) coordinates
 (0, 0).
 
 <code>moveto x, y</code> moves to an absolute location in
-traditional cartesian coordinates.  In this coordinate system,
-Each unit is a pixel, and each graph paper grid square is 25 units.
-The traditional mathematical coordinate axis are used, centered
+traditional Cartesian coordinates.  In this coordinate system,
+Each unit is one pixel, and each graph paper grid square is 25 units.
+The mathematical coordinate axes are used, placing (0, 0)
 at the middle with x increasing to the right and y increasing upward.
 
 A vector represented as an array of two numbers can be used.
