@@ -44,10 +44,10 @@ In the next example, `r` is given its commands before
 <pre class="examp">
 <span data-dfnright="for r">r = new Turtle red
 r.rt 90
-r.lt 180, 100</span>
+r.lt 180, 50</span>
 <span data-dfnright="for b">b = new Turtle blue
 b.lt 90
-b.rt 180, 100</span>
+b.rt 180, 50</span>
 </pre>
 
 <script type="demo">
@@ -84,7 +84,8 @@ setup ->
   remove car
 demo ->
   car = new Turtle
-  car.fd 100
+  car.speed 1
+  car.fd 50
   car.wear '/img/icon-car', 50
 </script>
 
