@@ -23,9 +23,11 @@ setup ->
   remove sally
 demo ->
   sally = new Turtle orange
+  sally.speed 1
   sally.fd 50
   sally.pause 1
-  sally.label 'sally', 'left'
+  sync sally, turtle
+  sally.label 'sally &rarr;', 'left'
   turtle.label 'original turtle', 'right'
 </script>
 
@@ -48,10 +50,11 @@ b.lt 90
 b.rt 180, 100</span>
 </pre>
 
-<script type="demo">
+<script type="demo">p
 r = b = null
 setup ->
-  remove r, b, turtle
+  ht()
+  remove r, b
   r = new Turtle red
   r.jump 0, -50
   b = new Turtle blue
