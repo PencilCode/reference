@@ -7,7 +7,9 @@ layout: reference
 <b>dot</b> can make a dot in any <a href="colors.html">color</a>.
 It draws the dot under the turtle.
 
-<code class="jumbo">dot <span data-dfn="color">red</span></code>
+<pre class="jumbo">
+dot <span data-dfn="color">red</span>
+</pre>
 
 <script type="demo" height=99>
 demo ->
@@ -27,7 +29,9 @@ demo ->
 the dot in pixels.  Remember that arguments need to be separated by
 a comma.
 
-<code default class="jumbo">dot <span data-dfn="color">skyblue</span><span data-note="comma">,</span>&nbsp;<span data-dfn="size">100</span></code>
+<pre class="jumbo">
+dot <span data-dfn="color">skyblue</span><span data-note="comma">,</span>&nbsp;<span data-dfn="size">100</span>
+</pre>
 
 <script type="demo">
 demo ->
