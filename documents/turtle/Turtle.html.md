@@ -48,6 +48,23 @@ b.lt 90
 b.rt 180, 100</span>
 </pre>
 
+<script type="demo">
+r = b = null
+setup ->
+  remove r, b, turtle
+  r = new Turtle red
+  r.jump 0, -50
+  b = new Turtle blue
+  b.jump 0, -50
+demo ->
+  r.pause 1
+  b.pause 1
+  r.rt 90
+  r.lt 180, 100
+  b.lt 90
+  b.rt 180, 100
+</script>
+
 ### Changing the Turtle
 
 Use [wear](wear.html) to change the turtle’s shell to a different color or replace its shell with an image.
@@ -57,5 +74,16 @@ car = new Turtle
 car.fd 100
 car.wear '/img/icon-car', 50
 </pre>
+
+<script type="demo">
+car = null
+setup ->
+  remove car
+demo ->
+  car = new Turtle
+  car.fd 100
+  car.wear '/img/icon-car', 50
+</script>
+
 
 See [Sprite](sprite.html) to make a blank "turtle" that you can draw yourself using [drawon](drawon.html).
