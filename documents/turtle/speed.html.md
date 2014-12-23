@@ -165,15 +165,15 @@ is give the turtle a list of commands!  The turtle walks through
 the motions after the program is done sending all the commands.
 You can see the effect writing output to the screen using a function
 that runs immediately without using the jQuery animation queue,
-like <b>write</b>:
+like <b>log</b>:
 
 <pre class="examp">
 pen red
 for j in [1..5]
   rt 360, 50
-  write "#{j}: sent rt 360, 60"
+  log "#{j}: sent rt 360, 60"
   rt 144
-  write "#{j}: sent rt 144"
+  log "#{j}: sent rt 144"
 </pre>
 
 <script type="demo" height=199 width=249>
