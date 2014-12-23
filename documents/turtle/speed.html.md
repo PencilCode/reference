@@ -187,9 +187,9 @@ demo = ->
   pen red
   for j in [1..5]
     rt 360, 50
-    write "#{j}: sent rt 360, 60"
+    log "#{j}: sent rt 360, 60"
     rt 144
-    write "#{j}: sent rt 144"
+    log "#{j}: sent rt 144"
 click ->
   stopped = true
   finish()
