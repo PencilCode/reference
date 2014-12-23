@@ -38,7 +38,7 @@ after receving commands, they all begin moving at the same time.
 In the next example, `r` is given its commands before
 `b`, but they both start moving at the same time.
 
-<pre>
+<pre class="examp">
 <span data-dfnright="r commands">r = new Turtle red
 r.rt 90
 r.lt 180, 100</span>
@@ -51,7 +51,7 @@ b.rt 180, 100</span>
 
 Use [wear](wear.html) to change the turtle’s shell to a different color or replace its shell with an image.
 
-<pre class="jumbo">
+<pre class="examp">
 car = new Turtle
 car.fd 100
 car.wear '/img/icon-car', 50
