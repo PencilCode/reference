@@ -75,8 +75,8 @@ p.label 'x', 'top'
 p.jumpto 0, 115
 p.label 'y', 'right'
 click (e) ->
-  $('#where').jumpto e
   $('#where').text "#{e.x}, #{e.y}"
+  $('#where').jumpto e.x, e.y
   moveto e.x, e.y
 </script>
 
