@@ -20,7 +20,7 @@ A vector represented as an array of two numbers can be used.
 <code>moveto x, y</code>.
 
 <script type="figure" width=299 height=249>
-turtle.css opacity: 0.3, turtlePenStyle: silver
+turtle.css opacity: 0.3, turtlePenStyle: silver, turtlePenDown: true
 p = new Pencil
 p.cross = ->
   @pen black, 0.7
@@ -145,7 +145,7 @@ of the page.  <code>pageX</code> increases to the right, but
 <code>pageY</code> is inverted: <code>pageY</code> increases going down.
 
 <script type="figure" width=299 height=249>
-turtle.css opacity: 0.3, turtlePenStyle: silver
+turtle.css opacity: 0.3, turtlePenStyle: silver, turtlePenDown: true
 p = new Pencil
 p.cross = ->
   @pen black, 0.7
