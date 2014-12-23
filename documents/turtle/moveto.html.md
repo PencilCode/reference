@@ -29,7 +29,8 @@ p.cross = ->
   @jump -5, -5
   @fd 10
   @jump 0, -5
-text = p.label 'origin', 'top right'
+p.label 'origin', id: 'where', labelSide: 'top right'
+$('#where').speed Infinity
 p.pen black, 1.5
 p.jumpto -8, 0
 p.rt 360, 8
@@ -74,8 +75,8 @@ p.label 'x', 'top'
 p.jumpto 0, 115
 p.label 'y', 'right'
 click (e) ->
-  text.jumpto e
-  text.text "#{e.x}, #{e.y}"
+  $('#where').jumpto e
+  $('#where').text "#{e.x}, #{e.y}"
   moveto e.x, e.y
 </script>
 
