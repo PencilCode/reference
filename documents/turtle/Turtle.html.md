@@ -63,9 +63,9 @@ demo ->
   r.pause 1
   b.pause 1
   r.rt 90
-  r.lt 180, 100
+  r.lt 180, 50
   b.lt 90
-  b.rt 180, 100
+  b.rt 180, 50
 </script>
 
 ### Changing the Turtle
