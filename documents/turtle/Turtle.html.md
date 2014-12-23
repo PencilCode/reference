@@ -57,4 +57,4 @@ car.fd 100
 car.wear '/img/icon-car', 50
 </pre>
 
-See [Sprite](sprite.html) to make a blank "turtle" that you can draw yourself using [drawon](drawon.html)
+See [Sprite](sprite.html) to make a blank "turtle" that you can draw yourself using [drawon](drawon.html).
