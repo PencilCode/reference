@@ -196,7 +196,7 @@ p.label 'pageX', 'bottom'
 p.jumpto pageX: -3, pageY: 240
 p.label 'pageY', 'right'
 click (e) ->
-  $('#where').text "pageX: #{e.pageX}, pageY: #{e.pageY}"
+  $('#where').html "pageX: #{e.pageX},<br>pageY: #{e.pageY}"
   $('#where').jumpto e
   moveto e
 </script>
