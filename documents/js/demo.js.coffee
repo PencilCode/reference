@@ -63,7 +63,7 @@ writeDemoFrame = (frame, code) ->
         pause(1);
         done(function() {
           $('body').append(
-            '<a style="display:block;position:fixed;right:5px;bottom:5px">' +
+            '<a style="display:block;position:fixed;right:5px;bottom:5px;cursor:default">' +
             'click to replay</a>');
         });
       }
