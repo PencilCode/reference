@@ -17,5 +17,12 @@
 <%- @content %>
 
 <%- @getBlock('scripts').add(@site.scripts).toHTML() %>
+<script>
+window.addEventHandler('keydown', function(e) {
+  if (e.which == 'E'.charCodeAt(0) && e.ctrl) {
+    location.href = "https://github.com/PencilCode/reference/edit/master/@document.path";
+  }
+});
+</script>
 </body>
 </html>
