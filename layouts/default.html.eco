@@ -20,9 +20,10 @@
 <script>
 window.addEventListener('keydown', function(e) {
   if (e.which == 'E'.charCodeAt(0) && e.ctrlKey) {
-    window.open(
+    var editor = window.open(
         "https://github.com/PencilCode/reference/edit/master/documents/<%- @document.relativePath %>",
         "pcredit");
+    editor.focus();
   }
 });
 </script>
