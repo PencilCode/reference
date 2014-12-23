@@ -20,7 +20,7 @@ A vector represented as an array of two numbers can be used.
 <code>moveto x, y</code>.
 
 <script type="figure" width=299 height=249>
-turtle.css opacity: 0.3
+turtle.css opacity: 0.3, turtlePen: silver
 p = new Pencil
 p.cross = ->
   @pen black, 0.7
@@ -29,7 +29,7 @@ p.cross = ->
   @jump -5, -5
   @fd 10
   @jump 0, -5
-p.label 'origin', 'top right'
+text = p.label 'origin', 'top right'
 p.pen black, 1.5
 p.jumpto -8, 0
 p.rt 360, 8
@@ -73,6 +73,10 @@ p.jumpto 140, 0
 p.label 'x', 'top'
 p.jumpto 0, 115
 p.label 'y', 'right'
+click (e) ->
+  text.jumpto e
+  text.text "#{e.x}, #{e.y}"
+  moveto e.x, e.y
 </script>
 
 ### Drawing while Moving
