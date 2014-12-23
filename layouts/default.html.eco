@@ -20,7 +20,9 @@
 <script>
 window.addEventListener('keydown', function(e) {
   if (e.which == 'E'.charCodeAt(0) && e.ctrlKey) {
-    location.href = "https://github.com/PencilCode/reference/edit/master/documents/<%- @document.relativePath %>";
+    window.open(
+        "https://github.com/PencilCode/reference/edit/master/documents/<%- @document.relativePath %>",
+        "pcredit");
   }
 });
 </script>
