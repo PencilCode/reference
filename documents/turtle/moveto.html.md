@@ -20,7 +20,7 @@ A vector represented as an array of two numbers can be used.
 <code>moveto x, y</code>.
 
 <script type="figure" width=299 height=249>
-turtle.css opacity: 0.3, turtlePen: silver
+turtle.css opacity: 0.3, turtlePenStyle: silver
 p = new Pencil
 p.cross = ->
   @pen black, 0.7
