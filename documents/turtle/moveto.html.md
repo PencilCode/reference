@@ -29,8 +29,7 @@ p.cross = ->
   @jump -5, -5
   @fd 10
   @jump 0, -5
-p.label 'origin', id: 'where', labelSide: 'top right'
-$('#where').speed Infinity
+p.label 'origin', id: 'where', labelSide: 'top right', turtleSpeed: Infinity
 p.pen black, 1.5
 p.jumpto -8, 0
 p.rt 360, 8
@@ -155,7 +154,7 @@ p.cross = ->
   @fd 10
   @jump 0, -5
 p.jumpto pageX: 22, pageY: 22
-p.label 'origin', id: 'where', labelSide: 'bottom right'
+p.label 'origin', id: 'where', labelSide: 'bottom right', turtleSpeed: Infinity
 p.jumpto pageX: 31, pageY: 31
 p.pen black, 0.7
 p.moveto pageX: 0, pageY: 0
