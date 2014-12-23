@@ -145,7 +145,7 @@ of the page.  <code>pageX</code> increases to the right, but
 <code>pageY</code> is inverted: <code>pageY</code> increases going down.
 
 <script type="figure" width=299 height=249>
-turtle.css opacity: 0.3
+turtle.css opacity: 0.3, turtlePenStyle: silver
 p = new Pencil
 p.cross = ->
   @pen black, 0.7
@@ -196,6 +196,10 @@ p.jumpto pageX: 275, pageY: -3
 p.label 'pageX', 'bottom'
 p.jumpto pageX: -3, pageY: 240
 p.label 'pageY', 'right'
+click (e) ->
+  $('#where').text "pageX: #{e.pageX}, pageY: #{e.pageY}"
+  $('#where').jumpto e
+  moveto e
 </script>
 
 <code>moveto</code> supports native HTML coordinates if they are passed
