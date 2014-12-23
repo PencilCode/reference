@@ -14,7 +14,7 @@ a period:
 
 <pre class="jumbo">
 sally = new Turtle <span data-dfnup="optional color">orange</span>
-sally<span data-dfn="command after a dot">.fd 100</span>
+sally<span data-dfn="command after a dot">.fd 50</span>
 </pre>
 
 <script type="demo">
@@ -23,7 +23,8 @@ setup ->
   remove sally
 demo ->
   sally = new Turtle orange
-  pause 1
+  sally.fd 50
+  sally.pause 1
   sally.label 'sally', 'left'
   turtle.label 'original turtle', 'right'
 </script>
@@ -39,10 +40,10 @@ In the next example, `r` is given its commands before
 `b`, but they both start moving at the same time.
 
 <pre class="examp">
-<span data-dfnright="r commands">r = new Turtle red
+<span data-dfnright="for r">r = new Turtle red
 r.rt 90
 r.lt 180, 100</span>
-<span data-dfnright="b commands">b = new Turtle blue
+<span data-dfnright="for b">b = new Turtle blue
 b.lt 90
 b.rt 180, 100</span>
 </pre>
