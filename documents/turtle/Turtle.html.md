@@ -50,7 +50,7 @@ b.lt 90
 b.rt 180, 100</span>
 </pre>
 
-<script type="demo">p
+<script type="demo">
 r = b = null
 setup ->
   ht()
