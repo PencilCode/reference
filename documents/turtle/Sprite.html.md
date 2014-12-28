@@ -12,10 +12,12 @@ Name the sprite by setting a variable.  Once the sprite has a variable
 name like `penny`, you can draw on it using [drawon](drawon.html).
 
 <pre class="jumbo">
-penny = new Sprite <span data-dfnup="optional color">orange</span>
-color: <span data-dfndown="color">gray</span>
-height: <span data-dfn="height">128</span>
-width: <span data-dfn="width">128</span>
+penny = new Sprite
+<span data-dfnright="size and color options">
+color: gray
+height: 128
+width: 128
+</span>
 </pre>
 
 <script type="demo">
