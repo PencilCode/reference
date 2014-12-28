@@ -1,51 +1,52 @@
 ---
-title: new Turtle
-description: creates a new turtle
+title: new Sprite
+description: creates a new sprite
 layout: reference
 ---
 
-**new Turtle** creates a new turtle.
+**new Sprite** creates a new sprite.
 
-**new Turtle** can create a new turtle with any [color](colors.html) shell. 
+**new Sprite** can create a blank object that you can draw on. By default, a new sprite is an invisible 256 pixel square but you can change its [color](colors.html) and size.  
 
-Name the turtle by setting a variable.  Once the turtle has a variable
-name like `sally`, the turtle can be moved by coding a command after
-a period:
+Name the sprite by setting a variable.  Once the sprite has a variable
+name like `penny`, you can draw on it using [drawon](drawon.html).
 
 <pre class="jumbo">
-sally = new Turtle <span data-dfnup="optional color">orange</span>
-sally<span data-dfn="command after a dot">.fd 50</span>
+penny = new Sprite <span data-dfnup="optional color">orange</span>
+color: <span data-dfn="color">gray</span>
+height: <span data-dfn="height">128</span>
+width: <span data-dfn="width">128</span>
 </pre>
 
 <script type="demo">
-sally = null
+penny = null
 setup ->
-  remove sally
+  remove penny
 demo ->
-  sally = new Turtle orange
-  sally.speed 1
-  sally.fd 50
-  sally.pause 1
-  sync sally, turtle
-  sally.label 'sally &rarr;', 'left'
-  turtle.label 'original turtle', 'right'
+  penny = new Sprite orange
+  penny.speed 1
+  penny.fd 50
+  penny.pause 1
+  sync penny, turtle
+  penny.label 'sally &rarr;', 'left'
+  penny.label 'original turtle', 'right'
 </script>
 
-### Multiple Turtles
+### Multiple Sprites
 
-Any number of turtles can be created.  Be sure to use a different
-name for each turtle.
+Any number of sprites can be created.  Be sure to use a different
+name for each sprites.
 
-Turtles receive their commands to move instantly, and then
+Sprites receive their commands to move instantly, and then
 after receving commands, they all begin moving at the same time.
 In the next example, `r` is given its commands before
 `b`, but they both start moving at the same time.
 
 <pre class="examp">
-<span data-dfnright="for r">r = new Turtle red
+<span data-dfnright="for r">r = new Sprite red
 r.rt 90
 r.lt 180, 50</span>
-<span data-dfnright="for b">b = new Turtle blue
+<span data-dfnright="for b">b = new Sprite blue
 b.lt 90
 b.rt 180, 50</span>
 </pre>
@@ -55,9 +56,9 @@ r = b = null
 setup ->
   ht()
   remove r, b
-  r = new Turtle red
+  r = new Sprite red
   r.jump 0, -50
-  b = new Turtle blue
+  b = new Sprite blue
   b.jump 0, -50
 demo ->
   r.pause 1
@@ -68,9 +69,9 @@ demo ->
   b.rt 180, 50
 </script>
 
-### Changing the Turtle
+### Changing the Sprite
 
-Use [wear](wear.html) to change the turtle’s shell to a different color or replace its shell with an image.
+Use optional arguments to change the sprite’s default color and size.
 
 <pre class="examp">
 car = new Turtle
