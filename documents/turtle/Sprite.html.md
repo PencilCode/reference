@@ -25,13 +25,10 @@ penny = null
 setup ->
   remove penny
 demo ->
-  penny = new Sprite orange
-  penny.speed 1
-  penny.fd 50
-  penny.pause 1
-  sync penny, turtle
-  penny.label 'sally &rarr;', 'left'
-  penny.label 'original turtle', 'right'
+  penny = new Sprite 
+  color: gray
+  height: 50
+  width: 75
 </script>
 
 ### Multiple Sprites
