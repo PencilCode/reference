@@ -6,14 +6,14 @@ layout: reference
 
 **new Sprite** creates a new sprite.
 
-**new Sprite** can create a blank object that you can draw on. By default, a new sprite is an invisible 256 pixel square but you can change its [color](colors.html) and size.  
+**new Sprite** can create a blank object that you can draw on and create your own shapes. By default, a new sprite is an invisible 256 pixel square but you can change its [color](colors.html) and size to make a custom, visible canvas.  
 
 Name the sprite by setting a variable.  Once the sprite has a variable
 name like `penny`, you can draw on it using [drawon](drawon.html).
 
 <pre class="jumbo">
 penny = new Sprite <span data-dfnup="optional color">orange</span>
-color: <span data-dfn="color">gray</span>
+color: <span data-dfndown="color">gray</span>
 height: <span data-dfn="height">128</span>
 width: <span data-dfn="width">128</span>
 </pre>
@@ -74,7 +74,7 @@ demo ->
 Use optional arguments to change the sprite’s default color and size.
 
 <pre class="examp">
-car = new Turtle
+car = new Sprite
 car.fd 100
 car.wear '/img/icon-car', 50
 </pre>
@@ -84,11 +84,11 @@ car = null
 setup ->
   remove car
 demo ->
-  car = new Turtle
+  car = new Sprite
   car.speed 1
   car.fd 50
   car.wear '/img/icon-car', 50
 </script>
 
 
-See [Sprite](sprite.html) to make a blank "turtle" that you can draw yourself using [drawon](drawon.html).
+
