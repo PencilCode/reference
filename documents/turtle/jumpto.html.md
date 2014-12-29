@@ -16,8 +16,8 @@ The mathematical coordinate axes are used, placing (0, 0)
 at the middle with x increasing to the right (horizontally) and y increasing upward (vertically).
 
 A vector represented as an array of two numbers can be used.
-<code>moveto [x, y]</code> is treated the same as
-<code>moveto x, y</code>.
+<code>jumpto [x, y]</code> is treated the same as
+<code>jumpto x, y</code>.
 
 <script type="figure" width=299 height=249>
 turtle.css opacity: 0.3, turtlePenStyle: silver, turtlePenDown: true
@@ -209,18 +209,23 @@ click (e) ->
   moveto e
 </script>
 
-<code>moveto</code> supports native HTML coordinates if they are passed
+<code>jumpto</code> supports native HTML coordinates if they are passed
 with the <code>pageX</code> and <code>pageY</code> properties.  Note
 that HTML mouse events all have pageX and pageY properties, so
-<code>moveto lastclick</code> will move to the location of the last
+<code>jumpto lastclick</code> will jump to the location of the last
 mouse click.
 
+Replay the demo to see how <code>jumpto lastclick</code> works. 
+
 <pre class="examp">
-moveto pageX: 50, pageY: 100
-pen slateblue
-moveto pageX: 150, pageY: 200
+jumpto pageX: 50, pageY: 100
+dot blue, 20
+jumpto pageX: 150, pageY: 200
+dot green, 20
 moveto pageX: 250, pageY: 100
-moveto lastclick
+dot yellow, 20
+jump to lastclick
+dot purple, 20
 </pre>
 
 <script type="demo" width=299 height=249>
