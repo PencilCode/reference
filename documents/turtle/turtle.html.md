@@ -1,22 +1,27 @@
 ---
-title: new Turtle
-description: creates a new turtle
+title: new Template
+description: creates a new Template
 layout: reference
 ---
 
-**new Turtle** creates a new turtle.
+**function** does basically xzy.
 
-**new Turtle** can create a new turtle with any [color](colors.html) shell. 
+**function** can do certain things that are covered in demo. 
 
-Name the turtle by setting a variable.  Once the turtle has a variable
-name like `sally`, the turtle can be moved by coding a command after
-a period:
+<!-- links: [color](colors.html) -->
 
+Get started by, e.g. naming an element.  Give it a name like
+like `sally`.
+
+<!-- simple example syntax, alt dfnright -->
+<!-- span data to annotate -->
 <pre class="jumbo">
 sally = new Turtle <span data-dfnup="optional color">orange</span>
 sally<span data-dfn="command after a dot">.fd 50</span>
 </pre>
 
+<!-- demo the example -->
+<!-- annotate the demo elements with label -->
 <script type="demo">
 sally = null
 setup ->
@@ -31,6 +36,7 @@ demo ->
   turtle.label 'original turtle', 'right'
 </script>
 
+<!-- Advanced functionality -->
 ### Multiple Turtles
 
 Any number of turtles can be created.  Be sure to use a different
