@@ -11,7 +11,7 @@ The turtle starts in the middle of the window, at (x, y) coordinates
 
 <code>moveto x, y</code> moves to an absolute location in
 traditional Cartesian coordinates.  In this coordinate system,
-Each unit is one pixel, and each graph paper grid square is 25 units.
+each unit is one pixel, and each graph paper grid square is 25 units.
 The mathematical coordinate axes are used, placing (0, 0)
 at the middle with x increasing to the right and y increasing upward.
 
