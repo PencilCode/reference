@@ -1,98 +1,40 @@
 ---
-title: drawnon
-description: draw on a sprite
+title: pause
+description: pauses the turtle
 layout: reference
 ---
 
-**drawon** is used to draw on a turtle or sprite to create new shapes.
+**pause** is used to pause the turtle for a specified number of seconds. 
 
-**drawon** lets you create new shapes by using creating a [sprite](sprite.html) to serve as a new canvas and drawing on it with a turtle to create your own shape, e.g. a new creature. 
+**pause** is one way you can slow a turtle down so other animations and actions can catch up. 
 
-First, name a sprite and a turtle by setting  variables. By default, a new sprite is an invisible 256 pixel square but you can change its [color](colors.html) and size. In this example, we are going to draw a dot on a sprite using the turtle.   
+You can also control an element's speed and timing by using [speed](speed.html) to set the number of moves per second and [sync](sync.html) to synchronize an element's timing with other elements. 
 
-<!--- what else -->
+<!--- is pause actually supposed to be included in the tutorials? -->
 <pre class="jumbo">
-s = new Sprite
-<span data-dfn="color">
-color: gray</span>
-t = new Turtle 
-<span data-dfn="draw">t.drawon s</span>
-t.dot orange, 100
-</pre>
-
-<script type="demo">
-penny = null
-setup ->
-  remove s, t
-demo ->
-  s = new Sprite
-  color: gray
-  t = new Turtle 
-  t.drawon s
-  t.dot orange, 100
-</script>
-
-### Moving New Shapes
-We use [pen](pen.html), [dot](dot.html) and [sync](sync.html) to create and move  shapes in our next example. Sync makes the shapes move in sequence instead of at the same time. 
-
-<!--- Check speedinfinity and whether sync correct -->
-<!--- What does null do (set to default?)  -->
-<!--- Add annotations  -->
-<pre class="examp">
-s = new Sprite
-  color: gray
 t = new Turtle
-t.drawon s
-t.dot red, 100
-t.pen blue, 10
-t.fd 100
-t.pen null
-t.ht()
-sync s, t
-s.lt 45
-s.fd 100
+t.dot orange, 100
+fd 100
+pause 1
+lt 90
+fd 50
 </pre>
-<!--- explain pause -->
+
+<!--- which ones shold be null? -->
 <script type="demo">
-t = s = b = g = null
+pen = null
 setup ->
-  ht()
-  remove s, t, g, b
+  remove t
 demo ->
-  s = new Sprite
-  color: gray
-  height: 50
-  width: 30
-  t = new Turtle
-  t.drawon s
-  t.dot red, 25
-  t.pen blue, 10
-  t.fd 20
-  t.pen null
-  t.ht()
-  sync s, t
-  s.lt 90
-  s.fd 40
-  b = new Sprite
-  color: pink
-  height: 50
-  width: 30
-  g = new Turtle
-  g.drawon b
-  g.dot orange, 25
-  g.pen black, 10
-  g.fd 20
-  g.pen null
-  g.ht()
-  sync b, g
-  b.pause 1
-  g.pause 1
-  b.rt 90
-  b.fd 40
+  pen red
+  fd 50
+  lt 90
+  fd 50
+  lt 90
+  fd 50
+  lt 90
+  pen blue
+  pause 4
+  fd 50
 </script>
-
-See [Sprite](sprite.html) to make a blank "turtle" that you can use to create an ant.
-
-
-
 
