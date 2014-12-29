@@ -4,11 +4,11 @@ description: draw on a sprite
 layout: reference
 ---
 
-**drawon** used to draw on a turtle or sprite to create new shapes.
+**drawon** is used to draw on a turtle or sprite to create new shapes.
 
 **drawon** lets you create new shapes by using creating a [sprite](sprite.html) to serve as a new canvas and drawing on it with a turtle to create your own shape, e.g. a new creature. 
 
-First, name a sprite and a turtle by setting  variables. By default, a new sprite is an invisible 256 pixel square but you can change its [color](colors.html) and size. In this example, we are going to draw a dot on the sprite, using the turtle.   
+First, name a sprite and a turtle by setting  variables. By default, a new sprite is an invisible 256 pixel square but you can change its [color](colors.html) and size. In this example, we are going to draw a dot on a sprite using the turtle.   
 
 <!--- what else -->
 <pre class="jumbo">
