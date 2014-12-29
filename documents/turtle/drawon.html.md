@@ -54,29 +54,35 @@ s.fd 100
 </pre>
 <!--- explain pause -->
 <script type="demo">
-t = s = null
+t = s = b = g = null
 setup ->
   ht()
-  remove s, t
+  remove s, t, g, b
+demo ->
   s = new Sprite
-  color: gray
+    color: gray
   t = new Turtle
   t.drawon s
-  t.dot red, 100
+  t.dot red, 50
   t.pen blue, 10
-  t.fd 100
+  t.fd 50
   t.pen null
   t.ht()
   sync s, t
-  s.lt 45
+  s.lt 90
   s.fd 100
-demo ->
-  r.pause 1
-  t.pause 1
-  r.rt 90
-  r.lt 180, 50
-  t.lt 90
-  t.rt 180, 50
+  b = new Sprite
+    color: pink
+  g = new Turtle
+  g.drawon b
+  g.dot orange, 50
+  g.pen black, 10
+  g.fd 50
+  g.pen null
+  g.ht()
+  sync b, g
+  b.rt 90
+  b.fd 100
 </script>
 
 See [Sprite](sprite.html) to make a blank "turtle" that you can use to create an ant using [drawon](drawon.html).
