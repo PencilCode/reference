@@ -81,7 +81,7 @@ click (e) ->
 
 ### Drawing while Jumping
 
-<code>jumpto</code> will jump to a location without drawing. You can use [moveto](moveto.html) with a pen to draw lines between points. 
+<code>jumpto</code> will jump to a location without drawing. You can use the function [moveto](moveto.html) with a pen to draw lines between points. 
 
 <code>jumpto</code> does not affect the
 turtle rotation, only its position.
@@ -89,11 +89,16 @@ turtle rotation, only its position.
 </script>
 
 <pre class="examp">
-pen peru
-moveto 50, 50
-moveto -75, -25
-moveto 0, -50
-moveto <span data-dfn="x">-125</span>, <span data-dfn="y">100</span>
+dot yellow, 20
+jumpto 50, 50
+dot blue, 20
+jumpto -75, -25
+dot pink, 20
+jumpto 0, -50
+dot purple, 20
+jumpto -125, 80
+dot green, 20
+jumpto <span data-dfn="x">-125</span>, <span data-dfn="y">100</span>
 </pre>
 
 <script type="demo" width=299 height=249>
@@ -112,28 +117,31 @@ setup ->
   p.jumpto -250, 0
   p.moveto 250, 0
 demo ->
-  pen peru
-  moveto 50, 50
+  jumpto 50, 50
+  dot green, 20
   plan ->
     p.jumpto turtle
     p.cross()
-    p.label 'moveto 50, 50', 'top'
-  moveto -75, -25
+    p.label 'jumpto 50, 50', 'top'
+    jumpto -75, -25
+    dot purple, 20
   plan ->
     p.jumpto turtle
     p.cross()
     p.jump 0, -8
-    p.label 'moveto -75, -25', 'bottom'
-  moveto 0, -50
+    p.label 'jumpto -75, -25', 'bottom'
+    jumpto 0, -50
+    dot yellow, 20
   plan ->
     p.jumpto turtle
     p.cross()
-    p.label 'moveto 0, -50', 'right'
-  moveto -125, 100
+    p.label 'jumpto 0, -50', 'right'
+    jumpto -125, 100
+    dot blue, 20
   plan ->
     p.jumpto turtle
     p.cross()
-    p.label 'moveto -125, 100', 'right'
+    p.label 'jumpto -125, 100', 'right'
 </script>
 
 ### Using HTML Coordinates
