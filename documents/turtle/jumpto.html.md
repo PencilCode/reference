@@ -222,7 +222,7 @@ jumpto pageX: 50, pageY: 100
 dot blue, 20
 jumpto pageX: 150, pageY: 200
 dot green, 20
-moveto pageX: 250, pageY: 100
+jumpto pageX: 250, pageY: 100
 dot yellow, 20
 jump to lastclick
 dot purple, 20
@@ -247,17 +247,20 @@ setup ->
   p.moveto pageX: 300, pageY: 0.5
   p.jumpto pageX: 50, pageY: 0.5
 demo ->
-  moveto pageX: 50, pageY: 100
+  jumpto pageX: 50, pageY: 100
   label 'pageX: 50<br>pageY: 100', 'top'
-  pen slateblue
-  moveto pageX: 150, pageY: 200
+  dot blue, 20
+  jumpto pageX: 150, pageY: 200
   label 'pageX: 150, pageY: 200', 'bottom'
-  moveto pageX: 250, pageY: 100
+  dot green, 20
+  jumpto pageX: 250, pageY: 100
+  dot yellow, 20
   label 'pageX: 250<br>pageY: 100', 'top'
   plan ->
     if lastclick.pageX and lastclick.pageY
-      moveto lastclick
+      jumpto lastclick
       label 'lastclick', if lastclick.pageY > 100 then 'bottom' else 'top'
+      dot purple, 20
 </script>
 
 ### Other Locations
