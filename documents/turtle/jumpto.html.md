@@ -115,33 +115,33 @@ setup ->
   p.jumpto 0, 250
   p.moveto 0, -250
   p.jumpto -250, 0
-  p.moveto 250, 0
+  p.moveto 250, 0 -->
 demo ->
   jumpto 50, 50
   dot green, 20
   plan ->
-    p.jumpto turtle
-    p.cross()
-    p.label 'jumpto 50, 50', 'top'
+    jumpto turtle
+    cross()
+    label 'jumpto 50, 50', 'top'
     jumpto -75, -25
     dot purple, 20
   plan ->
-    p.jumpto turtle
-    p.cross()
-    p.jump 0, -8
-    p.label 'jumpto -75, -25', 'bottom'
+    jumpto turtle
+    cross()
+    jump 0, -8
+    label 'jumpto -75, -25', 'bottom'
     jumpto 0, -50
     dot yellow, 20
   plan ->
-    p.jumpto turtle
-    p.cross()
-    p.label 'jumpto 0, -50', 'right'
+    jumpto turtle
+    cross()
+    label 'jumpto 0, -50', 'right'
     jumpto -125, 100
     dot blue, 20
   plan ->
-    p.jumpto turtle
-    p.cross()
-    p.label 'jumpto -125, 100', 'right'
+    jumpto turtle
+    cross()
+    label 'jumpto -125, 100', 'right'
 </script>
 
 ### Using HTML Coordinates
