@@ -1,6 +1,6 @@
 ---
-title: moveto
-description: moves the turtle to an absolute location
+title: jumpto
+description: moves the turtle to a new location without drawing
 layout: reference
 section: drawing
 refOrder: 0
@@ -9,11 +9,11 @@ refOrder: 0
 The turtle starts in the middle of the window, at (x, y) coordinates
 (0, 0).
 
-<code>moveto x, y</code> moves to an absolute location in
+<code>jumpto x, y</code> jumps to an absolute location in
 traditional Cartesian coordinates.  In this coordinate system,
 Each unit is one pixel, and each graph paper grid square is 25 units.
 The mathematical coordinate axes are used, placing (0, 0)
-at the middle with x increasing to the right and y increasing upward.
+at the middle with x increasing to the right (horizontally) and y increasing upward (vertically).
 
 A vector represented as an array of two numbers can be used.
 <code>moveto [x, y]</code> is treated the same as
@@ -79,11 +79,11 @@ click (e) ->
   moveto e.x, e.y
 </script>
 
-### Drawing while Moving
+### Drawing while Jumping
 
-<code>moveto</code> will trace lines if a pen is being used.  It allows
-lines to be drawn between any points without worrying about the angle
-and distance of the turtle.  <code>moveto</code> does not affect the
+<code>jumpto</code> will jump to a location without drawing. You can use [moveto](moveto.html) with a pen to draw lines between points. 
+
+<code>jumpto</code> does not affect the
 turtle rotation, only its position.
 
 </script>
@@ -295,3 +295,5 @@ demo ->
 
 In all these uses, <code>moveto</code> moves the turtle without changing
 its direction.
+
+You can use [jumpto](jumpto.html) with a pen if you want to draw lines between points.
