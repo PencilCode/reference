@@ -20,6 +20,7 @@ layout: reference
 </pre>
 
 <!--- which ones shold be null? -->
+<!--- demo - turtle and hare race -->
 <script type="demo">
 t = null
 setup ->
