@@ -6,11 +6,12 @@ layout: reference
 
 **sync** is used to synchronize turtles or sprites. 
 
-**sync** If you want to fix up sprite timing by synchronizing with other sprites, you can list the sprites you want to sync with using the "sync" command
+**sync** If you want to correct sprite timing by synchronizing with other sprites, you can list the sprites you want to sync with using the "sync" command
 
 The "sync" command will make any listed sprites pause until all of them reach that same point in the animation, before proceeding to any animation commands after the sync command. 
 
 <!--- annotations -->
+<!--- turtle and hare race demo -->
 <pre class="jumbo">
   r = new Turtle red
   g = turtle green
