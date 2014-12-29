@@ -10,7 +10,7 @@ layout: reference
 
 First, name the sprite by setting a variable.  Once the sprite has a name like `penny`, you can draw on it using [drawon](drawon.html).
 
-<!--- drawon example -->
+<!--- drawon explanation -->
 
 ### Changing the Sprite
 
@@ -44,6 +44,8 @@ Sprites receive their commands to move instantly, and then
 after receving commands, they all begin moving at the same time.
 <!--- You can use sync so that they move at different times -->
 In the next example, we create `paul`, an ant and `penny`, a breadcrumb. 
+
+<!--- http://gym.pencilcode.net/draw/ant.html - make the ant eat the breadcrumb -->
 
 <pre class="examp">
 <span data-dfnright="for paul">r = new Sprite red
