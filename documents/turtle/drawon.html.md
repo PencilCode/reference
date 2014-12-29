@@ -60,29 +60,35 @@ setup ->
   remove s, t, g, b
 demo ->
   s = new Sprite
-    color: gray
+  color: gray
+  height: 50
+  width: 30
   t = new Turtle
   t.drawon s
-  t.dot red, 50
+  t.dot red, 25
   t.pen blue, 10
-  t.fd 50
+  t.fd 20
   t.pen null
   t.ht()
   sync s, t
   s.lt 90
-  s.fd 100
+  s.fd 40
   b = new Sprite
-    color: pink
+  color: pink
+  height: 50
+  width: 30
   g = new Turtle
   g.drawon b
-  g.dot orange, 50
+  g.dot orange, 25
   g.pen black, 10
-  g.fd 50
+  g.fd 20
   g.pen null
   g.ht()
   sync b, g
+  b.pause 1
+  g.pause 1
   b.rt 90
-  b.fd 100
+  b.fd 40
 </script>
 
 See [Sprite](sprite.html) to make a blank "turtle" that you can use to create an ant.
