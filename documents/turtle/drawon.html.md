@@ -12,8 +12,8 @@ First, name a sprite and a turtle by setting  variables. By default, a new sprit
 
 <!--- what else -->
 <pre class="jumbo">
-magic orange = new Sprite
-<span data-dfnup="color">
+s = new Sprite
+<span data-dfn="color">
 color: gray</span>
 t = new Turtle 
 <span data-dfn="draw">t.drawon s</span>
@@ -23,9 +23,9 @@ t.dot orange, 100
 <script type="demo">
 penny = null
 setup ->
-  remove penny
+  remove s, t
 demo ->
-  magic orange = new Sprite
+  s = new Sprite
   color: gray
   t = new Turtle 
   t.drawon s
@@ -85,7 +85,7 @@ demo ->
   b.fd 100
 </script>
 
-See [Sprite](sprite.html) to make a blank "turtle" that you can use to create an ant using [drawon](drawon.html).
+See [Sprite](sprite.html) to make a blank "turtle" that you can use to create an ant.
 
 
 
