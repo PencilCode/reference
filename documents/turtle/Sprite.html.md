@@ -6,17 +6,22 @@ layout: reference
 
 **new Sprite** creates a new sprite.
 
-**new Sprite** can create a blank object that you can draw on and create your own shapes. By default, a new sprite is an invisible 256 pixel square but you can change its [color](colors.html) and size to make a custom, visible canvas.  
+**new Sprite** can create a blank canvas that you can draw on and create your own shapes. By default, a new sprite is an invisible 256 pixel square but you can change its [color](colors.html) and size.  
 
-Name the sprite by setting a variable.  Once the sprite has a variable
-name like `penny`, you can draw on it using [drawon](drawon.html).
+First, name the sprite by setting a variable.  Once the sprite has a name like `penny`, you can draw on it using [drawon](drawon.html).
+
+<!--- drawon example -->
+
+### Changing the Sprite
+
+Use optional arguments to change the sprite’s default color and size.
 
 <pre class="jumbo">
 penny = new Sprite
-<span data-dfnright="size and color options">
+<span data-dfnright="size and color">
 color: gray
-height: 128
-width: 128
+height: 50
+width: 75
 </span>
 </pre>
 
@@ -31,34 +36,33 @@ demo ->
   width: 75
 </script>
 
-### Multiple Sprites
+### Animating Multiple Sprites
 
-Any number of sprites can be created.  Be sure to use a different
-name for each sprites.
+Any number of sprites can be created.  Be sure to use a different name for each sprite.
 
 Sprites receive their commands to move instantly, and then
 after receving commands, they all begin moving at the same time.
-In the next example, `r` is given its commands before
-`b`, but they both start moving at the same time.
+<!--- You can use sync so that they move at different times -->
+In the next example, we create `paul`, an ant and `penny`, a breadcrumb. 
 
 <pre class="examp">
-<span data-dfnright="for r">r = new Sprite red
-r.rt 90
-r.lt 180, 50</span>
-<span data-dfnright="for b">b = new Sprite blue
-b.lt 90
-b.rt 180, 50</span>
+<span data-dfnright="for paul">r = new Sprite red
+paul.rt 90
+paul.lt 180, 50</span>
+<span data-dfnright="for penny">b = new Sprite gray
+penny.lt 90
+penny.rt 180, 50</span>
 </pre>
 
 <script type="demo">
-r = b = null
+paul = penny = null
 setup ->
   ht()
-  remove r, b
-  r = new Sprite red
-  r.jump 0, -50
-  b = new Sprite blue
-  b.jump 0, -50
+  remove paul, penny
+  paul = new Sprite red
+  paul.jump 0, -50
+  penny = new Sprite gray
+  peny.jump 0, -50
 demo ->
   r.pause 1
   b.pause 1
@@ -68,26 +72,7 @@ demo ->
   b.rt 180, 50
 </script>
 
-### Changing the Sprite
 
-Use optional arguments to change the sprite’s default color and size.
-
-<pre class="examp">
-car = new Sprite
-car.fd 100
-car.wear '/img/icon-car', 50
-</pre>
-
-<script type="demo">
-car = null
-setup ->
-  remove car
-demo ->
-  car = new Sprite
-  car.speed 1
-  car.fd 50
-  car.wear '/img/icon-car', 50
-</script>
 
 
 
