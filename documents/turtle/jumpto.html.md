@@ -299,7 +299,7 @@ twice per second, but will jump a distance of no more than 10 pixels each time.
 
 This function is useful to emulate gait. 
 
-<!-- tick indicates speed -->
+<!-- tick indicates repetition -->
 <pre class="examp">
 pen green
 tick 2, ->
