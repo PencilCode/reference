@@ -21,7 +21,7 @@ t.dot orange, 100
 </pre>
 
 <script type="demo">
-penny = null
+s = null
 setup ->
   remove s, t
 demo ->
@@ -53,6 +53,7 @@ s.lt 45
 s.fd 100
 </pre>
 <!--- explain pause -->
+<!--- which ones should be null? -->
 <script type="demo">
 t = s = b = g = null
 setup ->
