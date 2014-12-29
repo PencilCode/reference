@@ -1,28 +1,23 @@
 ---
-title: new Sprite
-description: creates a new sprite
+title: drawnon
+description: draw on a sprite
 layout: reference
 ---
 
-**new Sprite** creates a new sprite.
+**drawon** used to draw on a turtle or sprite to create new shapes.
 
-**new Sprite** can create a blank canvas that you can draw on and create your own shapes. By default, a new sprite is an invisible 256 pixel square but you can change its [color](colors.html) and size.  
+**drawon** lets you create new shapes by using creating a [sprite](sprite.html) to serve as a new canvas and drawing on it with a turtle to create your own shape, e.g. a new creature. 
 
-First, name the sprite by setting a variable.  Once the sprite has a name like `penny`, you can draw on it using [drawon](drawon.html).
+First, name a sprite and a turtle by setting  variables. By default, a new sprite is an invisible 256 pixel square but you can change its [color](colors.html) and size. In this example, we are going to draw a dot on the sprite, using the turtle.   
 
-<!--- drawon explanation -->
-
-### Changing the Sprite
-
-Use optional arguments to change the sprite’s default color and size.
-
+<!--- what else -->
 <pre class="jumbo">
-penny = new Sprite
-<span data-dfnright="size and color">
-color: gray
-height: 50
-width: 75
-</span>
+magic orange = new Sprite
+<span data-dfnup="color">
+color: gray</span>
+t = new Turtle 
+<span data-dfn="draw">t.drawon s</span>
+t.dot orange, 100
 </pre>
 
 <script type="demo">
@@ -30,50 +25,61 @@ penny = null
 setup ->
   remove penny
 demo ->
-  penny = new Sprite 
+  magic orange = new Sprite
   color: gray
-  height: 50
-  width: 75
+  t = new Turtle 
+  t.drawon s
+  t.dot orange, 100
 </script>
 
-### Animating Multiple Sprites
+### Moving New Shapes
+We use [pen](pen.html), [dot](dot.html) and [sync](sync.html) to create and move  shapes in our next example. Sync makes the shapes move in sequence instead of at the same time. 
 
-Any number of sprites can be created.  Be sure to use a different name for each sprite.
-
-Sprites receive their commands to move instantly, and then
-after receving commands, they all begin moving at the same time.
-<!--- You can use sync so that they move at different times -->
-In the next example, we create `paul`, an ant and `penny`, a breadcrumb. 
-
-<!--- http://gym.pencilcode.net/draw/ant.html - make the ant eat the breadcrumb -->
-
+<!--- Check speedinfinity and whether sync correct -->
+<!--- What does null do (set to default?)  -->
+<!--- Add annotations  -->
 <pre class="examp">
-<span data-dfnright="for paul">r = new Sprite red
-paul.rt 90
-paul.lt 180, 50</span>
-<span data-dfnright="for penny">b = new Sprite gray
-penny.lt 90
-penny.rt 180, 50</span>
+s = new Sprite
+  color: gray
+t = new Turtle
+t.drawon s
+t.dot red, 100
+t.pen blue, 10
+t.fd 100
+t.pen null
+t.ht()
+sync s, t
+s.lt 45
+s.fd 100
 </pre>
-
+<!--- explain pause -->
 <script type="demo">
-paul = penny = null
+t = s = null
 setup ->
   ht()
-  remove paul, penny
-  paul = new Sprite red
-  paul.jump 0, -50
-  penny = new Sprite gray
-  peny.jump 0, -50
+  remove s, t
+  s = new Sprite
+  color: gray
+  t = new Turtle
+  t.drawon s
+  t.dot red, 100
+  t.pen blue, 10
+  t.fd 100
+  t.pen null
+  t.ht()
+  sync s, t
+  s.lt 45
+  s.fd 100
 demo ->
   r.pause 1
-  b.pause 1
+  t.pause 1
   r.rt 90
   r.lt 180, 50
-  b.lt 90
-  b.rt 180, 50
+  t.lt 90
+  t.rt 180, 50
 </script>
 
+See [Sprite](sprite.html) to make a blank "turtle" that you can use to create an ant using [drawon](drawon.html).
 
 
 
