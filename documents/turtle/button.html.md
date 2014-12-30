@@ -1,34 +1,28 @@
 ---
-title: home
-description: returns turtle to the center of the page
+title: button
+description: creates an interactive control button 
 layout: reference
 ---
 
 <!-- any arguments in brackets? -->
-<code>home</code> returns the turtle to the center of the page.
+<code>button</code> creates an interactive control button.
 
-<code>home</code> can be used to make symmetrical shapes and graphics.
+<code>button</code> can be used to call a function when a user clicks the button. 
+
+It takes two arguments: first is the text for the button; second is a function to call whenever the user clicks the button.
 
 <pre class="examp">
-  <span data-dfnright="draw a match">
-  dot red
-  label "home", 'top'
-  p = pen brown, 2
-  p.bk 30
-  </span>
-  <span data-dfnright="return home">
-  p.home()
-  </span>
+  button
+  <span data-dfn="button label">
+  "Forward", -></span>
+  <span data-dfn="action">
+  fd 50</span>
 </pre>
   
 <script type="demo" height=99>
-p = null
 demo ->
-  dot red
-  label "home", 'top'
-  p = pen brown, 2
-  p.bk 30
-  p.home()
+  button "Forward", ->
+  fd 50
 </script>
 
 <h3>Drawing Shapes</h3>
