@@ -22,7 +22,7 @@ It takes two arguments: first is the text for the button; second is a function t
 demo ->
   pen goldenrod, 10
   button "Forward", ->
-  fd 50
+    fd 50
 </script>
 
 <h3>WIP</h3>
