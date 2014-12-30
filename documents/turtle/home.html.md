@@ -5,7 +5,7 @@ layout: reference
 ---
 
 <!-- any arguments in brackets? -->
-<code>home</code> returns the turtle to the center of the page and can be used to make symmetrical shapes and graphics.
+<b>home</b> returns the turtle to the center of the page and can be used to make symmetrical shapes and graphics.
 
 <pre class="jumbo"><span data-dfnright="draw a match">
   dot blue
@@ -28,7 +28,7 @@ demo ->
 
 <h3>Drawing Shapes</h3>
 
-<code>home</code> can be used to create intricate drawings where the center of the shape is the focus, e.g. flowers. 
+<b>home</b> can be used to create intricate drawings where the center of the shape is the focus, e.g. flowers. 
 
 In this example, we create an arrow. 
 
@@ -50,6 +50,7 @@ In this example, we create an arrow.
 </pre>
   
 <script type="demo" height=99>
+pen = null
 demo ->
   dot blue
   label "home", 'top'
