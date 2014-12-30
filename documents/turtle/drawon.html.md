@@ -94,6 +94,17 @@ demo ->
 
 See [Sprite](sprite.html) to make a blank "turtle" that you can use to create an ant.
 
-
+<!-- from Google Groups, use drawon instead of moveto (jumpto wrong)
+speed Infinity
+a = new Sprite
+b = new Turtle
+a.scale 1.5
+b.jumpto -300, 173
+b.pen red
+a.wear "http://www.crossriver.com/images/earth-map-1000x500.gif"
+b.pause 3
+speed .3 
+b.jumpto -60,35
+-->
 
 
