@@ -297,21 +297,27 @@ In all these uses, <code>movexy</code> moves the turtle without changing
 its direction.
 
 ### moveto versus movexy
-jumpto 50, 100
-dot blue, 30
-label "x50, y100", 'top'
-fd 50
-home
-s = new Turtle
-s.label "movexy", 'left'
-s.pen blue
-s.pen red
-s.movexy 50, 100
-pause 2
-j = new Turtle
-j.rt 90
-j.fd 100
-j.pen green
-j.label "moveto", 'right'
-j.moveto 50, 100
+<script type="demo" width=299 height=249>
+setup ->
+  pen null
+demo ->
+  jumpto 50, 100
+  dot blue, 30
+  label "x50, y100", 'top'
+  fd 50
+  home
+  s = new Turtle
+  s.label "movexy", 'left'
+  s.pen blue
+  s.pen red
+  s.movexy 50, 100
+  pause 2
+  j = new Turtle
+  j.rt 90
+  j.fd 100
+  j.pen green
+  j.label "moveto", 'right'
+  j.moveto 50, 100
+</script>
+
 
