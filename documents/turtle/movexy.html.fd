@@ -1,6 +1,6 @@
 ---
-title: movexy
-description: moves the turtle by an xy offset 
+title: moveto
+description: moves the turtle to an absolute location
 layout: reference
 section: drawing
 refOrder: 0
@@ -9,15 +9,15 @@ refOrder: 0
 The turtle starts in the middle of the window, at (x, y) coordinates
 (0, 0).
 
-<code>movexy x, y</code> moves to a specified offset in
+<code>moveto x, y</code> moves to an absolute location in
 traditional Cartesian coordinates.  In this coordinate system,
 each unit is one pixel, and each graph paper grid square is 25 units.
 The mathematical coordinate axes are used, placing (0, 0)
 at the middle with x increasing to the right and y increasing upward.
 
 A vector represented as an array of two numbers can be used.
-<code>movexy [x, y]</code> is treated the same as
-<code>movexy x, y</code>.
+<code>moveto [x, y]</code> is treated the same as
+<code>moveto x, y</code>.
 
 <script type="figure" width=299 height=249>
 turtle.css opacity: 0.3, turtlePenStyle: silver, turtlePenDown: true
@@ -81,19 +81,19 @@ click (e) ->
 
 ### Drawing while Moving
 
-<code>movexy</code> will trace lines if a pen is being used.  It allows
+<code>moveto</code> will trace lines if a pen is being used.  It allows
 lines to be drawn between any points without worrying about the angle
-and distance of the turtle.  <code>movexy</code> does not affect the
+and distance of the turtle.  <code>moveto</code> does not affect the
 turtle rotation, only its position.
 
 </script>
 
 <pre class="examp">
 pen peru
-movexy 50, 50
-movexy -75, -25
-movexy 0, -50
-movexy <span data-dfn="x">-125</span>, <span data-dfn="y">100</span>
+moveto 50, 50
+moveto -75, -25
+moveto 0, -50
+moveto <span data-dfn="x">-125</span>, <span data-dfn="y">100</span>
 </pre>
 
 <script type="demo" width=299 height=249>
@@ -113,27 +113,27 @@ setup ->
   p.moveto 250, 0
 demo ->
   pen peru
-  movexy 50, 50
+  moveto 50, 50
   plan ->
     p.jumpto turtle
     p.cross()
-    p.label 'movexy 50, 50', 'top'
-  movexy -75, -25
+    p.label 'moveto 50, 50', 'top'
+  moveto -75, -25
   plan ->
     p.jumpto turtle
     p.cross()
     p.jump 0, -8
-    p.label 'movexy -75, -25', 'bottom'
-  movexy 0, -50
+    p.label 'moveto -75, -25', 'bottom'
+  moveto 0, -50
   plan ->
     p.jumpto turtle
     p.cross()
-    p.label 'movexy 0, -50', 'right'
-  movexy -125, 100
+    p.label 'moveto 0, -50', 'right'
+  moveto -125, 100
   plan ->
     p.jumpto turtle
     p.cross()
-    p.label 'movexy -125, 100', 'right'
+    p.label 'moveto -125, 100', 'right'
 </script>
 
 ### Using HTML Coordinates
@@ -201,18 +201,18 @@ click (e) ->
   moveto e
 </script>
 
-<code>movexy</code> supports native HTML coordinates if they are passed
+<code>moveto</code> supports native HTML coordinates if they are passed
 with the <code>pageX</code> and <code>pageY</code> properties.  Note
 that HTML mouse events all have pageX and pageY properties, so
-<code>movexy lastclick</code> will move to the location of the last
+<code>moveto lastclick</code> will move to the location of the last
 mouse click.
 
 <pre class="examp">
-movexy pageX: 50, pageY: 100
+moveto pageX: 50, pageY: 100
 pen slateblue
-movexy pageX: 150, pageY: 200
-movexy pageX: 250, pageY: 100
-movexy lastclick
+moveto pageX: 150, pageY: 200
+moveto pageX: 250, pageY: 100
+moveto lastclick
 </pre>
 
 <script type="demo" width=299 height=249>
@@ -234,16 +234,16 @@ setup ->
   p.moveto pageX: 300, pageY: 0.5
   p.jumpto pageX: 50, pageY: 0.5
 demo ->
-  movexy pageX: 50, pageY: 100
+  moveto pageX: 50, pageY: 100
   label 'pageX: 50<br>pageY: 100', 'top'
   pen slateblue
-  movexy pageX: 150, pageY: 200
+  moveto pageX: 150, pageY: 200
   label 'pageX: 150, pageY: 200', 'bottom'
-  movexy pageX: 250, pageY: 100
+  moveto pageX: 250, pageY: 100
   label 'pageX: 250<br>pageY: 100', 'top'
   plan ->
     if lastclick.pageX and lastclick.pageY
-      movexy lastclick
+      moveto lastclick
       label 'lastclick', if lastclick.pageY > 100 then 'bottom' else 'top'
 </script>
 
@@ -259,18 +259,18 @@ Here is a summary of some types of locations that
 
 | example       | motion                                                       |
 |---------------|--------------------------------------------------------------|
-| <code>movexy x, y</code> | move to (x, y) in traditional mathematical y-up coordinates. |
-| <code>movexy [x, y]</code> | same as <code>moveto x, y</code> |
-| <code>movexy pageX: px, pageY: py</code> | move using HTML page coordinates. |
-| <code>movexy lastmouse</code> | move to the location of the last mouse event.|
-| <code>movexy otherturtle</code> | move to another turtle. |
-| <code>movexy $('#spot')</code> | move to the element with id spot. |
-| <code>movexy document</code> | move to the center of the document. |
-| <code>movexy window</code> | move to the center of the visible window. |
+| <code>moveto x, y</code> | move to (x, y) in traditional mathematical y-up coordinates. |
+| <code>moveto [x, y]</code> | same as <code>moveto x, y</code> |
+| <code>moveto pageX: px, pageY: py</code> | move using HTML page coordinates. |
+| <code>moveto lastmouse</code> | move to the location of the last mouse event.|
+| <code>moveto otherturtle</code> | move to another turtle. |
+| <code>moveto $('#spot')</code> | move to the element with id spot. |
+| <code>moveto document</code> | move to the center of the document. |
+| <code>moveto window</code> | move to the center of the visible window. |
 
 ### Limiting Motion
 
-When passing a single location object to <code>movexy</code>, it supports
+When passing a single location object to <code>moveto</code>, it supports
 an optional second argument limiting the distance of the motion.  When the
 second argument is given, the turtle will move towards the location, but
 no farther than the limiting distance in pixels.
@@ -281,7 +281,7 @@ twice per second, but will move no more than 10 pixels each time.
 <pre class="examp">
 pen green
 tick 2, ->
-  movexy lastmouse, <span data-dfn="limiting distance">10</span>
+  moveto lastmouse, <span data-dfn="limiting distance">10</span>
 </pre>
 
 <script type="demo" width=299 height=249>
@@ -290,32 +290,8 @@ setup ->
 demo ->
   pen green
   tick 2, ->
-    movexy lastmouse, 10
+    moveto lastmouse, 10
 </script>
 
-<script type="demo" width=299 height=249>
-setup ->
-  s = j = null
-demo ->
-  jumpto 50, 100
-  dot blue, 30
-  label "x50, y100", 'top'
-  fd 50
-  home
-  s = new Turtle
-  s.label "movexy", 'left'
-  s.pen blue
-  s.pen red
-  s.movexy 50, 100
-  pause 2
-  j = new Turtle
-  j.rt 90
-  j.fd 100
-  j.pen green
-  j.label "moveto", 'right'
-  j.moveto 50, 100
-</script>
-
-In all these uses, <code>movexy</code> moves the turtle without changing
+In all these uses, <code>moveto</code> moves the turtle without changing
 its direction.
-
