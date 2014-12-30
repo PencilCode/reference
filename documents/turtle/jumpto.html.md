@@ -297,9 +297,10 @@ no farther than the limiting distance in pixels.
 In the following program the turtle will jump towards the last mouse event
 twice per second, but will jump a distance of no more than 10 pixels each time.
 
+<!-- add suggestions at end rather -->
 This function is useful to emulate gait. 
 
-<!-- tick indicates repetition -->
+<!-- tick indicates repetition; add something-->
 <pre class="examp">
 pen green
 tick 2, ->
@@ -318,4 +319,4 @@ demo ->
 In all these uses, <code>moveto</code> moves the turtle without changing
 its direction.
 
-You can use [moveto](moveto.html) with a pen if you want to draw lines between points.
+If you want to draw lines between points, use <code>moveto</code> with a pen.
