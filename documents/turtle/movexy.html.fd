@@ -293,7 +293,6 @@ demo ->
     movexy lastmouse, 10
 </script>
 
-<!-- compare move to and movexy example 
 <script type="demo" width=299 height=249>
 setup ->
   s = j = null
