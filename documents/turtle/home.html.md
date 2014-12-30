@@ -7,17 +7,20 @@ layout: reference
 <!-- any arguments in brackets? -->
 <b>home</b> returns the turtle to the center of the page and can be used to make symmetrical shapes and graphics.
 
-<pre class="jumbo"><span data-dfnright="draw a match">
+<pre class="examp">
+  <span data-dfnright="draw a match">
   dot blue
   label "home", 'top'
   p = pen red, 2
-  p.bk 30</span>
+  p.bk 30
+  </span>
   <span data-dfnright="return home">
   p.home()
   </span>
 </pre>
   
 <script type="demo" height=99>
+remove p
 demo ->
   dot blue
   label "home", 'top'
@@ -50,12 +53,11 @@ In this example, we create an arrow.
 </pre>
   
 <script type="demo" height=99>
-pen = null
+remove p
 demo ->
   dot blue
   label "home", 'top'
   p = pen red, 2
-  p.bk 30
   p.lt 45
   p.bk 30
   p.pause 1
