@@ -6,6 +6,8 @@ layout: reference
 
 <!-- any arguments in brackets? -->
 <b>home</b> returns the turtle to the center of the page and can be used to make symmetrical shapes and graphics.
+**new Sprite** creates a new sprite.
+<code>home</code> returns the turtle to the center of the page and can be used to make symmetrical shapes and graphics.
 
 <pre class="examp">
   <span data-dfnright="draw a match">
