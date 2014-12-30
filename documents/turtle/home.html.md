@@ -5,9 +5,9 @@ layout: reference
 ---
 
 <!-- any arguments in brackets? -->
-<b>home</b> returns the turtle to the center of the page and can be used to make symmetrical shapes and graphics.
-**new Sprite** creates a new sprite.
-<code>home</code> returns the turtle to the center of the page and can be used to make symmetrical shapes and graphics.
+<code>home</code> returns the turtle to the center of the page.
+
+<code>home</code> can be used to make symmetrical shapes and graphics.
 
 <pre class="examp">
   <span data-dfnright="draw a match">
@@ -33,9 +33,9 @@ demo ->
 
 <h3>Drawing Shapes</h3>
 
-<b>home</b> can be used to create intricate drawings where the center of the shape is the focus, e.g. flowers. 
+<code>home</code> can be used to create intricate drawings where the center of the shape is the focus, e.g. flowers. 
 
-In this example, we create an arrow. 
+In this example, we will create an arrow shape. Notice that we move backwards from the center of the page to draw the arrow. 
 
 <pre class="examp"><span data-dfnright="draw an arrow">
   dot blue
@@ -70,3 +70,5 @@ demo ->
   p.home()
   p.bk 40
 </script>
+
+You can use [jumpto](jumpto.html) to make the turtle jump to specified x and y coordinates on a page.
