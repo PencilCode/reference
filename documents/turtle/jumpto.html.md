@@ -288,7 +288,6 @@ Here is a summary of some types of locations that
 | <code>jumpto window</code> | jump to the center of the visible window. |
 
 ### Limiting Motion
-<!-- seems more like follow-the-cursor functionality -->
 When passing a single location object to <code>jumpto</code>, it supports
 an optional second argument limiting the distance of the motion.  When the
 second argument is given, the turtle will jump towards the location, but
@@ -307,6 +306,7 @@ tick 2, ->
   jumpto lastmouse, <span data-dfn="limiting distance">10</span>
 </pre>
 
+<!-- comment on tick -->
 <script type="demo" width=299 height=249>
 setup ->
   tick null
