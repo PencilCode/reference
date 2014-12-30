@@ -20,6 +20,7 @@ It takes two arguments: first is the text for the button; second is a function t
   
 <script type="demo">
 demo ->
+  pen goldenrod, 10
   button "Forward", ->
   fd 50
 </script>
