@@ -5,15 +5,15 @@ layout: reference
 ---
 
 <!-- any arguments in brackets? -->
-<code>button</code> creates an interactive control button.
+<code>button</code> creates an interactive, clickable control button.
 
 <code>button</code> can be used to call a function or initiate an action when a user clicks the button. 
 
 It takes two arguments: first is the text for the button; second is a function to call whenever the user clicks the button.
 
-<pre class="jumbo">
+<pre class="jumbo" >
   button
-  <span data-dfn="button label">"Forward", -></span>
+  <span data-dfn="button label">"Forward", '->'</span>
   <span data-dfn="action">fd 50</span>
 </pre>
   
