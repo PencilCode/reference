@@ -3,30 +3,19 @@ title: home
 description: returns turtle to the center of the page
 layout: reference
 ---
-dot blue
-label "home", 'top'
-pause 1
-p = pen red, 2
-p.lt 45
-p.bk 30
-p.pause 1
-p.home()
-p.rt 45
-p.bk 30
-p.pause 1
-p.home()
-p.bk 40
-<!-- any arguments in brackets? -->
-<b>home</b> returns the turtle to the center of the page and can be used to make symmetrical shapes and graphics.
 
-<code class="jumbo"><span data-dfnright="draw a match">
+<!-- any arguments in brackets? -->
+<code>home</code> returns the turtle to the center of the page and can be used to make symmetrical shapes and graphics.
+
+<pre class="jumbo"><span data-dfnright="draw a match">
   dot blue
   label "home", 'top'
   p = pen red, 2
   p.bk 30</span>
   <span data-dfnright="return home">
-  p.home()</span>
-</code>
+  p.home()
+  </span>
+</pre>
   
 <script type="demo" height=99>
 demo ->
@@ -39,11 +28,11 @@ demo ->
 
 <h3>Drawing Shapes</h3>
 
-<b>home</b> can be used to create intricate drawings where the center of the shape is the focus, e.g. flowers. 
+<code>home</code> can be used to create intricate drawings where the center of the shape is the focus, e.g. flowers. 
 
 In this example, we create an arrow. 
 
-<code class="jumbo"><span data-dfnright="draw an arrow">
+<pre class="examp"><span data-dfnright="draw an arrow">
   dot blue
   label "home", 'top'
   p = pen red, 2
@@ -58,7 +47,7 @@ In this example, we create an arrow.
   p.home()
   p.bk 40
   </span>
-</code>
+</pre>
   
 <script type="demo" height=99>
 demo ->
