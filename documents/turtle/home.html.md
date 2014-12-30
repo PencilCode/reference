@@ -9,9 +9,9 @@ layout: reference
 
 <pre class="examp">
   <span data-dfnright="draw a match">
-  dot blue
+  dot red
   label "home", 'top'
-  p = pen red, 2
+  p = pen brown, 2
   p.bk 30
   </span>
   <span data-dfnright="return home">
@@ -20,11 +20,11 @@ layout: reference
 </pre>
   
 <script type="demo" height=99>
-remove p
+p = null
 demo ->
-  dot blue
+  dot red
   label "home", 'top'
-  p = pen red, 2
+  p = pen brown, 2
   p.bk 30
   p.home()
 </script>
@@ -53,7 +53,7 @@ In this example, we create an arrow.
 </pre>
   
 <script type="demo" height=99>
-remove p
+p = null
 demo ->
   dot blue
   label "home", 'top'
