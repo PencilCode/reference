@@ -11,13 +11,13 @@ layout: reference
 
 It takes two arguments: first is the text for the button; second is a function to call whenever the user clicks the button.
 
-<pre class="examp">
+<pre class="jumbo">
   button
   <span data-dfn="button label">"Forward", -></span>
   <span data-dfn="action">fd 50</span>
 </pre>
   
-<script type="demo" height=99>
+<script type="demo">
 demo ->
   button "Forward", ->
   fd 50
