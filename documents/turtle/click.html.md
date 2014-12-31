@@ -5,24 +5,25 @@ layout: reference
 ---
 
 <!-- size of canvas - e.g. width=249 height=99  -->
-<code>button</code> creates an interactive, clickable control button.
+<code>click</code> is an event-handler function. When a user clicks on the screen with a  mouse, a function is called and an action performed.
 
-<code>button</code> can be used to call a function or initiate an action when a user clicks the button. 
+<code>button</code> requires an input to perform a function, i.e. a mouseclick. The corresponding action can be anything you like, e.g. exit a program, run a script, draw something. 
 
-It takes two arguments: first is the text for the button; second is a function to call whenever the user clicks the button.
+In this example, clicking on the screen moves the turtle to that position.
+
+Notice that we have specified <code>speed Infinity</code> in order to keep up with the speed of the mouse clicks.  
 
 <pre class="jumbo" >
-  button
-  <span data-dfn="button label">"Forward", -></span>
-  
-  <span data-dfn="action">fd 50</span>
+  speed Infinity
+  click
+  <span data-dfn="function">(e), -></span>
+  move to e
 </pre>
   
 <script type="demo">
 demo ->
-  pen goldenrod, 10
-  button "Forward", ->
-    fd 50
+  speed Infinity
+  click (e) -> moveto e
 </script>
 
 <h3>WIP</h3>
