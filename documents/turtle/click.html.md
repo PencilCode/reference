@@ -17,7 +17,7 @@ Notice that we have specified <code>speed Infinity</code> in order to keep up wi
   speed Infinity
   click <span data-dfn="function">(e)</span>, ->
     
-  move to e
+  moveto e
 </pre>
   
 <!-- why doesn't it like it if I keep move etc. on next row -->
