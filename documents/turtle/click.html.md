@@ -15,7 +15,7 @@ Notice that we have specified <code>speed Infinity</code> in order to keep up wi
 
 <pre class="jumbo" >
   speed Infinity
-  click <span data-dfn="function">(e)</span>, ->
+  click <span data-dfn="function">(e)</span> ->
     
   moveto e
 </pre>
