@@ -23,6 +23,7 @@ Notice that we have specified <code>speed Infinity</code> in order to keep up wi
 <!-- why doesn't it like it if I keep move etc. on next row -->
 <script type="demo">
 demo ->
+  label "Click anywhere to try the code out", 'top'
   speed Infinity
   click (e) -> moveto e
 </script>
