@@ -24,7 +24,7 @@ Notice that we have specified <code>speed Infinity</code> in order to keep up wi
 demo ->
   speed Infinity
   click (e) -> 
-  moveto e
+  move to e
 </script>
 
 <h3>WIP</h3>
