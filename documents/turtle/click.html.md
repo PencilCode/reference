@@ -15,17 +15,15 @@ Notice that we have specified <code>speed Infinity</code> in order to keep up wi
 
 <pre class="jumbo" >
   speed Infinity
-  click <span data-dfn="function">(e)</span> ->
-    
-  moveto e
+  click <span data-dfn="function">(e)</span> -> moveto e
 </pre>
   
 <!-- why doesn't it like it if I keep move etc. on next row -->
 <script type="demo">
 demo ->
-  label "Click anywhere to try the code out", 'top'
+  label "Click anywhere on the cavas to try the code out", 'top'
   speed Infinity
-  click (e) -> moveto e
+click (e) -> moveto e
 </script>
 
 <h3>WIP</h3>
