@@ -6,7 +6,7 @@ layout: reference
 
 **new Sprite** creates a new sprite.
 
-**new Sprite** can create a blank canvas that you can draw on and create your own shapes. By default, a new sprite is an invisible 256 pixel square but you can change its [color](colors.html) and size.  
+**new Sprite** can create a blank canvas that you can draw on and create your own shapes. By default, a new sprite is an invisible 256 pixel square, but you can change its [color](colors.html) and size.  
 
 First, name the sprite by setting a variable.  Once the sprite has a name like `penny`, you can draw on it using [drawon](drawon.html).
 
@@ -18,10 +18,10 @@ Use optional arguments to change the sprite’s default color and size.
 
 <pre class="jumbo">
 penny = new Sprite
-<span data-dfnright="size and color">
-color: gray
-height: 50
-width: 75
+<span data-dfnright="size and color"
+>  color: gray
+  height: 50
+  width: 75
 </span>
 </pre>
 
@@ -31,9 +31,9 @@ setup ->
   remove penny
 demo ->
   penny = new Sprite 
-  color: gray
-  height: 50
-  width: 75
+    color: gray
+    height: 50
+    width: 75
 </script>
 
 ### Animating Multiple Sprites
