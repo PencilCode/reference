@@ -20,11 +20,11 @@ Notice that we have specified <code>speed Infinity</code> in order to keep up wi
   move to e
 </pre>
   
+<!-- why doesn't it like it if I keep move etc. on next row -->
 <script type="demo">
 demo ->
   speed Infinity
-  click (e) -> 
-  move to e
+  click (e) -> moveto e
 </script>
 
 <h3>WIP</h3>
