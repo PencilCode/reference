@@ -39,7 +39,7 @@ demo ->
     p.rt 45
     p.bk 5
     p.home()
-    p.bk 15
+    p.bk 10
     p.pen null
     p.label 'blueviolet color', 'bottom'
 </script>
