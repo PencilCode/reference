@@ -78,7 +78,7 @@ For all 140 standard named colors, see [the color table](colors.html).
 pen in pixels.  Remember that arguments need to be separated by
 a comma.
 
-<code class="jumbo" data-after="fd 100">pen <span data-dfn="color">pink</span><span data-note="comma">,</span>&nbsp;<span data-dfn="size">20</span></code>
+<code class="jumbo">pen <span data-dfn="color">pink</span><span data-note="comma">,</span>&nbsp;<span data-dfn="size">20</span></code>
 
 <script type="demo" height=99>
 p = new Pencil
@@ -102,15 +102,15 @@ demo ->
   plan ->
     p.home()
     p.pen black, 0.7
-    p.jump 0, -10
+    p.jump -25, -10
     p.lt 45
     p.bk 5
     p.home()
-    p.jump 0, -10
+    p.jump -25, -10
     p.rt 45
     p.bk 5
     p.home()
-    p.jump 0, -10
+    p.jump -25, -10
     p.bk 15
     p.pen null
     p.label 'pink color', 'bottom'
