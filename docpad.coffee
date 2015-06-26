@@ -1,9 +1,12 @@
+path = require('path')
+
 # The DocPad Configuration File
 # It is simply a CoffeeScript Object which is parsed by CSON
 docpadConfig = {
 
   # Collapse src directory.
   srcPath: ''
+  ignorePaths: [path.join(process.cwd(), 'out')]
 
   # =================================
   # Template Data
