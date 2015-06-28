@@ -76,7 +76,7 @@ p.label 'y', 'right'
 click (e) ->
   $('#where').text "#{e.x}, #{e.y}"
   $('#where').jumpto e.x, e.y
-  moveto e.x, e.y
+  jumpto e.x, e.y
 </script>
 
 ### Drawing while Jumping
@@ -206,7 +206,7 @@ p.label 'pageY', 'right'
 click (e) ->
   $('#where').html "pageX: #{e.pageX}<br>pageY: #{e.pageY}"
   $('#where').jumpto e
-  moveto e
+  jumpto e
 </script>
 
 <code>jumpto</code> supports native HTML coordinates if they are passed
