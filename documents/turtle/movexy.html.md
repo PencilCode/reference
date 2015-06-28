@@ -9,15 +9,15 @@ refOrder: 0
 The turtle starts in the middle of the window, at (x, y) coordinates
 (0, 0).
 
-<code>movexy x, y</code> moves by an xy offset in
+`movexy x, y` moves by an xy offset in
 traditional Cartesian coordinates.  In this coordinate system,
 each unit is one pixel, and each graph paper grid square is 25 units.
 The mathematical coordinate axes are used, placing (0, 0)
 at the middle with x increasing to the right and y increasing upward.
 
 A vector represented as an array of two numbers can be used.
-<code>movexy [x, y]</code> is treated the same as
-<code>movexy x, y</code>.
+`movexy [x, y]` is treated the same as
+`movexy x, y`.
 
 <script type="figure" width=299 height=249>
 turtle.css opacity: 0.3, turtlePenStyle: silver, turtlePenDown: true
@@ -76,7 +76,7 @@ p.label 'y', 'right'
 click (e) ->
   $('#where').text "#{e.x}, #{e.y}"
   $('#where').jumpto e.x, e.y
-  moveto e.x, e.y
+  movexy e.x, e.y
 </script>
 
 ### Drawing while Moving
@@ -123,150 +123,18 @@ demo ->
     p.jumpto turtle
     p.cross()
     p.jump 0, -8
-    p.label 'movexy -75, -25', 'bottom'
+    p.label 'movexy -75, -25', 'left'
   movexy 0, -50
   plan ->
     p.jumpto turtle
     p.cross()
-    p.label 'moveto 0, -50', 'right'
+    p.label 'movexy 0, -50', 'left'
   movexy -125, 100
   plan ->
     p.jumpto turtle
     p.cross()
-    p.label 'movexy -125, 100', 'right'
+    p.label 'movexy 125, 0', 'right'
 </script>
-
-### Using HTML Coordinates
-
-The native coordinate system supported by HTML follows a different
-convention: it places the (pageX, pageY) origin at the upper-left corner
-of the page.  <code>pageX</code> increases to the right, but
-<code>pageY</code> is inverted: <code>pageY</code> increases going down.
-
-<script type="figure" width=299 height=249>
-turtle.css opacity: 0.3, turtlePenStyle: silver, turtlePenDown: true
-p = new Pencil
-p.cross = ->
-  @pen black, 0.7
-  @jump -5, 0
-  @move 10
-  @jump -5, -5
-  @fd 10
-  @jump 0, -5
-p.jumpto pageX: 22, pageY: 22
-p.label 'origin', id: 'where', labelSide: 'bottom right', turtleSpeed: Infinity
-p.jumpto pageX: 31, pageY: 31
-p.pen black, 0.7
-p.moveto pageX: 0, pageY: 0
-p.pen black, 1.5
-p.jumpto pageX: -7.5, pageY: 0.5
-p.rt 360, 8
-p.jumpto pageX: 0.5, pageY: 0.5
-p.moveto pageX: 0.5, pageY: 300
-p.jumpto pageX: 0.5, pageY: 0.5
-p.moveto pageX: 300, pageY: 0.5
-p.jumpto pageX: 50, pageY: 0.5
-p.cross()
-p.label '50', 'bottom'
-p.jumpto pageX: 100, pageY: 0
-p.cross()
-p.label '100', 'bottom'
-p.jumpto pageX: 150, pageY: 0
-p.cross()
-p.label '150', 'bottom'
-p.jumpto pageX: 200, pageY: 0
-p.cross()
-p.label '200', 'bottom'
-p.jumpto pageX: 250, pageY: 0
-p.cross()
-p.jumpto pageX: 0, pageY: 50
-p.cross()
-p.label '50', 'right'
-p.jumpto pageX: 0, pageY: 100
-p.cross()
-p.label '100', 'right'
-p.jumpto pageX: 0, pageY: 150
-p.cross()
-p.label '150', 'right'
-p.jumpto pageX: 0, pageY: 200
-p.cross()
-p.label '200', 'right'
-p.jumpto pageX: 275, pageY: -3
-p.label 'pageX', 'bottom'
-p.jumpto pageX: -3, pageY: 240
-p.label 'pageY', 'right'
-click (e) ->
-  $('#where').html "pageX: #{e.pageX}<br>pageY: #{e.pageY}"
-  $('#where').jumpto e
-  moveto e
-</script>
-
-<code>movexy</code> supports native HTML coordinates if they are passed
-with the <code>pageX</code> and <code>pageY</code> properties.  Note
-that HTML mouse events all have pageX and pageY properties, so
-<code>movexy lastclick</code> will move to the location of the last
-mouse click.
-
-<pre class="examp">
-movexy pageX: 50, pageY: 100
-pen slateblue
-movexy pageX: 150, pageY: 200
-movexy pageX: 250, pageY: 100
-movexy lastclick
-</pre>
-
-<script type="demo" width=299 height=249>
-p = new Pencil
-p.cross = ->
-  @pen black, 0.7
-  @jump -5, 0
-  @move 10
-  @jump -5, -5
-  @fd 10
-  @jump 0, -5
-setup ->
-  p.pen silver, 1.5
-  p.jumpto pageX: -7.5, pageY: 0.5
-  p.rt 360, 8
-  p.jumpto pageX: 0.5, pageY: 0.5
-  p.moveto pageX: 0.5, pageY: 300
-  p.jumpto pageX: 0.5, pageY: 0.5
-  p.moveto pageX: 300, pageY: 0.5
-  p.jumpto pageX: 50, pageY: 0.5
-demo ->
-  movexy pageX: 50, pageY: 100
-  label 'pageX: 50<br>pageY: 100', 'top'
-  pen slateblue
-  movexy pageX: 150, pageY: 200
-  label 'pageX: 150, pageY: 200', 'bottom'
-  movexy pageX: 250, pageY: 100
-  label 'pageX: 250<br>pageY: 100', 'top'
-  plan ->
-    if lastclick.pageX and lastclick.pageY
-      movexy lastclick
-      label 'lastclick', if lastclick.pageY > 100 then 'bottom' else 'top'
-</script>
-
-### Other Locations
-
-<code>movexy</code> will also move to any element or jQuery object or
-any other object that supports a pagexy() method that returns page
-coordinates.  For example <code>movexy otherturtle</code> will move
-to the location of another turtle.
-
-Here is a summary of some types of locations that
-<code>movexy</code> understands.
-
-| example       | motion                                                       |
-|---------------|--------------------------------------------------------------|
-| <code>movexy x, y</code> | move to (x, y) in traditional mathematical y-up coordinates. |
-| <code>movexy [x, y]</code> | same as <code>movexy x, y</code> |
-| <code>movexy pageX: px, pageY: py</code> | move using HTML page coordinates. |
-| <code>movexy lastmouse</code> | move to the location of the last mouse event.|
-| <code>movexy otherturtle</code> | move to another turtle. |
-| <code>movexy $('#spot')</code> | move to the element with id spot. |
-| <code>movexy document</code> | move to the center of the document. |
-| <code>movexy window</code> | move to the center of the visible window. |
 
 ### Limiting Motion
 
@@ -280,16 +148,16 @@ twice per second, but will move no more than 10 pixels each time.
 
 <pre class="examp">
 pen green
-tick 2, ->
+forever 2, ->
   movexy lastmouse, <span data-dfn="limiting distance">10</span>
 </pre>
 
 <script type="demo" width=299 height=249>
 setup ->
-  tick null
+  stop()
 demo ->
   pen green
-  tick 2, ->
+  forever 2, ->
     movexy lastmouse, 10
 </script>
 
