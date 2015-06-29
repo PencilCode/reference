@@ -18,3 +18,14 @@ containing the reference material for the Pencil Code website.
 
 3. Start hacking away by modifying the `src` directory
 
+## Editing Online
+
+If you have committer access to PencilCode/reference on github,
+you can edit the site directly on github without installing
+anything.
+
+1. Visit [ref.pencilcode.net](http://ref.pencilcode.net)
+
+2. Navigate to the page you want to edit, and press control-E to visit the github editing page.
+
+3. Edit and commit changes.  They will automatically propagate to the website in a minute or two.
