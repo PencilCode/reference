@@ -20,7 +20,7 @@ in CoffeeScript:
 | `if`, `then`, `else`, `unless` | Picks between two choices in a program     |
 | `switch`, `when`, `default`    | Makes multi-way choices                    |
 | | **Choices** |
-| `->`                           | Declares a function                        |
+| `=>`, `->`                     | Declares a function                        |
 | `return`                       | Finishes a function normally               |
 | `do`                           | Binds variables in a nested function block |
 | | **Logic** |
