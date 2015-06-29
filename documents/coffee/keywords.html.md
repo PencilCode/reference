@@ -12,13 +12,17 @@ in CoffeeScript:
 
 | CoffeeScript Keywords       |                                               |
 |-----------------------------|-----------------------------------------------|
-| | **Control Flow** |
-| `if`, `then`, `else`, `unless` | Picks between two choices in a program     |
-| `switch`, `when`, `default`    | Makes multi-way choices                    |
+| | **Loops** |
 | `for`, `while`, `loop`, `by`   | Repeats part of a program                  |
 | `in`,  `of`                    | Tests or lists elements in a container     |
 | `break`, `continue`            | Gets out of a repeated loop                |
+| | **Choices** |
+| `if`, `then`, `else`, `unless` | Picks between two choices in a program     |
+| `switch`, `when`, `default`    | Makes multi-way choices                    |
+| | **Choices** |
+| `->`                           | Declares a function                        |
 | `return`                       | Finishes a function normally               |
+| `do`                           | Binds variables in a nested function block |
 | | **Logic** |
 | `is`, `isnt`                   | Tests equality and inequality              |
 | `and`, `or`, `not`             | Combines boolean values                    |
@@ -34,7 +38,6 @@ in CoffeeScript:
 | | **Variables** |
 | `this`                         | Refers to the current object               |
 | `arguments`                    | Refers to the current function arguments   |
-| `do`                           | Binds variables in a nested function block |
 | | **Continuations**  |
 | `await`, `defer`               | Suspends a function to wait for a result   |
 | `yield`                        | Suspends a function to yield a result      |
