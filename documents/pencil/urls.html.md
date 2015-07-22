@@ -90,6 +90,13 @@ following function, using the turtle library:
 console.log(save.loginCookie().key)
 ```
 
+The [terms of service](//pencilcode.net/terms.html) warning applies
+to keys as well: please do experiment with keys, but do not interfere
+with another students work by hacking their keys or overwriting their
+data.  Pencil Code is a learning community.  We do not expect students
+to learn bulletproof security measures before storing their data, and
+advanced users here should respect and support novices.
+
 The turtle library also includes simplfied `load` and `save` methods
 that unwrap the metadata for you:
 
