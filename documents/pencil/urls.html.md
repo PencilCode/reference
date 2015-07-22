@@ -35,6 +35,14 @@ an external service such as [Imgur](//imgur.com/) or
 [Soundcloud](//soundcloud.com/) or [Youtube](//youtube.com/),
 and link to those services using absolute URLs.
 
+When saving your data, rememember to follow the Pencil Code
+[terms of service](//pencilcode.net/terms.html).
+In particular, do not flood the service with more than a megabytes
+of data: Pencil Code is not a bulks storage service, and using it as
+one would unfairly deny resources to other students.  If you try to
+host spam or copyrighted content or bulk data that is too large,
+we may remove the data, or limit or block access.
+
 Pencil Code is good for storing small text or data files for your
 application.  If you save data, you can use file extensions like
 `.txt` or `.json` or `.xml` to indicate the data type.
