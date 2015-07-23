@@ -6,15 +6,16 @@ section: basic
 refOrder: 4
 ---
 
-### How Pencil Code stores your Data
+### How Pencil Code stores your data
 
 The web server for the Pencil Code editor has a simple design.
 
   * There is a single HTML file (internally called `editor.html`) that does all the work. All `pencilcode.net/edit/...` URLs actually resolve to this same static file.
-  * That file does HTTP requests to `pencilcode.net/load/...` the actual text of programs you write.
-  * And it does HTTP requests to `pencilcode.net/save/...` to write the actual data of the programs you write.
+  * That page makes HTTP GETs to `pencilcode.net/load/...` to load the actual text of programs.
+  * And it makes HTTP POSTs to `pencilcode.net/save/...` to write the text of the programs.
 
-Here is a summary of the special URL patterns on Pencil Code.
+Here is a summary of the special URL patterns on Pencil Code that deal
+with files saved in a user's directory.
 
 | URL pattern | purpose |
 |-------------|---------|
@@ -25,7 +26,7 @@ Here is a summary of the special URL patterns on Pencil Code.
 | <em>user</em>.pencilcode.net/<b>code</b>/dir/filename | Serves just the main (raw) code of the file |
 | <em>user</em>.pencilcode.net/<b>print</b>/dir/filename | Serves a printout, with line numbers, of the code |
 
-### Loading and Storing your own Data
+### Loading and storing your own data
 
 You can also load and save your own data on the Pencil Code server.
 
@@ -77,7 +78,43 @@ $.post '/save/dir/filename',
     console.log 'saved and got', m
 ```
 
-### Access Keys and Turtle Methods
+### JSON response format
+
+When loading a file via `/load/`, the response is formatted as JSON.
+For example, if you view
+(pencilcode.net/load/first)[http://pencilcode.net/load/first], you
+will see the following JSON data (though not indented nicely):
+
+```
+{
+  "file":"/first",
+  "data":"speed 2\npen red\nfor [1..25]\n  fd 100\n  rt 88\n",
+  "auth":true,
+  "mtime":1385737227432,
+  "mime":"text/x-pencilcode;charset=utf-8"
+}
+```
+
+The data of the file is encoded in a string under the `"data"` field,
+and all the other fields are metadata.
+
+| Field    | Meaning |
+|----------|---------|
+| `"file"` | The username (if any) and filename of the file |
+| `"data"` | The unicode contents of the file               |
+| `"auth"` | True if a password key is needed to save here  |
+| `"mtime"`| The modification date in seconds since 1970    |
+| `"mime"` | The mime type                                  |
+| `"meta"` | (Optional) further metadata for this file      |
+
+The `"meta"` field, when present, is used with Pencil Code
+programs without an file extension which to store non-default
+language or library choices (the choices under the "gear menu"
+in the editor).
+
+### Access keys and turtle methods
+
+To save data in an account, you may need an access key.
 
 Every account has a different access key.  Note that the keys are not
 a high-security measure - they are akin to a school combination lock,
@@ -90,12 +127,12 @@ following function, using the turtle library:
 console.log(save.loginCookie().key)
 ```
 
-The [terms of service](//pencilcode.net/terms.html) warning applies
-to keys as well: please do experiment with keys, but do not interfere
-with another students work by hacking their keys or overwriting their
-data.  Pencil Code is a learning community.  We do not expect students
-to learn bulletproof security measures before storing their data, and
-advanced users here should respect and support novices.
+Heed the [terms of service](//pencilcode.net/terms.html) when using
+keys: please do experiment with keys, but do not interfere with
+another students work by hacking their keys or overwriting their
+data.  Pencil Code is a learning community.  We do not require students
+to learn bulletproof security measures before storing their data,
+so please respect their work and support these novices.
 
 The turtle library also includes simplfied `load` and `save` methods
 that unwrap the metadata for you:
@@ -105,13 +142,16 @@ load 'myfile', (txt) -> write 'got', txt
 save 'myfile', 'saved at ' + new Date
 ```
 
-### Other Useful URLs
+If you run a program while logged in, the `save` method will use your
+cookie to provide the key automatically.
+
+### Other useful URLs
 
 The Pencil Code server also supports a few other useful URLs.
 
 | URL pattern | purpose |
 |-------------|---------|
 | pencilcode.net/<b>img</b>/any-description | Redirects to a creative-commons image |
-| pencilcode.net/<b>proxy</b>/http&#58;//any-url/path | Proxies a fetch to the given URL.  Useful for accessing public data without cookies or other cross-domain security issues. |
-| pencilcode.net/socket.io/status | Shows the status of socket.io connections. |
+| pencilcode.net/<b>proxy</b>/http&#58;//any-url/path | Proxies an HTTP GET to the given URL. |
+| pencilcode.net/<b>socket.io</b>/status | Shows the status of socket.io connections. |
 
