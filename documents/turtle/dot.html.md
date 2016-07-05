@@ -44,13 +44,13 @@ demo ->
     p.pen black, 0.7
     p.bk 30
     p.jump 0, 15
-    p.move 50
+    p.slide 50
     p.label '100 px', 'top'
-    p.move 50
+    p.slide 50
     p.jump 0, 15
     p.bk 30
     p.pen null
-    p.move -50, 15
+    p.slide -50, 15
     remove p
   speed 0.2
   animate opacity: .3
