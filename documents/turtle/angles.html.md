@@ -1,6 +1,6 @@
 ---
 title: Angles
-description: the direction an objectis facing
+description: the direction an object is facing
 layout: reference
 ---
 
