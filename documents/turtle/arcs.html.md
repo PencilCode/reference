@@ -12,4 +12,4 @@ Arcs can be drawn by adding a second arguement to the familiar [lt](lt.html) and
 lt <span data-dfn="angle">135</span>, <span data-dfn="radius">60</span>
 </pre>
 
-<iframe src="http://david.pencilcode.net/home/explainer/curves"></iframe>
+<iframe src="http://david.pencilcode.net/home/explainer/curves" width="300" height="400"></iframe>
