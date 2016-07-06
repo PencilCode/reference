@@ -43,5 +43,4 @@ demo ->
   speed 0.2
   animate
     opacity: .3
-  
 </script>
