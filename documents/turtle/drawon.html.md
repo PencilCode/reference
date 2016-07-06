@@ -13,7 +13,7 @@ First, name a sprite and a turtle by setting  variables. By default, a new sprit
 <!--- what else -->
 <pre class="jumbo">
 s = new Sprite
-<span data-dfn="color">
+  <span data-dfn="color">
   color: gray </span>
 
 t = new Turtle
