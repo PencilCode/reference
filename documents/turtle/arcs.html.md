@@ -20,7 +20,7 @@ An arc can even have an angle of 360 degrees, creating a circle.
 rt 360, 50
 </pre>
 
-<script type="demo" height=110>
+<script type="demo" height=120 width=120>
 demo ->
   fd 50
   rt 90
