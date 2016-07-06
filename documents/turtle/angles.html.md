@@ -18,6 +18,8 @@ p.turnto <span data-dfn="returns an angle">direction(turtle)</span>
 
 The direction from one object to another object is an angle. This angle is a value between -180 and 180 and like coordinates, the angle is relative to the environment, not the object itself. This means that, no matter which direction the object is currently facing, the direction will remain the same between the same locations. 
 
+In the example below, the direction from the turtle to the mouse cursor is displayed at the top, and the relative angles from the turtle (in this case, the coordinates used in the [rt](rt.html) command) are displayed in the wheel around the turtle. When the mouse button is clicked, the turtle will turn towards the cursor's location. 
+
 <script type="demo" height=300 width=300>
 speed Infinity
 drawDiagram = ->
