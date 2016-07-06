@@ -18,7 +18,8 @@ Use optional arguments to change the sprite’s default color and size.
 
 <pre class="jumbo">
 penny = new Sprite
-<span data-dfnright="size and color">  color: gray
+<span data-dfnright="size and color"
+>  color: gray
   height: 50
   width: 75
 </span>
