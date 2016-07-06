@@ -21,7 +21,6 @@ t = new Turtle
 <span data-dfn="draw">
 t.drawon s
 </span>
-
 t.dot orange, 100
 </pre>
 
