@@ -6,7 +6,7 @@ section: basic
 refOrder: 6
 ---
 
-<b>lt</b> pivots the clockwise (Left Turn).
+<b>lt</b> pivots the turtle clockwise (Left Turn).
 
 The turn is measured in degrees.
 
