@@ -67,8 +67,8 @@ drawDiagram = ->
   fd 80
   dot white, 30
 
-click (e) ->
-  turnto e
+mousedown ->
+  turnto lastmousemove
   cg()
   drawDiagram()
 
