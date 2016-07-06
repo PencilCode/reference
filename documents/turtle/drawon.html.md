@@ -14,7 +14,7 @@ First, name a sprite and a turtle by setting  variables. By default, a new sprit
 <pre class="jumbo">
 s = new Sprite
   <span data-dfn="color">
-  color: gray </span>
+  color: gray</span>
 
 t = new Turtle
 <span data-dfn="draw">
@@ -96,7 +96,7 @@ demo ->
   b.fd 40
 </script>
 
-See [Sprite](sprite.html) to make a blank "turtle" that you can use to create an ant.
+See [Sprite](sprite.html) to make a blank, turtle-like object on which you can draw or use to display graphics. 
 
 <!-- from Google Groups, use drawon instead of moveto (jumpto wrong)
 speed Infinity
