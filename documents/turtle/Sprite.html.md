@@ -51,6 +51,7 @@ In the next example, we create `paul`, an ant and `penny`, a breadcrumb.
 <span data-dfnright="for paul">r = new Sprite red
 paul.rt 90
 paul.lt 180, 50</span>
+
 <span data-dfnright="for penny">b = new Sprite gray
 penny.lt 90
 penny.rt 180, 50</span>
