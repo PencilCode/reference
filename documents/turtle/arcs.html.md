@@ -14,3 +14,15 @@ lt <span data-dfn="angle">135</span>, <span data-dfn="radius">60</span>
 
 <iframe src="http://david.pencilcode.net/home/explainer/curves" width="600" height="500"></iframe>
 
+An arc can even have an angle of 360 degrees, creating a circle. 
+
+<script type="demo" height=99>
+demo ->
+  fd 50
+  rt 90
+  pen red
+  rt 360, 50
+  speed 0.2
+  animate
+    opacity: .3
+</script>
