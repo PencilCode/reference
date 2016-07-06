@@ -6,7 +6,7 @@ section: basic
 refOrder: 5
 ---
 
-<b>rt</b> pivots the turtle clockwise (Right Turn).
+<b>rt</b> pivots the turtle clockwise (<b>rt</b> stands for "right turn").
 
 The turn is measured in degrees.
 
