@@ -1,5 +1,5 @@
 ---
-title: drawnon
+title: drawon
 description: draw on a sprite
 layout: reference
 ---
@@ -14,14 +14,20 @@ First, name a sprite and a turtle by setting  variables. By default, a new sprit
 <pre class="jumbo">
 s = new Sprite
 <span data-dfn="color">
-color: gray</span>
+color: gray
+</span>
+
 t = new Turtle 
-<span data-dfn="draw">t.drawon s</span>
+<span data-dfn="draw">
+t.drawon s
+</span>
+
 t.dot orange, 100
 </pre>
 
 <script type="demo">
 s = null
+t = null
 setup ->
   remove s, t
 demo ->
