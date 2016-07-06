@@ -26,7 +26,22 @@ demo ->
   rt 90
   pen red
   rt 360, 50
+  plan ->
+    p = new Pencil
+    p.jump -50, 15
+    p.pen black, 0.7
+    p.bk 30
+    p.jump 0, 15
+    p.slide 50
+    p.label '100 px', 'top'
+    p.slide 50
+    p.jump 0, 15
+    p.bk 30
+    p.pen null
+    p.slide -50, 15
+    remove p
   speed 0.2
   animate
     opacity: .3
+  
 </script>
