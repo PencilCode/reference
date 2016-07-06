@@ -20,51 +20,59 @@ The direction from one object to another object is an angle. This angle is a val
 
 <script type="demo" height=300 width=300>
 speed Infinity
-fd 100
-label 0, labelSide: 'centered'
-bk 15
-pen black
-bk 5
-pen gray
-bk 80
-pen null
-for i in [15..165] by 15
-  rt i
+drawDiagram = ->
   fd 100
-  label i, labelSide: 'centered'
+  label 0, labelSide: 'centered'
+  bk 15
+  pen black
+  bk 5
+  pen blue, 3
+  bk 80
+  pen null
+  for i in [15..165] by 15
+    rt i
+    fd 100
+    label i, labelSide: 'centered'
+    bk 15
+    pen black
+    bk 5
+    pen lightgray
+    bk 80
+    pen null
+    lt 2*i
+    fd 100
+    label -i, labelSide: 'centered'
+    bk 15
+    pen black
+    bk 5
+    pen lightgray
+    bk 80
+    pen null
+    rt i
+  rt 180
+  fd 100
+  label 180, labelSide: 'centered'
   bk 15
   pen black
   bk 5
   pen gray
   bk 80
   pen null
-  lt 2*i
-  fd 100
-  label -i, labelSide: 'centered'
-  bk 15
-  pen black
-  bk 5
-  pen gray
-  bk 80
+  fd 80
+  rt 90
+  pen black, 2
+  rt 360, 80
   pen null
-  rt i
-rt 180
-fd 100
-label 180, labelSide: 'centered'
-bk 15
-pen black
-bk 5
-pen gray
-bk 80
-pen null
-fd 80
-rt 90
-pen black, 2
-rt 360, 80
-pen null
-rt 90
-fd 80
-dot white, 30
+  rt 90
+  fd 80
+  dot white, 30
+
+click (e) ->
+  turnto e
+  cg()
+  drawDiagram()
+
+drawDiagram()
 
 p = write ""
 d = new Turtle
@@ -77,7 +85,7 @@ tick 200, ->
   d.turnto lastmousemove
   d.fd 80
   d.home()
-  p.html direction(lastmousemove)
+  p.html "direction to mouse: " + direction(lastmousemove)
   await done defer()
   c.remove()
 </script>
