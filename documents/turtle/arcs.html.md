@@ -16,6 +16,10 @@ lt <span data-dfn="angle">135</span>, <span data-dfn="radius">60</span>
 
 An arc can even have an angle of 360 degrees, creating a circle. 
 
+<pre class="jumbo">
+rt 360, 50
+</pre>
+
 <script type="demo" height=110>
 demo ->
   fd 50
