@@ -12,12 +12,12 @@ First, name a sprite and a turtle by setting  variables. By default, a new sprit
 
 <!--- what else -->
 <pre class="jumbo">
-s = new Sprite
-<span data-dfn="color" style="padding-bottom:50px">
+s = new Sprite <span data-dfn="color">
 color: gray </span>
-t = new Turtle 
-<span data-dfn="draw">
+
+t = new Turtle <span data-dfn="draw">
 t.drawon s </span>
+
 t.dot orange, 100
 </pre>
 
