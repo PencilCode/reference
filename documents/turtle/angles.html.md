@@ -67,6 +67,17 @@ fd 80
 dot white, 30
 
 p = write ""
-tick 20, ->
+d = new Turtle
+  opacity: 0
+tick 200, ->
+  c = new Sprite
+    opacity: 0
+  d.drawon c
+  d.pen red
+  d.turnto lastmousemove
+  d.fd 80
+  d.home()
   p.html direction(lastmousemove)
+  await done defer()
+  c.remove()
 </script>
