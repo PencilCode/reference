@@ -13,5 +13,5 @@ lt <span data-dfn="angle">90</span>
 Angles can also be used to determine the direction of one object from another, such as in the [direction](direction.html) command. 
 
 <pre class="jumbo">
-p.turnto <span data-dfn="returns and angle">direction(turtle)</span>
+p.turnto <span data-dfn="returns an angle">direction(turtle)</span>
 </pre>
