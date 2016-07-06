@@ -16,7 +16,7 @@ Angles are also used to determine the direction of one object from another, such
 p.turnto <span data-dfn="returns an angle">direction(turtle)</span>
 </pre>
 
-The direction from one object to another object is an angle. This angle is a value between -180 and 180 and unlike coordinates, which are always the same, the angle is relative to the direction the object is currently facing. 
+The direction from one object to another object is an angle. This angle is a value between -180 and 180 and like coordinates, the angle is relative to the environment, not the object itself. This means that, no matter which direction the object is currently facing, the direction will remain the same between the same locations. 
 
 <script type="demo" height=300 width=300>
 speed Infinity
