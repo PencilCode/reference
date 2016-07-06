@@ -18,7 +18,7 @@ p.turnto <span data-dfn="returns an angle">direction(turtle)</span>
 
 The direction from one object to another object is an angle. This angle is a value between -180 and 180 and unlike coordinates, which are always the same, the angle is relative to the direction the object is currently facing. 
 
-<script type="demo" height=99>
+<script type="demo" height=250 width=250>
 speed Infinity
 fd 100
 label 0, labelSide: 'centered'
