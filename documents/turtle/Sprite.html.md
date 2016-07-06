@@ -4,7 +4,7 @@ description: creates a new sprite
 layout: reference
 ---
 
-**new Sprite** creates a new sprite. test
+**new Sprite** creates a new sprite.
 
 **new Sprite** can create a blank canvas that you can draw on and create your own shapes. By default, a new sprite is an invisible 256 pixel square, but you can change its [color](colors.html) and size.  
 
