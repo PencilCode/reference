@@ -100,46 +100,45 @@ To draw an (interior) angle of a certain degree, you need to find the exterior a
 
 For example, when drawing an equillateral triangle (a triangle with all angles equal to 60 degrees and all side equal in length), if you use 60 degree angles, it will not turn out correctly. 
 
-<script type="demo" height=180 width=300>
-demo ->
-  speed 10
-  angle1 = 60
-  angle2 = 180 - angle1
-  
-  drawAngle = (angle) ->
-    plan ->
-      pen mediumpurple, 1
-      fd 50
-      bk 25
-      rt 90
-      rt angle, 25
-      lt 180
-      lt angle/2, 25
-      rt 90
-      pen null
-      fd 20
-      label angle + "°", labelSide: 'centered'
-      bk 45
-      lt angle/2
-      pen red
-  
-  slide -75, -75
-  pen red
-  fd 100
-  drawAngle(angle1)
-  rt angle1
-  drawAngle(angle2)
-  fd 100
-  pen null
-  home()
-  
-  slide 25, -75
-  pen red
-  fd 100
-  drawAngle(angle2)
-  rt angle2
-  drawAngle(angle1)
-  fd 100
+<script type="predemo" height=180 width=300>
+speed 10
+angle1 = 60
+angle2 = 180 - angle1
+
+drawAngle = (angle) ->
+  plan ->
+    pen mediumpurple, 1
+    fd 50
+    bk 25
+    rt 90
+    rt angle, 25
+    lt 180
+    lt angle/2, 25
+    rt 90
+    pen null
+    fd 20
+    label angle + "°", labelSide: 'centered'
+    bk 45
+    lt angle/2
+    pen red
+
+slide -75, -75
+pen red
+fd 100
+drawAngle(angle1)
+rt angle1
+drawAngle(angle2)
+fd 100
+pen null
+home()
+
+slide 25, -75
+pen red
+fd 100
+drawAngle(angle2)
+rt angle2
+drawAngle(angle1)
+fd 100
 </script>
 
 Instead of using:
