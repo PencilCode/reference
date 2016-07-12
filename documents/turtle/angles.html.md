@@ -177,6 +177,7 @@ drawAngle = (angle) ->
     lt angle/2
     pen red
     
+slide -100, -75
 pen red
 for i in [1..3]
   fd 100
