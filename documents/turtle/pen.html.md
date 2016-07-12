@@ -42,7 +42,7 @@ demo ->
     p.bk 15
     p.pen null
     p.fd 8
-    p.label 'blueviolet color', 'bottom'
+    p.label 'blueviolet color', 'bottom bottom'
 </script>
 
 <h3>Colors</h3>
