@@ -142,7 +142,7 @@ demo ->
 </script>
 
 
-<h3>Drawing Curves</h3>
+<h3>Drawing Arcs</h3>
 
-`lt` can also be used to draw curves by using a second argument.
-Read the reference page on <a href="curves.html">curves</a>.
+`lt` can also be used to draw arcs by using a second argument.
+Read the reference page on <a href="arcs.html">arcs</a>.
