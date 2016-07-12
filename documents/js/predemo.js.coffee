@@ -102,7 +102,7 @@ $ ->
     link = $('<a class="demo" href="#demo' + j + '">' + caption + '</a>')
       .insertBefore(this)
       .wrap('<p style="text-align:center"></p>')
-      .on 'click', showdemo
+      .on 'load', showdemo
 
 $ ->
   $('script[type=figure]').each (j) ->
