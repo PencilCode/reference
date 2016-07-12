@@ -212,6 +212,7 @@ demo ->
       lt angle/2
       pen red
       
+  slide -25, -25
   pen red
   for i in [1..3]
     fd 100
