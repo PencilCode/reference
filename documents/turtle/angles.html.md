@@ -155,7 +155,7 @@ fd 100
 
 For example, when drawing an equillateral triangle (a triangle with all angles equal to 60 degrees and all sides equal in length), if you use 60 degree angles, it will not turn out correctly. 
 
-<script type="demo" height=200 width=300>
+<script type="figure" height=200 width=300>
 speed 10
 angle1 = 60
 angle2 = 180 - angle1
@@ -188,7 +188,7 @@ fd 100
 </script>
 
 As you can see, using an angle of 60 degrees did not create a triangle. However, if you were to use an angle of 120 degrees, it works. 
-<script type="demo" height=200 width=300>
+<script type="figure" height=200 width=300>
 speed 10
 angle1 = 120
 angle2 = 180 - angle1
