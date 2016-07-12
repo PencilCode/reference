@@ -98,7 +98,19 @@ It is important to note that the angles used by commands (such as [lt](lt.html) 
 
 To draw an (interior) angle of a certain degree, you need to find the exterior angle to use in the code. The exterior angle is equal to 180 degrees minus the desired interior angle. 
 
-For example, when drawing an equillateral triangle (a triangle with all angles equal to 60 degrees and all sides equal in length), if you use 60 degree angles, it will not turn out correctly. 
+Instead of using:
+
+<pre class="jumbo">
+rt 60
+</pre>
+
+like in the example on the left, we need to use: 
+
+<pre class="jumbo">
+rt <span data-dfn="180 - 60">120</span>
+</pre>
+
+The following is an example of the differences between using the interior angle (left) of 60 degrees and the exterior angle (right) of 120 degrees. 
 
 <script type="figure" height=180 width=300>
 speed 10
@@ -141,14 +153,35 @@ drawAngle(angle1)
 fd 100
 </script>
 
-Instead of using:
+For example, when drawing an equillateral triangle (a triangle with all angles equal to 60 degrees and all sides equal in length), if you use 60 degree angles, it will not turn out correctly. 
 
-<pre class="jumbo">
-rt 60
-</pre>
+<script type="figure" height=180 width=300>
+speed 10
+angle1 = 60
+angle2 = 180 - angle1
 
-like in the example on the left, we need to use: 
-
-<pre class="jumbo">
-rt <span data-dfn="180 - 60">120</span>
-</pre>
+drawAngle = (angle) ->
+  plan ->
+    pen mediumpurple, 1
+    fd 50
+    bk 25
+    rt 90
+    rt angle, 25
+    lt 180
+    lt angle/2, 25
+    rt 90
+    pen null
+    fd 20
+    label angle + "°", labelSide: 'centered'
+    bk 45
+    lt angle/2
+    pen red
+    
+pen red
+for i in [1..3]
+  fd 100
+  drawAngle(angle1)
+  rt angle1
+  drawAngle(angle2)
+fd 100
+</script>
