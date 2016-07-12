@@ -98,7 +98,7 @@ It is important to note that the angles used by commands (such as [lt](lt.html) 
 
 To draw an (interior) angle of a certain degree, you need to find the exterior angle to use in the code. The exterior angle is equal to 180 degrees minus the desired interior angle. 
 
-For example, when drawing an equillateral triangle (a triangle with all angles equal to 60 degrees and all side equal in length), if you use 60 degree angles, it will not turn out correctly. 
+For example, when drawing an equillateral triangle (a triangle with all angles equal to 60 degrees and all sides equal in length), if you use 60 degree angles, it will not turn out correctly. 
 
 <script type="predemo" height=180 width=300>
 speed 10
