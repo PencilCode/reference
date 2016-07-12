@@ -4,7 +4,7 @@ description: moves the turtle forward
 layout: reference
 ---
 
-<b>fd</b> moves the turtle forward.
+<b>fd</b> moves the turtle forward. It is the opposite counterpart to [bk](bk.html). 
 
 The distance is measured in pixels.
 
