@@ -51,7 +51,7 @@ It is important to note that the angles used by commands (such as [lt](lt.html) 
 
 For example, when drawing an equillateral triangle (a triangle with all angles equal to 60 degrees and all side equal in length), if you use 60 degree angles, it will not turn out correctly. 
 
-<script>
+<script type="demo">
 demo ->
   speed 10
   angle1 = 60
