@@ -74,7 +74,7 @@ demo ->
       lt angle/2
       pen red
   
-  slide -75, 0
+  slide -75, -75
   pen red
   fd 100
   drawAngle(angle1)
@@ -84,7 +84,7 @@ demo ->
   pen null
   home()
   
-  slide 75, 0
+  slide 75, -75
   pen red
   fd 100
   drawAngle(angle2)
