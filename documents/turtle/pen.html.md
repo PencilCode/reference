@@ -72,29 +72,6 @@ Here are some basic colors that can be used with pen:
 
 For all 140 standard named colors, see [the color table](colors.html).
 
-<h3>Erasing</h3>
-
-There is also special "color" called *erase* that will remove any existing color it passes over. 
-
-<pre class="examp">
-pen red
-fd 50
-home()
-
-pen erase
-fd 50
-</pre>
-
-<script type="demo">
-demo ->
-  pen red
-  fd 50
-  home()
-  
-  pen erase
-  fd 50
-</script>
-
 <h3>Thick Lines</h3>
 
 <b>pen</b> accepts an optional second argument, which is the width of the
@@ -355,5 +332,25 @@ demo ->
 [fill](fill.html) can also be used to fill shapes with solid colors using
 the default <b>fillStyle</b> property.
 
+<h3>Erasing</h3>
 
+There is also special "color" called *erase* that will remove any existing color it passes over. 
 
+<pre class="examp">
+pen red
+fd 50
+home()
+
+pen erase
+fd 50
+</pre>
+
+<script type="demo">
+demo ->
+  pen red
+  fd 50
+  home()
+  
+  pen erase
+  fd 50
+</script>
