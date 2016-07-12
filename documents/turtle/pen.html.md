@@ -347,10 +347,10 @@ fd 50
 
 <script type="demo">
 demo ->
-  pen red
+  pen red, 30
   fd 50
   home()
   
-  pen erase
+  pen erase, 30
   fd 50
 </script>
