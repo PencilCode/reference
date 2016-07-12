@@ -27,7 +27,7 @@ scrollElementIntoViewport = (el, cb, knownheight) ->
     return
   $('body').animate({scrollTop: '+=' + delta}, 'linear', cb)
 
-writeDemoFrame = (frame, code) ->
+writePredemoFrame = (frame, code) ->
   frame.contentWindow.document.write """
     <!doctype html>
     <html>
@@ -49,7 +49,7 @@ writeDemoFrame = (frame, code) ->
     function setup(how) {
       setup.again = how;
     }
-    function demo(how) {
+    function predemo(how) {
       function go() {
         speed(Infinity);
         pen(null);
@@ -88,8 +88,8 @@ $ ->
     code = $(this).text()
     height = $(this).attr('height') || 149
     width = $(this).attr('width') || 199
-    caption = $(this).attr('caption') || 'see a demo'
-    showdemo = (e) ->
+    caption = $(this).attr('caption') || 'see a predemo'
+    showpredemo = (e) ->
       if e then e.preventDefault()
       linkheight = link.height()
       frame = $('<iframe class="predemo">')
@@ -97,12 +97,12 @@ $ ->
         .css({height: linkheight, width:width})
         .animate({height: height})
         .queue (next) ->
-          writeDemoFrame this, code
+          writePredemoFrame this, code
       scrollElementIntoViewport frame, null, height
     link = $('<a class="predemo" href="#predemo' + j + '">' + caption + '</a>')
       .insertBefore(this)
       .wrap('<p style="text-align:center"></p>')
-      .on 'load', showdemo
+      .on 'load', showpredemo
 
 $ ->
   $('script[type=figure]').each (j) ->
@@ -113,4 +113,4 @@ $ ->
       .css({height: height, width:width})
       .insertBefore(this)
       .wrap('<p style="text-align:center"></p>')
-    writeDemoFrame frame.get(0), code
+    writePredemoFrame frame.get(0), code
