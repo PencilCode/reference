@@ -84,7 +84,7 @@ writeDemoFrame = (frame, code) ->
   frame.contentWindow.document.close()
 
 $ ->
-  $('script[type=demo]').each (j) ->
+  $('script[type=predemo]').each (j) ->
     code = $(this).text()
     height = $(this).attr('height') || 149
     width = $(this).attr('width') || 199
@@ -92,14 +92,14 @@ $ ->
     showdemo = (e) ->
       if e then e.preventDefault()
       linkheight = link.height()
-      frame = $('<iframe class="demo">')
+      frame = $('<iframe class="predemo">')
         .replaceAll(link)
         .css({height: linkheight, width:width})
         .animate({height: height})
         .queue (next) ->
           writeDemoFrame this, code
       scrollElementIntoViewport frame, null, height
-    link = $('<a class="demo" href="#demo' + j + '">' + caption + '</a>')
+    link = $('<a class="predemo" href="#predemo' + j + '">' + caption + '</a>')
       .insertBefore(this)
       .wrap('<p style="text-align:center"></p>')
       .on 'load', showdemo
@@ -109,7 +109,7 @@ $ ->
     code = $(this).text()
     height = $(this).attr('height') || 149
     width = $(this).attr('width') || 199
-    frame = $('<iframe class="demo">')
+    frame = $('<iframe class="predemo">')
       .css({height: height, width:width})
       .insertBefore(this)
       .wrap('<p style="text-align:center"></p>')
