@@ -132,7 +132,7 @@ fd 100
 pen null
 home()
 
-slide 25, -75
+slide 50, -75
 pen red
 fd 100
 drawAngle(angle2)
