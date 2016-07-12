@@ -6,7 +6,7 @@ section: basic
 refOrder: 4
 ---
 
-<b>bk</b> tells the turtle to move backward.
+<b>bk</b> tells the turtle to move backward. It has the opposite effect from [fd](fd.html). 
 
 The distance is measured in pixels.
 
