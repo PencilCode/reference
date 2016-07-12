@@ -100,7 +100,7 @@ To draw an (interior) angle of a certain degree, you need to find the exterior a
 
 For example, when drawing an equillateral triangle (a triangle with all angles equal to 60 degrees and all sides equal in length), if you use 60 degree angles, it will not turn out correctly. 
 
-<script type="demo" height=180 width=300>
+<script type="figure" height=180 width=300>
 speed 10
 angle1 = 60
 angle2 = 180 - angle1
