@@ -334,7 +334,7 @@ the default <b>fillStyle</b> property.
 
 <h3>Erasing</h3>
 
-There is also special "color" called *erase* that will remove any existing color it passes over. 
+There is also special "color" called _erase_ that will remove any existing color it passes over. 
 
 <pre class="examp">
 pen red
