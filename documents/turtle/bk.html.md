@@ -104,7 +104,11 @@ demo ->
 
 <h3>Turtle Distances</h3>
 
-<b>bk 100</b> moves about an inch on a typical screen, because
+<pre class="jumbo">
+bk &nbsp;<span data-dfn="distance">100</span>
+</pre>
+
+moves about an inch on a typical screen, because
 most computers fit about 100 pixels in an inch.  The graph paper
 background is equivalent to a 1/4 inch grid: it has one square per
 25 pixels.
