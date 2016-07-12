@@ -105,7 +105,7 @@ demo ->
 <h3>Turtle Distances</h3>
 
 <pre class="jumbo">
-bk &nbsp;<span data-dfn="distance">100</span>
+bk <span data-dfn="distance">100</span>
 </pre>
 
 moves about an inch on a typical screen, because
