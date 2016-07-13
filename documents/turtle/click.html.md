@@ -18,7 +18,7 @@ click (<span data-dfn="position">e</span>) ->
   #...</span>
 </pre>
 
-`e` is the location the mouse was clicked. This can be used as a location in commands such as [moveto](moveto.html), [jumpto](jumpto.html), [turnto](turnto.html), etc.
+* `e` is the location the mouse was clicked. This can be used as a location in commands such as [moveto](moveto.html), [jumpto](jumpto.html), [turnto](turnto.html), etc.
 
 <code>click</code> preforms as a standard function, but cannot be called within the code and cannot be given a specific input. It is only called when the user clicks the mouse. The corresponding action can be anything you like, e.g. exit a program, run a script, draw something. 
 
