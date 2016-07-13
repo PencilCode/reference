@@ -23,7 +23,7 @@ Any text following the `#` on the same line is ignored by the program and is not
 Unlike inline comments, block comments affect all lines until they are stopped by another block comment delimiter. 
 
 <code class="jumbo">
-<span data-dfnright="block comment delimiter">\#\#\#</span>
+<span data-dfnup="block comment delimiter">\#\#\#</span>
 This is a
 block comment
 \#\#\#
