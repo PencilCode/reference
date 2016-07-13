@@ -4,6 +4,8 @@ description: the syntax of Pencil Code
 layout: reference
 ---
 
+Info: [Coffeescript Syntax](https://arcturo.github.io/library/coffeescript/02_syntax.html)
+
 ###Inline and Block Comments
 
 Comments are used to write plain text into code without breaking the original code. They can be used to help users understand how the code works or to explain how to use it (such as the controls). 
