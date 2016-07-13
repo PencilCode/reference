@@ -5,16 +5,27 @@ layout: reference
 ---
 
 <!-- size of canvas - e.g. width=249 height=99  -->
-<code>click</code> is an event-handler function. When a user clicks on the screen with a  mouse, a function is called and an action performed.
+<code>click</code> is an event-handler function. When a user clicks on the screen with the mouse, a function is called and an action is performed.
 ---
-<code>click</code> requires an input to perform a function, i.e. a mouse click. The corresponding action can be anything you like, e.g. exit a program, run a script, draw something. 
+
+###Syntax
+
+<pre class="examp">
+click (<span data-dfn="position">e</span>) -> 
+  <span data-dfnright="code to run">#line 1
+  #line 2
+  #line 3
+  #...</span>
+</pre>
+
+<code>click</code> preforms as a standard function, but cannot be called and cannot be given a specific input. It is only called when the user clicks the mouse. The corresponding action can be anything you like, e.g. exit a program, run a script, draw something. 
 
 <!-- blurb about functions  -->
 In this example, clicking on the screen moves the turtle to that position.
 
 Notice that we have specified <code>speed Infinity</code> in order to keep up with the speed of the mouse clicks.  
 
-<pre class="examp" >
+<pre class="examp">
   speed Infinity
   click <span data-dfn="function">(e)</span> -> moveto e
 </pre>
