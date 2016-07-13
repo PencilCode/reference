@@ -12,13 +12,14 @@ layout: reference
 
 <pre class="examp">
 click (<span data-dfn="position">e</span>) -> 
-  <span data-dfnright="code to run">#line 1
+  <span data-dfnright="code to run">
+  #line 1
   #line 2
   #line 3
   #...</span>
 </pre>
 
-<code>click</code> preforms as a standard function, but cannot be called and cannot be given a specific input. It is only called when the user clicks the mouse. The corresponding action can be anything you like, e.g. exit a program, run a script, draw something. 
+<code>click</code> preforms as a standard function, but cannot be called within the code and cannot be given a specific input. It is only called when the user clicks the mouse. The corresponding action can be anything you like, e.g. exit a program, run a script, draw something. 
 
 <!-- blurb about functions  -->
 In this example, clicking on the screen moves the turtle to that position.
