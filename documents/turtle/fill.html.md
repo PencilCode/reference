@@ -6,7 +6,7 @@ section: drawing
 refOrder: 8
 ---
 
-<pre>Formatting Test</pre>
+There is a <code>formatting test</code> in progress!
 
 `fill` can be used to fill a shape after it is drawn
 
