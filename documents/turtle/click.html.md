@@ -5,7 +5,7 @@ layout: reference
 ---
 
 <!-- size of canvas - e.g. width=249 height=99  -->
-<code>click</code> is an event-handler function. When a user clicks on the screen with the mouse, a function is called and an action is performed.
+<code>click</code> is an [event-handler](event.html) function. When a user clicks on the screen with the mouse, a function is called and an action is performed.
 ---
 
 ###Syntax
