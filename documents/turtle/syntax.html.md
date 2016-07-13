@@ -35,6 +35,12 @@ This is useful for creating a long explanation at the beginning of a file.
 
 Functions can be used to represent a piece of code that can be run simply by writing the name of the function, along with optional inputs if so desired. 
 
+There are two ways of creating a function. The first one is almost exclusively for use in situations where you can only have one line of code or the new line character is unavailable (such as the terminal). 
+
+<code class="examp">
+<span data-dfnup="name">myFunction</span> = (<span data-dfnup="inputs">v1, v2, v3</span>) -> line 1<span data-note="line seperator">;</code> line 2; line 3; ...
+</code>
+
 <code class="examp">
 <span data-dfnup="name">myFunction</span> = (<span data-dfnup="inputs">v1, v2, v3</span>) -> 
   line 1
