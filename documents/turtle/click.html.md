@@ -12,8 +12,7 @@ layout: reference
 
 <pre class="examp">
 click (<span data-dfn="position">e</span>) -> 
-  <span data-dfnright="code to run">
-  #line 1
+  <span data-dfnright="code to run">  #line 1
   #line 2
   #line 3
   #...</span>
