@@ -6,6 +6,8 @@ section: drawing
 refOrder: 8
 ---
 
+<pre>Formatting Test</pre>
+
 `fill` can be used to fill a shape after it is drawn
 
 <pre class="jumbo">
