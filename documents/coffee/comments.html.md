@@ -18,7 +18,7 @@ Any text following the `#` on the same line is ignored by the program and is not
 
 For example: 
 
-<pre class='jumbo'>
+<pre class='examp'>
 box = (size) -> #Draws a black box of a specified size
   rt 180
   fd .5 * size
