@@ -109,20 +109,20 @@ The Pencil Code editor has quite a few keyboard shortcuts available to use. Some
 
 ## Other
 
-| Windows/Linux                    | Mac                              | Action                           |
-|----------------------------------|----------------------------------|----------------------------------|
-| Tab                              | Tab                              | Indent                           |
-| Shift+Tab                        | Shift+Tab                        | Outdent                          |
-| Ctrl+Z                           | Command+Z                        | Undo                             |
-| Ctrl+Shift+Z, Ctrl+Y             | Command+Shift+Z, Command+Y       | Redo                             |
-| Ctrl+,                           | Command+,                        | Show the settings menu           |
-| Ctrl+/                           | Command+/                        | Toggle comment                   |
-| Ctrl+T                           | Ctrl+T                           | Transpose letters                |
-| Ctrl+Enter                       | Command+Enter                    | Enter full screen                |
-| Ctrl+Shift+U                     | Ctrl+Shift+U                     | Change to lower case             |
-| Ctrl+U                           | Ctrl+U                           | Change to upper case             |
-| Insert                           | Insert                           | Overwrite                        |
-| Ctrl+Shift+E                     | Command+Shift+E                  | Macros replay                    |
-| Ctrl+Alt+E                       | ---                              | Macros recording                 |
-| Delete                           | ---                              | Delete                           |
-| ---                              | Ctrl+L                           | Center selection                 |
+| Windows/Linux           | Mac                        | Action                 |
+|-------------------------|----------------------------|------------------------|
+| Tab, Ctrl+]             | Tab                        | Indent                 |
+| Shift+Tab, Ctrl+Shift+[ | Shift+Tab                  | Outdent                |
+| Ctrl+Z                  | Command+Z                  | Undo                   |
+| Ctrl+Shift+Z, Ctrl+Y    | Command+Shift+Z, Command+Y | Redo                   |
+| Ctrl+,                  | Command+,                  | Show the settings menu |
+| Ctrl+/                  | Command+/                  | Toggle comment         |
+| Ctrl+T                  | Ctrl+T                     | Transpose letters      |
+| Ctrl+Enter              | Command+Enter              | Enter full screen      |
+| Ctrl+Shift+U            | Ctrl+Shift+U               | Change to lower case   |
+| Ctrl+U                  | Ctrl+U                     | Change to upper case   |
+| Insert                  | Insert                     | Overwrite              |
+| Ctrl+Shift+E            | Command+Shift+E            | Macros replay          |
+| Ctrl+Alt+E              | ---                        | Macros recording       |
+| Delete                  | ---                        | Delete                 |
+| ---                     | Ctrl+L                     | Center selection       |
