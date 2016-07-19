@@ -7,6 +7,7 @@ layout: reference
 The Pencil Code editor has quite a few keyboard shortcuts available to use. Some you may already know, but others will be completely new. 
 ### Line Operations
 
+
 | Windows/Linux  | Mac                                     | Action              |
 |----------------|-----------------------------------------|---------------------|
 | Ctrl-D         | Command-D                               | Remove line         |
@@ -22,6 +23,7 @@ The Pencil Code editor has quite a few keyboard shortcuts available to use. Some
 
 
 ### Selection
+
 
 | Windows/Linux    | Mac                 | Action                     |
 |------------------|---------------------|----------------------------|
@@ -46,6 +48,7 @@ The Pencil Code editor has quite a few keyboard shortcuts available to use. Some
 
 ### Multicursors
 
+
 | Windows/Linux                    | Mac                              | Action                                                              |
 |----------------------------------|----------------------------------|---------------------------------------------------------------------|
 | :------------------------------- | :------------------------------- | :-------------------------------                                    |
@@ -61,6 +64,7 @@ The Pencil Code editor has quite a few keyboard shortcuts available to use. Some
 
 
 ### Moving the Cursor
+
 
 | Windows/Linux                    | Mac                              | Action                           |
 |----------------------------------|----------------------------------|----------------------------------|
@@ -87,6 +91,7 @@ The Pencil Code editor has quite a few keyboard shortcuts available to use. Some
 
 ### Find and Replace
 
+
 | Windows/Linux                    | Mac                              | Action                           |
 |----------------------------------|----------------------------------|----------------------------------|
 | :------------------------------- | :------------------------------- | :------------------------------- |
@@ -98,6 +103,7 @@ The Pencil Code editor has quite a few keyboard shortcuts available to use. Some
 
 ### Folding
 
+
 | Windows/Linux                    | Mac                                      | Action                           |
 |----------------------------------|------------------------------------------|----------------------------------|
 | :------------------------------- | :-------------------------------         | :------------------------------- |
@@ -108,6 +114,7 @@ The Pencil Code editor has quite a few keyboard shortcuts available to use. Some
 
 
 ### Other
+
 
 | Windows/Linux                    | Mac                              | Action                           |
 |----------------------------------|----------------------------------|----------------------------------|
