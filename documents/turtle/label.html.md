@@ -19,7 +19,7 @@ demo ->
 </script>
 
 The text of a label is a <a href="/coffeescript/strings.html">string</a>, so it should be
-quoted.  The string may contain <a href="html.html">HTML</a>.
+quoted.  The string may contain [HTML](http://www.w3schools.com/html/default.asp).
 
 <h3>Bigger Labels</h3>
 
