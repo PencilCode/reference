@@ -20,12 +20,12 @@ click (<span data-dfn="position">e</span>) ->
 
 * `e` is the location the mouse was clicked. This can be used as a location in commands such as [moveto](moveto.html), [jumpto](jumpto.html), [turnto](turnto.html), etc.
 
-<code>click</code> preforms as a standard function, but cannot be called within the code and cannot be given a specific input. It is only called when the user clicks the mouse. The corresponding action can be anything you like, e.g. exit a program, run a script, draw something. 
+`click` preforms like a regular function, but it cannot be called within the code and cannot be given a specific input. It is only called when the user clicks the mouse. The corresponding action can be anything you like, e.g. exit a program, run a script, draw something. 
 
 <!-- blurb about functions  -->
-In this example, clicking on the screen moves the turtle to that position.
+In this example, clicking on the screen moves the turtle to the position that was clicked.
 
-Notice that we have specified <code>speed Infinity</code> in order to keep up with the speed of the mouse clicks.  
+Notice that we have specified `speed Infinity` in order to keep up with the speed of the mouse clicks.  
 
 <pre class="examp">
   speed Infinity
