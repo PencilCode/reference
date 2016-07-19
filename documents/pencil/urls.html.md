@@ -38,10 +38,10 @@ and link to those services using absolute URLs.
 
 When saving your data, rememember to follow the Pencil Code
 [terms of service](//pencilcode.net/terms.html).
-In particular, do not flood the service with more than a megabytes
-of data: Pencil Code is not a bulks storage service, and using it as
+In particular, do not flood the service with more than a megabyte
+of data: Pencil Code is not a bulk storage service, and using it as
 one would unfairly deny resources to other students.  If you try to
-host spam or copyrighted content or bulk data that is too large,
+host spam or copyrighted content or bulk data that are too large,
 we may remove the data, or limit or block access.
 
 Pencil Code is good for storing small text or data files for your
