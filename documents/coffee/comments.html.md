@@ -4,7 +4,7 @@ description: words with no meaning
 layout: reference
 ---
 
-CoffeeScript, like most other programming languages, has two ways of creating comments: inline comments and block comments
+CoffeeScript, like many other programming languages, has two ways of creating comments: inline comments and block comments
 
 ###Inline Comments
 
