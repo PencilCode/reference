@@ -33,7 +33,7 @@ Notice that we have specified `speed Infinity` in order to keep up with the spee
 </pre>
 
 <!-- why doesn't it like it if I keep move etc. on next row -->
-<script>
+<script type="figure">
 label "Click anywhere on the cavas to try the code out", 'top'
 speed Infinity
 click (e) -> moveto e
