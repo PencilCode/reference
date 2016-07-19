@@ -52,7 +52,6 @@ The Pencil Code editor has quite a few keyboard shortcuts available to use. Some
 
 | Windows/Linux                    | Mac                              | Action                                                              |
 |----------------------------------|----------------------------------|---------------------------------------------------------------------|
-| :------------------------------- | :------------------------------- | :-------------------------------                                    |
 | Ctrl-Alt-Up                      | Ctrl-Option-Up                   | Add multicursor above                                               |
 | Ctrl-Alt-Down                    | Ctrl-Option-Down                 | Add multicursor below                                               |
 | Ctrl-Alt-Right                   | Ctrl-Option-Right                | Add next occurrence to multi-selection                              |
@@ -68,7 +67,6 @@ The Pencil Code editor has quite a few keyboard shortcuts available to use. Some
 
 | Windows/Linux                    | Mac                              | Action                           |
 |----------------------------------|----------------------------------|----------------------------------|
-| :------------------------------- | :------------------------------- | :------------------------------- |
 | Left                             | Left, Ctrl-B                     | Go to left                       |
 | Right                            | Right, Ctrl-F                    | Go to right                      |
 | Ctrl-Left                        | Option-Left                      | Go to word left                  |
@@ -93,7 +91,6 @@ The Pencil Code editor has quite a few keyboard shortcuts available to use. Some
 
 | Windows/Linux                    | Mac                              | Action                           |
 |----------------------------------|----------------------------------|----------------------------------|
-| :------------------------------- | :------------------------------- | :------------------------------- |
 | Ctrl-F                           | Command-F                        | Find                             |
 | Ctrl-H                           | Command-Option-F                 | Replace                          |
 | Ctrl-K                           | Command-G                        | Find next                        |
@@ -104,7 +101,6 @@ The Pencil Code editor has quite a few keyboard shortcuts available to use. Some
 
 | Windows/Linux                    | Mac                                      | Action                           |
 |----------------------------------|------------------------------------------|----------------------------------|
-| :------------------------------- | :-------------------------------         | :------------------------------- |
 | Alt-L, Ctrl-F1                   | Command-Option-L, Command-F1             | Fold selection                   |
 | Alt-Shift-L, Ctrl-Shift-F1       | Command-Option-Shift-L, Command-Shift-F1 | Unfold                           |
 | Alt-0                            | Command-Option-0                         | Fold all                         |
@@ -115,7 +111,6 @@ The Pencil Code editor has quite a few keyboard shortcuts available to use. Some
 
 | Windows/Linux                    | Mac                              | Action                           |
 |----------------------------------|----------------------------------|----------------------------------|
-| :------------------------------- | :------------------------------- | :------------------------------- |
 | Tab                              | Tab                              | Indent                           |
 | Shift-Tab                        | Shift-Tab                        | Outdent                          |
 | Ctrl-Z                           | Command-Z                        | Undo                             |
