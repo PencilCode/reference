@@ -19,7 +19,7 @@ Any text following the `#` on the same line is ignored by the program and is not
 For example: 
 
 <pre class='examp'>
-box = (size) -> #Draws a black box of a specified size
+box = (size) -> <span data-dfnup="this inline comment is ignored when running the code">#Draws a black box of a specified size
   rt 180
   fd .5 * size
   rt 90
