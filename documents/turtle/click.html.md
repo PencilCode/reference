@@ -39,7 +39,21 @@ speed Infinity
 click (e) -> moveto e
 </script>
 
-### WIP
+But `click` does not have to use the location of the mouse at all. In the following example, the location clicked is irrelevant (as long as it's on the canvas, of course). 
+
+<script type="figure">
+speed Infinity
+ht()
+a = 0
+dot lightblue, 10000
+label a, { fontSize: 60, fontFamily: "Consolas" }
+click ->
+  cs()
+  dot lightblue, 10000
+  a += 1
+  label a, { fontSize: 60, fontFamily: "Consolas" }
+</script>
+
 <!-- another example, see: http://activity.pencilcode.net/home/worksheet/clickmove.html -->
 
 <!-- blurb about naming functions   -->
