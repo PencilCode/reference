@@ -41,6 +41,21 @@ click (e) -> moveto e
 
 But `click` does not have to use the location of the mouse at all. In the following example, the location clicked is irrelevant (as long as it's on the canvas, of course). 
 
+The following example counts the number of times the mouse is clicked, regardless of location. 
+
+<pre class="examp">
+speed Infinity
+ht()
+a = 0
+dot lightblue, 10000
+label a, { fontSize: 60, fontFamily: "Consolas" }
+click ->
+  cs()
+  dot lightblue, 10000
+  a += 1
+  label a, { fontSize: 60, fontFamily: "Consolas" }
+</pre>
+
 <script type="figure">
 speed Infinity
 ht()
