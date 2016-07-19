@@ -9,7 +9,7 @@ refOrder: 0
 The turtle starts in the middle of the window, at (x, y) coordinates
 (0, 0).
 
-<code>jumpto x, y</code> jumps to an absolute location in
+`jumpto x, y` jumps to an absolute location in
 traditional Cartesian coordinates.  In this coordinate system,
 Each unit is one pixel, and each graph paper grid square is 25 units.
 The mathematical coordinate axes are used, placing (0, 0)
@@ -25,7 +25,7 @@ p = new Pencil
 p.cross = ->
   @pen black, 0.7
   @jump -5, 0
-  @move 10
+  @slide 10
   @jump -5, -5
   @fd 10
   @jump 0, -5
