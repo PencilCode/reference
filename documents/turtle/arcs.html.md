@@ -14,7 +14,7 @@ lt <span data-dfn="angle">135</span>, <span data-dfn="radius">60</span>
 
 <iframe src="http://david.pencilcode.net/home/explainer/curves" width="600" height="500" style="border:none"></iframe>
 
-An arc can even have any value as an angle. An angle of 360 degrees creates a circle. 
+An arc can have any value as an angle, even negative values. An angle of 360 degrees creates a circle. 
 
 <pre class="jumbo">
 rt 360, 50
