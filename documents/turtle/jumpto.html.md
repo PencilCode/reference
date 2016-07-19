@@ -316,7 +316,7 @@ demo ->
     jumpto lastmouse, 10
 </script>
 
-In all these uses, `moveto` moves the turtle without changing
+In all these uses, `jumpto` moves the turtle without changing
 its direction.
 
-If you want to draw lines between points, use `moveto` with a pen.
+If you want to draw lines between points, use `jumpto` with a pen.
