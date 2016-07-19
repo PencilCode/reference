@@ -114,7 +114,7 @@ The Pencil Code editor has quite a few keyboard shortcuts available to use. Some
 | Tab                  | Tab                        | Indent                 |
 | Shift+Tab            | Shift+Tab                  | Outdent                |
 | Ctrl+]               | Command+]                  | Indent selected lines  |
-| Ctrl+Shift+[         | Command+[                  | Outdent selected lines |
+| Ctrl+Shift+[         | Command+Shift+[            | Outdent selected lines |
 | Ctrl+Z               | Command+Z                  | Undo                   |
 | Ctrl+Shift+Z, Ctrl+Y | Command+Shift+Z, Command+Y | Redo                   |
 | Ctrl+,               | Command+,                  | Show the settings menu |
