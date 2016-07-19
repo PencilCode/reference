@@ -16,8 +16,8 @@ The mathematical coordinate axes are used, placing (0, 0)
 at the middle with x increasing to the right (horizontally) and y increasing upward (vertically).
 
 A vector represented as an array of two numbers can be used.
-<code>jumpto [x, y]</code> is treated the same as
-<code>jumpto x, y</code>.
+`jumpto [x, y]` is treated the same as
+`jumpto x, y`.
 
 <script type="figure" width=299 height=249>
 turtle.css opacity: 0.3, turtlePenStyle: silver, turtlePenDown: true
@@ -81,9 +81,9 @@ click (e) ->
 
 ### Drawing while Jumping
 
-<code>jumpto</code> will jump to a location without drawing. You can use the function [moveto](moveto.html) with a pen to draw lines between points. 
+`jumpto` will jump to a location without drawing. You can use the function [moveto](moveto.html) with a pen to draw lines between points. 
 
-<code>jumpto</code> does not affect the
+`jumpto` does not affect the
 turtle rotation, only its position.
 
 </script>
@@ -106,7 +106,7 @@ p = new Pencil
 p.cross = ->
   @pen black, 0.7
   @jump -5, 0
-  @move 10
+  @slide 10
   @jump -5, -5
   @fd 10
   @jump 0, -5
@@ -148,8 +148,8 @@ demo ->
 
 The native coordinate system supported by HTML follows a different
 convention: it places the (pageX, pageY) origin at the upper-left corner
-of the page.  <code>pageX</code> increases to the right, but
-<code>pageY</code> is inverted: <code>pageY</code> increases going down.
+of the page.  `pageX` increases to the right, but
+`pageY` is inverted: `pageY` increases going down.
 
 <script type="figure" width=299 height=249>
 turtle.css opacity: 0.3, turtlePenStyle: silver, turtlePenDown: true
@@ -157,7 +157,7 @@ p = new Pencil
 p.cross = ->
   @pen black, 0.7
   @jump -5, 0
-  @move 10
+  @slide 10
   @jump -5, -5
   @fd 10
   @jump 0, -5
@@ -209,14 +209,14 @@ click (e) ->
   jumpto e
 </script>
 
-<code>jumpto</code> supports native HTML coordinates if they are passed
-with the <code>pageX</code> and <code>pageY</code> properties.  Note
+`jumpto` supports native HTML coordinates if they are passed
+with the `pageX` and `pageY` properties.  Note
 that HTML mouse events all have pageX and pageY properties, so
-<code>jumpto lastclick</code> will jump to the location of the last
+`jumpto lastclick` will jump to the location of the last
 mouse click.
 
 <!-- or better way to demonstrate? -->
-Replay the demo to see how <code>jumpto lastclick</code> works. 
+Replay the demo to see how `jumpto lastclick` works. 
 
 <pre class="examp">
 jumpto pageX: 50, pageY: 100
@@ -235,7 +235,7 @@ p = new Pencil
 p.cross = ->
   @pen black, 0.7
   @jump -5, 0
-  @move 10
+  @slide 10
   @jump -5, -5
   @fd 10
   @jump 0, -5
@@ -268,27 +268,27 @@ demo ->
 
 ### Other Locations
 
-<code>jumpto</code> will also jump to any element or jQuery object or
+`jumpto` will also jump to any element or jQuery object or
 any other object that supports a pagexy() method that returns page
-coordinates.  For example <code>jumpto otherturtle</code> will jump
+coordinates.  For example `jumpto otherturtle` will jump
 to the location of another turtle.
 
 Here is a summary of some types of locations that
-<code>jumpto</code> understands.
+`jumpto` understands.
 
 | example       | motion                                                       |
 |---------------|--------------------------------------------------------------|
-| <code>jumpto x, y</code> | jump to (x, y) in traditional mathematical y-up coordinates. |
-| <code>jumpto [x, y]</code> | same as <code>jumpto x, y</code> |
-| <code>jumpto pageX: px, pageY: py</code> | jump using HTML page coordinates. |
-| <code>jumpto lastmouse</code> | jump to the location of the last mouse event.|
-| <code>jumpto otherturtle</code> | jump to another turtle. |
-| <code>jumpto $('#spot')</code> | jump to the element with id spot. |
-| <code>jumpto document</code> | jump to the center of the document. |
-| <code>jumpto window</code> | jump to the center of the visible window. |
+| `jumpto x, y` | jump to (x, y) in traditional mathematical y-up coordinates. |
+| `jumpto [x, y]` | same as `jumpto x, y` |
+| `jumpto pageX: px, pageY: py` | jump using HTML page coordinates. |
+| `jumpto lastmouse` | jump to the location of the last mouse event.|
+| `jumpto otherturtle` | jump to another turtle. |
+| `jumpto $('#spot')` | jump to the element with id spot. |
+| `jumpto document` | jump to the center of the document. |
+| `jumpto window` | jump to the center of the visible window. |
 
 ### Limiting Motion
-When passing a single location object to <code>jumpto</code>, it supports
+When passing a single location object to `jumpto`, it supports
 an optional second argument limiting the distance of the motion.  When the
 second argument is given, the turtle will jump towards the location, but
 no farther than the limiting distance in pixels.
@@ -316,7 +316,7 @@ demo ->
     jumpto lastmouse, 10
 </script>
 
-In all these uses, <code>moveto</code> moves the turtle without changing
+In all these uses, `moveto` moves the turtle without changing
 its direction.
 
-If you want to draw lines between points, use <code>moveto</code> with a pen.
+If you want to draw lines between points, use `moveto` with a pen.
