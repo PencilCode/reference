@@ -39,7 +39,7 @@ speed Infinity
 click (e) -> moveto e
 </script>
 
-But `click` does not have to use the location of the mouse at all. In the following example, the location clicked is irrelevant (as long as it's on the canvas, of course). 
+But `click` does not have to use the location of the mouse at all. 
 
 The following example counts the number of times the mouse is clicked, regardless of location. 
 
