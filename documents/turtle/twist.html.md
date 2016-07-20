@@ -34,7 +34,7 @@ e = new Sprite
 e.wear "<span data-dfn="image url">https://i.imgur.com/nUx9V2u.png</span>"
 </pre>
 
-<script type="figure" height=300 width=100>
+<script type="figure" height=100 width=300>
 speed Infinity
 ht()
 e = new Sprite
@@ -45,3 +45,26 @@ e.scale .25
 Although this may look right, the sprite is actually still facing upwards. If you use [`fd`](fd.html) to move the ship forward, it looks like the ship moves up, not forward. Of course, we want it to look like it moves forward. 
 
 We can do this by adding `e.twist -90` after `e.scale .25`. 
+
+<script type="demo">
+speed Infinity
+ht()
+
+button 'Without twist', ->
+  cs()
+  e = null
+  e = new Sprite
+  e.wear "https://i.imgur.com/nUx9V2u.png"
+  e.scale .25
+  speed 1
+  e.fd 100
+
+button 'With twist', ->
+  cs()
+  e = new Sprite
+  e.wear "https://i.imgur.com/nUx9V2u.png"
+  e.scale .25
+  e.twist -90
+  speed 1
+  e.fd 100
+</script>
