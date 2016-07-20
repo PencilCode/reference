@@ -46,7 +46,9 @@ Although this may look right, the sprite is actually still facing upwards. If yo
 
 We can do this by adding `e.twist -90` after `e.scale .25`. 
 
-<script type="demo" width=400 height=400>
+Below is an example of before and after using `twist`. 
+
+<script type="figure" width=400 height=400>
 speed Infinity
 ht()
 
