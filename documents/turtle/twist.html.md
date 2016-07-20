@@ -12,7 +12,7 @@ For example, say you wanted to use the image below in your code.
   display: block;
   margin: auto;">
 
-You'd probably want it to be horizontal, not vertical. First you need to import the image into your code using the [wear](wear.html) command. 
+You'd probably want it to be horizontal, not vertical. First you need to import the image into your code using [`wear`](wear.html). 
 
 <pre class="jumbo">
 e = new Sprite
@@ -27,4 +27,4 @@ e.wear "https://i.imgur.com/PhKFPpt.png"
 e.scale .25
 </script>
 
-Now, if you use `fd` to move the ship forward, it looks like the ship moves up, not forward. Of course, we want it to look like it moves forward, and while you can use [`slide`](slide.html) to 
+Now, if you use [`fd`](fd.html) to move the ship forward, it looks like the ship moves up, not forward. Of course, we want it to look like it moves forward, and while you can use [`slide`](slide.html) to 
