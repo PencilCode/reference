@@ -13,7 +13,7 @@ anobject.twist <span data-dfnup="angle">40</span>
 </pre>
 
   * `anobject` is the name of the object being modified
-  * `twist` acts like [`rt`](rt.html) and rotates the graphic clockwise
+  * `twist` acts like [`rt`](rt.html) and rotates the graphic clockwise the given number of degrees. To rotate it counterclockwise, simply use a negative angle. 
 
 In this case, the graphic would be rotated 40 degrees clockwise. 
 
