@@ -27,4 +27,4 @@ e.wear "https://i.imgur.com/PhKFPpt.png"
 e.scale .25
 </script>
 
-Now, if you use [`fd`](fd.html) to move the ship forward, it looks like the ship moves up, not forward. Of course, we want it to look like it moves forward, and while you can use [`slide`](slide.html) to 
+Now, if you use [`fd`](fd.html) to move the ship forward, it looks like the ship moves up, not forward. Of course, we want it to look like it moves forward, and while you can use [`slide`](slide.html) to move it, this becomes difficult to use once you start rotating the ship, as you would have to calculate the proper movement vector. 
