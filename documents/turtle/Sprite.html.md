@@ -56,11 +56,11 @@ In the next example, we create `paul`, an ant and `penny`, a breadcrumb.
 <!--- http://gym.pencilcode.net/draw/ant.html - make the ant eat the breadcrumb -->
 
 <pre class="examp">
-<span data-dfnright="for paul">r = new Sprite red
+<span data-dfnright="for paul">paul = new Sprite red
 paul.rt 90
 paul.lt 180, 50</span>
 
-<span data-dfnright="for penny">b = new Sprite gray
+<span data-dfnright="for penny">penny = new Sprite gray
 penny.lt 90
 penny.rt 180, 50</span>
 </pre>
@@ -75,10 +75,10 @@ setup ->
   penny = new Sprite gray
   penny.jump 0, -50
 demo ->
-  r.pause 1
-  b.pause 1
-  r.rt 90
-  r.lt 180, 50
-  b.lt 90
-  b.rt 180, 50
+  paul.pause 1
+  penny.pause 1
+  paul.rt 90
+  paul.lt 180, 50
+  penny.lt 90
+  penny.rt 180, 50
 </script>
