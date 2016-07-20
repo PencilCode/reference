@@ -44,4 +44,4 @@ demo ->
     width: 75
 </script>
 
-Sprites can be used as new actors when creating [animations](animation.html)
+Sprites can be used as new actors when creating [animations](animation.html). 
