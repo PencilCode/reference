@@ -25,6 +25,13 @@ When creating the object, various [CSS](http://www.w3schools.com/css/default.asp
 | width    | a positive number                     | Changes the width of the object. Can make a turtle appear distorted.                                                |
 | height   | a positive number                     | Changes the height of the object. Can make a turtle appear distorted.                                               |
 
+Other useful commands include: 
+
+| Command               | Function                                                     |
+|-----------------------|--------------------------------------------------------------|
+| [`wear`](wear.html)   | changes the color of an object, or makes it display an image |
+| [`twist`](twist.html) | rotates the graphic of an object                             |
+
 ## Timing
 
 Timing is key in animation, but sometimes it can be hard to get everything timed perfectly. 
