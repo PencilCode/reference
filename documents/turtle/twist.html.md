@@ -12,5 +12,5 @@ speed Infinity
 enterprise = new Sprite
 enterprise.wear 'http://i.imgur.com/MNynqth.png'
 enterprise.scale .25
-enterprise.twist 90
+enterprise.twist -90
 </script>
