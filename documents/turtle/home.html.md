@@ -12,7 +12,7 @@ layout: reference
 <pre class="examp">
 jumpto 0, 0
 turnto 0
-scale 1/<span data-dfnright="the amount the object has already been scaled">x</span>
+scale 1/<span data-dfnup="the amount the object has already been scaled">x</span>
 </pre>
 
 `home` can be used to make symmetrical shapes and graphics.
