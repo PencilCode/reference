@@ -4,7 +4,7 @@ description: writes text under the turtle
 layout: reference
 ---
 
-<b>label</b> writes text at the turtle position.
+`label` writes text at the turtle position.
 
 <code class="jumbo">label <span data-dfnup="quote">'</span><span data-dfn="text">You are here.</span><span data-dfnup="quote">'</span></code>
 
@@ -18,7 +18,7 @@ demo ->
     opacity: .3
 </script>
 
-The text of a label is a <a href="/coffeescript/strings.html">string</a>, so it should be
+The text of a label is a <a href="/coffee/strings.html">string</a>, so it should be
 quoted.  The string may contain [HTML](http://www.w3schools.com/html/default.asp).
 
 <h3>Bigger Labels</h3>
