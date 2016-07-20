@@ -20,6 +20,9 @@ e.wear "<span data-dfn="image url">https://i.imgur.com/PhKFPpt.png</span>"
 </pre>
 
 <script type="demo" height=300 width=100>
+speed Infinity
+ht()
 e = new Sprite
 e.wear "https://i.imgur.com/PhKFPpt.png"
+e.scale .75
 </script>
