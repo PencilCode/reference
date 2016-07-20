@@ -19,12 +19,14 @@ e = new Sprite
 e.wear "<span data-dfn="image url">https://i.imgur.com/PhKFPpt.png</span>"
 </pre>
 
-<script type="figure" height=300 width=100 style="display: inline-block;">
+<div style="display: inline-block; width: 19%">
+<script type="figure" height=300 width=100>
 speed Infinity
 ht()
 e = new Sprite
 e.wear "https://i.imgur.com/PhKFPpt.png"
 e.scale .25
 </script>
+</div>
 
 Now, if you use [`fd`](fd.html) to move the ship forward, it looks like the ship moves up, not forward. Of course, we want it to look like it moves forward. 
