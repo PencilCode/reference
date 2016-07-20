@@ -14,7 +14,7 @@ Using each command individually would look something like this:
 <pre class="jumbo">
 jumpto 0, 0
 turnto 0
-scale 1/<span data-dfndown="the amount the object has already been scaled">x</span>
+scale 1/<span data-dfn="the amount the object has already been scaled">x</span>
 </pre>
 
 `home` can be used to make symmetrical shapes and graphics.
