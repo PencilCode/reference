@@ -31,6 +31,8 @@ There are also many commands that will change the appearance of objects after th
 |-----------------------|--------------------------------------------------------------|
 | [`wear`](wear.html)   | changes the color of an object, or makes it display an image |
 | [`twist`](twist.html) | rotates the graphic of an object                             |
+| [`hide`](hide.html)   | hides the object, making it invisible                        |
+| [`show`](show.html)   | unhides the object, making it visible                        |
 
 ## Timing
 
