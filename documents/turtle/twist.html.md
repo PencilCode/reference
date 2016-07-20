@@ -8,6 +8,6 @@ The twist command allows you to rotate the appearance of an object without chang
 
 For instance, say you wanted to use the image below in your code. 
 
-<img src="https://i.imgur.com/PhKFPpt.png" height=300>
+<img src="https://i.imgur.com/PhKFPpt.png" height=300 align="middle">
 
 You'd probably want it to be horizontal, not vertical. 
