@@ -31,7 +31,7 @@ First you need to import the image into your code using [`wear`](wear.html).
 
 <pre class="jumbo">
 e = new Sprite
-e.wear "<span data-dfn="image url">https://i.imgur.com/PhKFPpt.png</span>"
+e.wear "<span data-dfn="image url">https://i.imgur.com/nUx9V2u.png</span>"
 </pre>
 
 <script type="figure" height=300 width=100>
