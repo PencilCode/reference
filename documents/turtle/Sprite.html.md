@@ -14,7 +14,7 @@ First, name the sprite by setting a variable. To do this, type:
 <span data-dfnup="any string">penny</span> = new Sprite
 </pre>
 
-This will allow you to give the sprite commands like `penny.fd 5`, `penny.home()`, etc.. 
+This will allow you to use commands on the sprite such as [fd](fd.html), [home](home.html), etc.. 
 
 Once the sprite has a name like `penny`, you can draw on it using [drawon](drawon.html).
 
