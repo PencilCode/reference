@@ -42,16 +42,16 @@ You can replace the turtle's shell with an image. Notice that the URL for the im
   t.<span data-dfn="command after a dot">wear "http://gym.pencilcode.net/images/dog.png"
 </pre>
 
-<script type="figure" height=300>
+<script type="figure" height=200>
 t = s = null
 setup ->
   remove t, s
 demo ->
   s = new Turtle pink
   t = new Turtle purple
-  #t.fd 30
+  t.fd 30
   t.pause 2
-  wear "http://gym.pencilcode.net/images/dog.png"
+  t.wear "http://gym.pencilcode.net/images/dog.png"
 </script>
 
 <!-- you can also use fade, mirror, etc. to change the look of the turtle -->
