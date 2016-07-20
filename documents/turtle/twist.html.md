@@ -71,3 +71,5 @@ button 'With twist', ->
   await done defer()
   e.remove()
 </script>
+
+Finally, use `rt 90` to rotate the ship horizontally. 
