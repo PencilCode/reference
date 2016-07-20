@@ -6,6 +6,19 @@ layout: reference
 
 `twist` allows the appearance of an object to be rotated without rotating the object. This means that, if an image is turned the wrong way, you don't have to edit the image itself; you can simply rotate it in the code! 
 
+### Syntax
+
+<pre class="jumbo">
+anobject.twist <span data-dfnup="angle">40</span>
+</pre>
+
+  * `anobject` is the name of the object being modified
+  * `twist` acts like [`rt`](rt.html) and rotates the graphic clockwise
+
+In this case, the graphic would be rotated 40 degrees clockwise. 
+
+Twist rotates the graphic instantly and has no visual animation. 
+
 For example, say you wanted to use the image below in your code. 
 
 <img src="https://i.imgur.com/PhKFPpt.png" height=300 style="
@@ -28,3 +41,5 @@ e.scale .25
 </script>
 
 Now, if you use [`fd`](fd.html) to move the ship forward, it looks like the ship moves up, not forward. Of course, we want it to look like it moves forward. 
+
+We can do this by adding `e.twist -90` after `e.scale .25`. 
