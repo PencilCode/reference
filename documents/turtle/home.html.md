@@ -5,9 +5,17 @@ layout: reference
 ---
 
 <!-- any arguments in brackets? -->
-<code>home</code> returns the turtle to the center of the page.
+`home` returns the turtle to the starting position. 
 
-<code>home</code> can be used to make symmetrical shapes and graphics.
+`home` acts almost like the [jumpto](jumpto.html), [turnto](turnto.html), and [scale](scale.html) commands all in one command. 
+
+<pre class="examp">
+jumpto 0, 0
+turnto 0
+scale 1/<span data-dfnright="the amount the object has already been scaled">x</span>
+</pre>
+
+`home` can be used to make symmetrical shapes and graphics.
 
 <pre class="examp">
   <span data-dfnright="draw a match">
