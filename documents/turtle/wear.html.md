@@ -42,7 +42,7 @@ You can replace the turtle's shell with an image. Notice that the URL for the im
   t.<span data-dfn="command after a dot">wear "http://gym.pencilcode.net/images/dog.png"
 </pre>
 
-<script type="demo" height=300>
+<script type="figure" height=300>
 t = s = null
 setup ->
   remove t, s
