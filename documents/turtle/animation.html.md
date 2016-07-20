@@ -18,10 +18,10 @@ When a turtle is created using `new Turtle`, its appearance matches that of the 
 
 When creating the turtle, various [CSS](http://www.w3schools.com/css/default.asp) properties can be set. 
 
-| Property | Expected Value                      | Function                                                                         |
-|----------|-------------------------------------|----------------------------------------------------------------------------------|
-| opacity  |  number between 0 and 1 (inclusive) | Changes the opacity of the object<br>1 is fully opaque<br>0 is fully transparent |
-|          |                                     |                                                                                  |
+| Property | Expected Value                        | Function                                                                                                                    |
+|----------|---------------------------------------|-----------------------------------------------------------------------------------------------------------------------------|
+| opacity  |  a number between 0 and 1 (inclusive) | Changes the opacity of the object. <br>1 is fully opaque<br>0 is fully transparent                                          |
+| color    | a CSS standard [color](colors.html)   | Changes the color of the object. <br>Unlike [wear](wear.html), this will not give a <br>sprite the appearance of a turtle.  |
 
 ## Timing
 
