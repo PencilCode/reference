@@ -14,7 +14,7 @@ The setup phase is where everything is created; all the actors are created, give
 
 ### Changing the Appearance of Objects
 
-When a turtle is created using `new Turtle`, its appearance matches that of the default turtle. However, this can be changed in a variety of ways. 
+When a turtle is created using `new Turtle`, its appearance matches that of the default turtle. Similarly, when a sprite is created using `new Sprite`, it is displayed as a semi-transparent gray box. However, this can be changed in a variety of ways. 
 
 When creating the turtle, various [CSS](http://www.w3schools.com/css/default.asp) properties can be set. 
 
