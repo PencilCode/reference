@@ -22,7 +22,7 @@ Once the sprite has a name like `penny`, you can draw on it using [drawon](drawo
 
 ### Changing the Sprite
 
-Use optional arguments to change the sprite’s default color and size.
+When creating the sprite, you can use optional arguments to change various properties, such as default color, size and opacity.
 
 <pre class="jumbo">
 penny = new Sprite
@@ -73,7 +73,7 @@ setup ->
   paul = new Sprite red
   paul.jump 0, -50
   penny = new Sprite gray
-  peny.jump 0, -50
+  penny.jump 0, -50
 demo ->
   r.pause 1
   b.pause 1
@@ -82,8 +82,3 @@ demo ->
   b.lt 90
   b.rt 180, 50
 </script>
-
-
-
-
-
