@@ -25,7 +25,7 @@ When creating the object, various [CSS](http://www.w3schools.com/css/default.asp
 | width    | a positive number                     | Changes the width of the object. Can make a turtle appear distorted.                                                |
 | height   | a positive number                     | Changes the height of the object. Can make a turtle appear distorted.                                               |
 
-Other useful commands include: 
+There are also many commands that will change the appearance of objects after they are created. Below is a list of these commands and their functions. 
 
 | Command               | Function                                                     |
 |-----------------------|--------------------------------------------------------------|
