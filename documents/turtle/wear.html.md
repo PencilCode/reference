@@ -51,7 +51,7 @@ demo ->
   t = new Turtle purple
   #t.fd 30
   t.pause 2
-  t.wear "http://gym.pencilcode.net/images/dog.png"
+  wear "http://gym.pencilcode.net/images/dog.png"
 </script>
 
 <!-- you can also use fade, mirror, etc. to change the look of the turtle -->
