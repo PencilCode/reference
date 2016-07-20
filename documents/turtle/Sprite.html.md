@@ -11,7 +11,7 @@ layout: reference
 First, name the sprite by setting a variable. To do this, type: 
 
 <pre class="jumbo">
-<span data-dfnup="any <a href="/coffee/strings.html">string</a>>penny</span> = new Sprite
+<span data-dfnup="any <a href='/coffee/strings.html'>string</a>>penny</span> = new Sprite
 </pre>
 
 Once the sprite has a name like `penny`, you can draw on it using [drawon](drawon.html).
