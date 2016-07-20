@@ -6,6 +6,8 @@ layout: reference
 
 `twist` allows the appearance of an object to be rotated without rotating the object. This means that, if an image is turned the wrong way, you don't have to edit the image itself; you can simply rotate it in the code! 
 
+`twist` is very useful for [animation](animation.html). 
+
 ### Syntax
 
 <pre class="jumbo">
