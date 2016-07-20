@@ -19,7 +19,9 @@ In this case, the graphic would be rotated 40 degrees clockwise.
 
 Twist rotates the graphic instantly and has no visual animation. 
 
-For example, say you wanted to use the image below in your code. 
+### Example
+
+Say you wanted to use the image below in your code. 
 
 <img src="https://i.imgur.com/PhKFPpt.png" height=300 style="
   display: block;
