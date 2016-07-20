@@ -24,7 +24,7 @@ speed Infinity
 ht()
 e = new Sprite
 e.wear "https://i.imgur.com/PhKFPpt.png"
-e.scale .75
+e.scale .25
 </script>
 
 Now, if you use `fd` to move the ship forward, it looks like the ship moves up, not forward. Of course, we want it to look like it moves forward, and while you can use [`slide`](slide.html) to 
