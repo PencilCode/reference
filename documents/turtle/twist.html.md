@@ -8,13 +8,6 @@ The twist command allows you to rotate the appearance of an object without chang
 
 For instance, say you wanted to use the image below in your code. 
 
-<script type="figure" width=100 height=300>
-ht()
-speed Infinity
-enterprise = new Sprite
-enterprise.wear 'https://i.imgur.com/PhKFPpt.png'
-enterprise.scale .25
-enterprise.twist -90
-</script>
+<img src="https://i.imgur.com/PhKFPpt.png" height=300>
 
 You'd probably want it to be horizontal, not vertical. 
