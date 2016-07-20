@@ -23,11 +23,11 @@ Twist rotates the graphic instantly and has no visual animation.
 
 Say you wanted to use the image below in your code. 
 
-<img src="https://i.imgur.com/PhKFPpt.png" height=300 style="
+<img src="https://i.imgur.com/nUx9V2u.png" height=100 style="
   display: block;
   margin: auto;">
 
-You'd probably want it to be horizontal, not vertical. First you need to import the image into your code using [`wear`](wear.html). 
+First you need to import the image into your code using [`wear`](wear.html). 
 
 <pre class="jumbo">
 e = new Sprite
@@ -38,10 +38,10 @@ e.wear "<span data-dfn="image url">https://i.imgur.com/PhKFPpt.png</span>"
 speed Infinity
 ht()
 e = new Sprite
-e.wear "https://i.imgur.com/PhKFPpt.png"
+e.wear "https://i.imgur.com/nUx9V2u.png"
 e.scale .25
 </script>
 
-Now, if you use [`fd`](fd.html) to move the ship forward, it looks like the ship moves up, not forward. Of course, we want it to look like it moves forward. 
+Although this may look right, the sprite is actually still facing upwards. If you use [`fd`](fd.html) to move the ship forward, it looks like the ship moves up, not forward. Of course, we want it to look like it moves forward. 
 
 We can do this by adding `e.twist -90` after `e.scale .25`. 
