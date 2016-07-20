@@ -44,41 +44,4 @@ demo ->
     width: 75
 </script>
 
-### Animating Multiple Sprites
-
-Any number of sprites can be created.  Be sure to use a different name for each sprite.
-
-Sprites receive their commands to move instantly, and then
-after receving commands, they all begin moving at the same time.
-<!--- You can use sync so that they move at different times -->
-In the next example, we create `paul`, an ant and `penny`, a breadcrumb. 
-
-<!--- http://gym.pencilcode.net/draw/ant.html - make the ant eat the breadcrumb -->
-
-<pre class="examp">
-<span data-dfnright="for paul">paul = new Sprite red
-paul.rt 90
-paul.lt 180, 50</span>
-
-<span data-dfnright="for penny">penny = new Sprite gray
-penny.lt 90
-penny.rt 180, 50</span>
-</pre>
-
-<script type="demo">
-paul = penny = null
-setup ->
-  ht()
-  remove paul, penny
-  paul = new Sprite red
-  paul.jump 0, -50
-  penny = new Sprite gray
-  penny.jump 0, -50
-demo ->
-  paul.pause 1
-  penny.pause 1
-  paul.rt 90
-  paul.lt 180, 50
-  penny.lt 90
-  penny.rt 180, 50
-</script>
+Sprites can be used as new actors when creating [animations](animation.html)
