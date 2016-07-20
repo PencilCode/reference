@@ -16,7 +16,7 @@ You'd probably want it to be horizontal, not vertical. First you need to import 
 
 <pre class="jumbo">
 e = new Sprite
-e.wear "<span data-dfnup="image url">https://i.imgur.com/PhKFPpt.png</span>"
+e.wear "<span data-dfn="image url">https://i.imgur.com/PhKFPpt.png</span>"
 </pre>
 
 <script type="demo">
