@@ -49,25 +49,23 @@ We can do this by adding `e.twist -90` after `e.scale .25`.
 <script type="demo" width=400 height=400>
 speed Infinity
 ht()
-e = new Sprite
-  opacity: 0
 
 button 'Without twist', ->
-  e.remove()
-  e = null
   e = new Sprite
   e.wear "https://i.imgur.com/nUx9V2u.png"
   e.scale .25
   speed 1
   e.fd 100
+  await done defer()
+  e.remove()
 
 button 'With twist', ->
-  e.remove()
   e = new Sprite
   e.wear "https://i.imgur.com/nUx9V2u.png"
   e.scale .25
   e.twist -90
   speed 1
   e.fd 100
-
+  await done defer()
+  e.remove()
 </script>
