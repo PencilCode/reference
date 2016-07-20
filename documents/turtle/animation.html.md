@@ -27,4 +27,4 @@ When creating the object, various [CSS](http://www.w3schools.com/css/default.asp
 
 ## Timing
 
-Timing is key in animation, but sometimes it can be hard to get everything
+Timing is key in animation, but sometimes it can be hard to get everything timed perfectly. 
