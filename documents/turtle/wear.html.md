@@ -49,7 +49,7 @@ setup ->
 demo ->
   s = new Turtle pink
   t = new Turtle purple
-  t.fd 30
+  #t.fd 30
   t.pause 2
   t.wear "http://gym.pencilcode.net/images/dog.png"
 </script>
