@@ -18,6 +18,11 @@ When a turtle is created using `new Turtle`, its appearance matches that of the 
 
 When creating the turtle, various [CSS](http://www.w3schools.com/css/default.asp) properties can be set. 
 
+| Property | Expected Value                      | Function                                                                         |
+|----------|-------------------------------------|----------------------------------------------------------------------------------|
+| opacity  |  number between 0 and 1 (inclusive) | Changes the opacity of the object<br>1 is fully opaque<br>0 is fully transparent |
+|          |                                     |                                                                                  |
+
 ## Timing
 
 Timing is key in animation, but sometimes it can be hard to get everything
