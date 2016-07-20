@@ -10,7 +10,7 @@ An angle can be used to determine how far an object rotates when using certain c
 lt <span data-dfn="angle">90</span>
 </pre>
 
-Angles are also used to determine the direction of one object from another, such as in the [direction](direction.html) command. 
+Angles are also used to determine the direction of one object from another, such as in the [`direction`](direction.html) command. 
 
 <pre class="jumbo">
 p.turnto <span data-dfn="returns an angle">direction(turtle)</span>
