@@ -19,7 +19,7 @@ e = new Sprite
 e.wear "<span data-dfn="image url">https://i.imgur.com/PhKFPpt.png</span>"
 </pre>
 
-<script type="demo">
+<script type="demo" height=300 width=100>
 e = new Sprite
 e.wear "https://i.imgur.com/PhKFPpt.png"
 </script>
