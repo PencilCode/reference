@@ -25,10 +25,14 @@ setup ->
   remove sally
 demo ->
   t = new Turtle pink
-  s = new Turtle purple
-  t.fd 30
-  t.pause 2
-  t.wear blue
+  pause 1
+  plan ->
+    s = new Turtle purple
+    pause 1
+    plan ->
+      t.fd 30
+      t.pause 2
+      t.wear blue
 </script>
 
 ### Change Turtle Image
@@ -48,10 +52,13 @@ setup ->
   remove t, s
 demo ->
   s = new Turtle pink
-  t = new Turtle purple
-  t.fd 30
-  t.pause 2
-  t.wear "http://gym.pencilcode.net/images/dog.png"
+  pause 1
+  plan ->
+    t = new Turtle purple
+    t.pause 1
+    t.fd 30
+    t.pause 2
+    t.wear "http://gym.pencilcode.net/images/dog.png"
 </script>
 
 <!-- you can also use fade, mirror, etc. to change the look of the turtle -->
