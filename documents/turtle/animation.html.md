@@ -51,7 +51,7 @@ t.rt 90
 t.fd 100
 </pre>
 
-test 3
+test 4
 
 <script type="demo" width=420 height=220>
 setup ->
