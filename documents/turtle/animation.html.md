@@ -51,7 +51,7 @@ t.rt 90
 t.fd 100
 </pre>
 
-test 7
+test 8
 
 <script type="figure" width=420 height=220>
 demo2 ->
