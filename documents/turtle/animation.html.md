@@ -160,3 +160,53 @@ Now the queues look more like this:
 | fd 100         | &nbsp;      |
 
 This means when the turtle is running `pen red`, bob is already running `lt 90`, and `bob` finishes while the turtle is still running `pen blue`. 
+
+But wait! There's a command to fix this: [`sync()`](sync.html)
+
+We can use the `sync()` command to make `bob` wait for the turtle so it doesn't fall behind. 
+
+### Example 4: Syncing with `sync()`
+
+The `sync()` command will allow us to hold movement of `bob` until the turtle has the same amount of work left in its queue. 
+
+<pre class="examp">
+pen red
+rt 90
+fd 100
+pen blue
+lt 90
+bob = new Turtle red
+bob.lt 90
+bob.fd 100
+bob.rt 90
+sync(turtle, bob)
+<span data-dfnright="waits untill all other actions are complete">
+bob.fd 100
+fd 100
+</span>
+</pre>
+
+<script type="figure" width=420 height=240>
+go = ->
+  pen red
+  rt 90
+  fd 100
+  pen blue
+  lt 90
+  bob = new Turtle red
+  bob.lt 90
+  bob.fd 100
+  bob.rt 90
+  sync(turtle, bob)
+  bob.fd 100
+  fd 100
+  click (e) ->
+    if (!turtle.queue().length)
+      speed(Infinity)
+      pen(null)
+      home()
+      cs()
+      speed(1)
+      go()
+go()
+</script>
