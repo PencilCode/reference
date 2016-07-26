@@ -54,7 +54,11 @@ t.fd 100
 test 8
 
 <script type="figure" width=420 height=220>
+<<<<<<< HEAD
 demo ->
+=======
+go = ->
+>>>>>>> parent of 5333ed9... Update animation.html.md
   rt 90
   fd 100
   lt 90
@@ -64,4 +68,14 @@ demo ->
   t.fd 100
   t.rt 90
   t.fd 100
+  click (e) ->
+    await done defer()
+    speed(Infinity)
+    pen(null)
+    home()
+    cs()
+    speed(1)
+    go()
+
+go()
 </script>
