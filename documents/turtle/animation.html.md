@@ -24,10 +24,11 @@ fd 200
 </pre>
 
 <script type="demo">
-rt 90
-fd 200
-lt 90
-fd 200
+demo ->
+  rt 90
+  fd 200
+  lt 90
+  fd 200
 </script>
 
 It looks like the code runs sequentially---once the turtle finishes one command, it moves on to the next until the program is complete. 
@@ -51,13 +52,14 @@ t.fd 200
 </pre>
 
 <script type="demo">
-rt 90
-fd 200
-lt 90
-fd 200
-t = new Turtle
-t.rt 90
-t.fd 200
-t.lt 90
-t.fd 200
+demo ->
+  rt 90
+  fd 200
+  lt 90
+  fd 200
+  t = new Turtle
+  t.rt 90
+  t.fd 200
+  t.lt 90
+  t.fd 200
 </script>
