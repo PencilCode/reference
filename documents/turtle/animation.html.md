@@ -80,15 +80,13 @@ However, they were both created at the same time, and their movement queued at t
 Let's take a closer look at the code. 
 
 <pre class="jumbo">
-<span data-dfnright="turtle's queue">
-rt 90
+<span data-dfnright="turtle's queue">rt 90
 fd 100
 lt 90
 fd 100
 </span>
 bob = new Turtle red
-<span data-dfnright="bob's queue">
-bob.lt 90
+<span data-dfnright="bob's queue">bob.lt 90
 bob.fd 100
 bob.rt 90
 bob.fd 100
@@ -181,7 +179,7 @@ bob.fd 100
 bob.rt 90
 sync(turtle, bob)
 
-bob.fd 100
+<span data-dfnright="waits until all<br>other actions are<br>complete"></span>bob.fd 100
 fd 100
 </pre>
 
