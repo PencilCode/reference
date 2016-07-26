@@ -108,4 +108,42 @@ This code happens to have corresponding actions running at the same time, but wh
 
 ### Example 3: Unbalanced Queues
 
-If we have the same number of commands, the queues will run at the same time (as shown above). But if we have a different number of actions being queued, it
+If we have the same number of commands, the queues will run at the same time (as shown above). However, if we have a different number of actions being queued, it desynchronizes the two turtles. 
+
+<pre class="examp">
+pen red
+rt 90
+fd 100
+pen blue
+lt 90
+fd 100
+bob = new Turtle red
+bob.lt 90
+bob.fd 100
+bob.rt 90
+bob.fd 100
+</pre>
+
+<script type="figure">
+go = ->
+  pen red
+  rt 90
+  fd 100
+  pen blue
+  lt 90
+  fd 100
+  bob = new Turtle red
+  bob.lt 90
+  bob.fd 100
+  bob.rt 90
+  bob.fd 100
+  click (e) ->
+    if (!turtle.queue().length)
+      speed(Infinity)
+      pen(null)
+      home()
+      cs()
+      speed(1)
+      go()
+go()
+</script>
