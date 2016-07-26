@@ -51,12 +51,13 @@ t.rt 90
 t.fd 100
 </pre>
 
+test 1
+
 <script type="demo" width=420 height=220>
-setup ->
-  t = null
-  remove t
+#setup ->
+#  t = null
+#  remove t
 demo ->
-  
   rt 90
   fd 100
   lt 90
