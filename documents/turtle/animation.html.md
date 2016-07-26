@@ -51,18 +51,27 @@ t.rt 90
 t.fd 100
 </pre>
 
-test 6
+test 7
 
 <script type="figure" width=420 height=220>
-demo ->
+go = ->
   rt 90
   fd 100
   lt 90
   fd 100
   t = new Turtle red
-  t.home()
   t.lt 90
   t.fd 100
   t.rt 90
   t.fd 100
+  click (e) ->
+    await done defer()
+    speed(Infinity)
+    pen(null)
+    home()
+    cs()
+    speed(1)
+    go()
+
+go()
 </script>
