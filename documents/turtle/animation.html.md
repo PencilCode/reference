@@ -225,8 +225,55 @@ In the queue, this `sync()` would look something like this:
 
 Because all the code is run at once in the beginning, some commands may appear to fail, but they are actually just running in the wrong place. Fortunately, there are ways of fixing this. 
 
-The `.touches` command is a perfect example of a command that breaks because of this method of compiling code. 
+The [`.touches`](touches.html) command is a perfect example of a command that breaks because of this method of compiling code. 
 
 ### Example 5: The `.touches` Paradox
 
-Say you have 
+Say you have the following code:
+
+<pre class="examp">
+bob = new Turtle red
+fd 50
+write touches bob
+</pre>
+
+The expected output is `false`, since there is clearly a space between the turtle and `bob`. 
+
+<script type="figure">
+bob = new Turtle red
+fd 50
+write touches bob
+</script>
+
+For some reason, the command seems to have broken, right? Wrong. The value of `touches bob` was calculated when the code was run, **before** the turtle had moved, and at that time, they were touching. However, it wasn't displayed until that point in the turtle's queue. 
+
+### Example 6: This isn't a Lie
+
+Here, try this. I think we'll all agree that `false` is the expected value, and here is an example that proves it. 
+
+By looping the check, we can guarantee that the falue returned by `touches bob` is the truth at that moment in time. 
+
+<pre class="examp">
+p = write ''
+forever ->
+  p.text touches bob
+
+bob = new Turtle red
+fd 50
+bk 100
+fd 100
+</pre>
+
+<script type="demo">
+setup ->
+  
+demo ->
+  p = write ''
+  forever ->
+    p.text touches bob
+  
+  bob = new Turtle red
+  fd 50
+  bk 100
+  fd 100
+</script>
