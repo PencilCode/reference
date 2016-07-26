@@ -97,24 +97,25 @@ bob.fd 100
 
 And these queues translate to: 
 
-<div class="rTable">
-<div class="rTableBody">
-<div class="rTableRow"><div class="rTableHead">turtle's queue</div><div class="rTableHead">bob's queue</div></div>
-<div class="rTableRow">
-<div class="rTableCell">rt 90</div>
-<div class="rTableCell">lt 90</div>
-</div>
-<div class="rTableRow">
-<div class="rTableCell">fd 100</div>
-<div class="rTableCell">fd 100</div>
-</div>
-<div class="rTableRow">
-<div class="rTableCell">lt 90</div>
-<div class="rTableCell">rt 90</div>
-</div>
-<div class="rTableRow">
-<div class="rTableCell">fd 100</div>
-<div class="rTableCell">fd 100</div>
-</div>
-</div>
-</div>
+<table>
+  <tr>
+    <th>turtle's queue</th>
+    <th>bob's queue</th>
+  </tr>
+  <tr>
+    <td>rt 90</td>
+    <td>lt 90</td>
+  </tr>
+  <tr>
+    <td>fd 100</td>
+    <td>fd 100</td>
+  </tr>
+  <tr>
+    <td>lt 90</td>
+    <td>rt 90</td>
+  </tr>
+  <tr>
+    <td>fd 100</td>
+    <td>fd 100</td>
+  </tr>
+</table>
