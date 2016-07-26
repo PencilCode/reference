@@ -225,6 +225,7 @@ In the queue, this `sync()` would look something like this:
 
 Because all the code is run at once in the beginning, some commands may appear to fail, but they are actually just running in the wrong place. Fortunately, there are ways of fixing this. 
 
+The `.touches` command is a perfect example of a command that breaks because of this method of compiling code. 
 
 ### Example 5: The `.touches` Paradox
 
