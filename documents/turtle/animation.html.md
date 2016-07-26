@@ -156,7 +156,7 @@ Now the queues look more like this:
 | rt 90          | fd 100      |
 | fd 100         | rt 90       |
 | pen blue       | fd 100      |
-| lt 90          |             |
-| fd 100         |             |
+| lt 90          | &nbsp;      |
+| fd 100         | &nbsp;      |
 
 This means when the turtle is running `pen red`, bob is already running `lt 90`, and `bob` finishes while the turtle is still running `pen blue`. 
