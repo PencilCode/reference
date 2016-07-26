@@ -23,7 +23,7 @@ lt 90
 fd 200
 </pre>
 
-<script type="demo">
+<script type="demo" width=220 height=220>
 demo ->
   rt 90
   fd 200
@@ -51,7 +51,7 @@ t.lt 90
 t.fd 200
 </pre>
 
-<script type="demo">
+<script type="demo" width=420 height=220>
 setup ->
   t = null
   remove t
