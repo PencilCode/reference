@@ -51,14 +51,10 @@ t.rt 90
 t.fd 100
 </pre>
 
-test 8
+test 9
 
 <script type="figure" width=420 height=220>
-<<<<<<< HEAD
-demo ->
-=======
 go = ->
->>>>>>> parent of 5333ed9... Update animation.html.md
   rt 90
   fd 100
   lt 90
@@ -76,6 +72,5 @@ go = ->
     cs()
     speed(1)
     go()
-
 go()
 </script>
