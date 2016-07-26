@@ -97,25 +97,33 @@ bob.fd 100
 
 And these queues translate to: 
 
-<table>
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;border-color:#ccc;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:#ccc;color:#333;background-color:#fff;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:#ccc;color:#333;background-color:#f0f0f0;}
+.tg .tg-yw4l{vertical-align:top}
+.tg .tg-b7b8{background-color:#f9f9f9;vertical-align:top}
+.tg .tg-4eph{background-color:#f9f9f9}
+</style>
+<table class="tg">
   <tr>
-    <th>turtle's queue</th>
-    <th>bob's queue</th>
+    <th class="tg-031e">turtle's queue</th>
+    <th class="tg-031e">bob's queue</th>
   </tr>
   <tr>
-    <td>rt 90</td>
-    <td>lt 90</td>
+    <td class="tg-yw4l">rt 90</td>
+    <td class="tg-b7b8">lt 90</td>
   </tr>
   <tr>
-    <td>fd 100</td>
-    <td>fd 100</td>
+    <td class="tg-031e">fd 100</td>
+    <td class="tg-4eph">fd 100</td>
   </tr>
   <tr>
-    <td>lt 90</td>
-    <td>rt 90</td>
+    <td class="tg-031e">lt 90</td>
+    <td class="tg-4eph">rt 90</td>
   </tr>
   <tr>
-    <td>fd 100</td>
-    <td>fd 100</td>
+    <td class="tg-yw4l">fd 100</td>
+    <td class="tg-b7b8">fd 100</td>
   </tr>
 </table>
