@@ -215,6 +215,6 @@ In the queue, this `sync()` would look something like this:
 | pen red        | lt 90       |
 | rt 90          | fd 100      |
 | fd 100         | rt 90       |
-| pen blue       | &nbsp;      |
-| lt 90          | &nbsp;      |
+| pen blue       | ======      |
+| lt 90          | ======      |
 | fd 100         | fd 100      |
