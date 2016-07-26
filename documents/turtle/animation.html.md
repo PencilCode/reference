@@ -78,7 +78,8 @@ If the code ran sequentially, the turtle would have moved, and once it reached t
 Let's take a closer look at the code. 
 
 <pre class="jumbo">
-<span data-dfnright="turtle's queue">rt 90
+<span data-dfnright="turtle's queue">
+rt 90
 fd 100
 lt 90
 fd 100
@@ -94,3 +95,24 @@ bob.fd 100
 
 And these queues translate to: 
 
+<div class="rTable">
+<div class="rTableBody">
+<div class="rTableRow"><div class="rTableHead">turtle's queue</div><div class="rTableHead">bob's queue</div></div>
+<div class="rTableRow">
+<div class="rTableCell">rt 90</div>
+<div class="rTableCell">lt 90</div>
+</div>
+<div class="rTableRow">
+<div class="rTableCell">fd 100</div>
+<div class="rTableCell">fd 100</div>
+</div>
+<div class="rTableRow">
+<div class="rTableCell">lt 90</div>
+<div class="rTableCell">rt 90</div>
+</div>
+<div class="rTableRow">
+<div class="rTableCell">fd 100</div>
+<div class="rTableCell">fd 100</div>
+</div>
+</div>
+</div>
