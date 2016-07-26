@@ -239,10 +239,11 @@ write touches bob
 
 The expected output is `false`, since there is clearly a space between the turtle and `bob`. 
 
-<script type="figure">
-bob = new Turtle red
-fd 50
-write touches bob
+<script type="demo">
+demo ->
+  bob = new Turtle red
+  fd 50
+  write touches bob
 </script>
 
 For some reason, the command seems to have broken, right? Wrong. The value of `touches bob` was calculated when the code was run, **before** the turtle had moved, and at that time, they were touching. However, it wasn't displayed until that point in the turtle's queue. 
