@@ -18,17 +18,17 @@ Let's say you wanted the turtle to turn right, move forward, turn left and move 
 
 <pre class="examp">
 rt 90
-fd 200
+fd 100
 lt 90
-fd 200
+fd 100
 </pre>
 
 <script type="demo" width=220 height=220>
 demo ->
   rt 90
-  fd 200
+  fd 100
   lt 90
-  fd 200
+  fd 100
 </script>
 
 It looks like the code runs sequentially---once the turtle finishes one command, it moves on to the next until the program is complete. 
@@ -42,13 +42,13 @@ Let's try creating another turtle named `t`, and using the the same code for bot
 <pre class="examp">
 t = new Turtle red
 rt 90
-fd 200
+fd 100
 lt 90
-fd 200
+fd 100
 t.lt 90
-t.fd 200
+t.fd 100
 t.rt 90
-t.fd 200
+t.fd 100
 </pre>
 
 <script type="demo" width=420 height=220>
@@ -58,11 +58,11 @@ setup ->
 demo ->
   t = new Turtle red
   rt 90
-  fd 200
+  fd 100
   lt 90
-  fd 200
+  fd 100
   t.lt 90
-  t.fd 200
+  t.fd 100
   t.rt 90
-  t.fd 200
+  t.fd 100
 </script>
