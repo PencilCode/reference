@@ -51,13 +51,14 @@ t.rt 90
 t.fd 100
 </pre>
 
-test 2
+test 3
 
 <script type="demo" width=420 height=220>
 setup ->
   t = null
   remove t
 demo ->
+  speed 1
   rt 90
   fd 100
   lt 90
