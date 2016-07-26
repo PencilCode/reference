@@ -37,7 +37,7 @@ But what if we add a second turtle?
 
 ### Example 2: Two Turtles, Same Code
 
-Let's try creating another turtle named `t`, and using the the same code for both turtles. 
+Let's try creating another turtle named `t`, and using the the same code for both turtles, albiet in the reverse direction (moving in a "U" pattern). 
 
 <pre class="examp">
 rt 90
@@ -61,9 +61,8 @@ demo ->
   lt 90
   fd 200
   t = new Turtle
-  t.rt 90
-  t.fd 200
   t.lt 90
   t.fd 200
+  t.rt 90
+  t.fd 200
 </script>
-
