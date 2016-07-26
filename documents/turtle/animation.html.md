@@ -55,18 +55,18 @@ test 3
 
 <script type="demo" width=420 height=220>
 setup ->
-  t = null
-  remove t
+  p = null
+  remove p
 demo ->
   speed 1
   rt 90
   fd 100
   lt 90
   fd 100
-  t = new Turtle red
-  t.home()
-  t.lt 90
-  t.fd 100
-  t.rt 90
-  t.fd 100
+  p = new Turtle red
+  p.home()
+  p.lt 90
+  p.fd 100
+  p.rt 90
+  p.fd 100
 </script>
