@@ -53,7 +53,7 @@ t.fd 100
 
 test 9
 
-<script type="figure" width=420 height=220>
+<script type="figure" width=420 height=240>
 go = ->
   rt 90
   fd 100
