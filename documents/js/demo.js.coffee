@@ -67,10 +67,27 @@ writeDemoFrame = (frame, code) ->
             'click to replay</a>');
         });
       }
+      function demo2(how) {
+        function go2() {
+          await done defer()
+          speed(Infinity)
+          pen(null)
+          home()
+          cs()
+          speed(1)
+          how();
+          pause(1);
+          done(function() {
+            $('body').append(
+              '<a style="display:block;position:fixed;right:5px;bottom:5px;cursor:default">' +
+              'click to replay</a>');
+        }
+      }
       go();
       click(function() {
         if (!turtle.queue().length) {
           go();
+          go2();
         }
       });
     }
