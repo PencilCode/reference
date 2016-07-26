@@ -16,7 +16,7 @@ However, there are several commands that modify the way the queues are created a
 
 Let's say you wanted the turtle to turn right, move forward, turn left and move forward again. You would write the following code: 
 
-<pre class="jumbo">
+<pre class="examp">
 rt 90
 fd 200
 lt 90
@@ -38,7 +38,7 @@ But what if we add a second turtle?
 
 Let's try creating another turtle named "t", and using the the same code for both turtles. 
 
-<pre class="jumbo">
+<pre class="examp">
 rt 90
 fd 200
 lt 90
@@ -49,3 +49,15 @@ t.fd 200
 t.lt 90
 t.fd 200
 </pre>
+
+<script type="demo">
+rt 90
+fd 200
+lt 90
+fd 200
+t = new Turtle
+t.rt 90
+t.fd 200
+t.lt 90
+t.fd 200
+</script>
