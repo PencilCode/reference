@@ -101,7 +101,7 @@ The Pencil Code editor has quite a few keyboard shortcuts available to use. Some
 
 | Windows/Linux                    | Mac                                      | Action                           |
 |----------------------------------|------------------------------------------|----------------------------------|
-| Alt+L, Ctrl+F1                   | Command+Option+L, Command+F1             | Fold selection                   |
+| Alt+L, Ctrl+F1                   | Command+Option+L, Command+F1             | Toggle fold selection            |
 | Alt+Shift+L, Ctrl+Shift+F1       | Command+Option+Shift+L, Command+Shift+F1 | Unfold                           |
 | Alt+0                            | Command+Option+0                         | Fold all                         |
 | Alt+Shift+0                      | Command+Option+Shift+0                   | Unfold all                       |
