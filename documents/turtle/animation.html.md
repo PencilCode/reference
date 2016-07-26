@@ -54,14 +54,15 @@ t.fd 100
 test 5
 
 <script type="figure" width=420 height=220>
-rt 90
-fd 100
-lt 90
-fd 100
-p = new Turtle red
-p.home()
-p.lt 90
-p.fd 100
-p.rt 90
-p.fd 100
+demo ->
+  rt 90
+  fd 100
+  lt 90
+  fd 100
+  t = new Turtle red
+  t.home()
+  t.lt 90
+  t.fd 100
+  t.rt 90
+  t.fd 100
 </script>
