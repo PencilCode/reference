@@ -60,6 +60,7 @@ writeDemoFrame = (frame, code) ->
         pause(1);
         speed(1);
         how();
+        dot red, 1000
         pause(1);
         done(function() {
           $('body').append(
