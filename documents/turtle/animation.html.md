@@ -14,4 +14,4 @@ However, there are several commands that modify the way the queues are created a
 
 ##### Example 1
 
-If I want the turtle to move 
+Let's say you want the turtle to move forward, turn right, and move forward again. You would write the following code: 
