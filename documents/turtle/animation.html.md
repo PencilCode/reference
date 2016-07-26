@@ -51,22 +51,17 @@ t.rt 90
 t.fd 100
 </pre>
 
-test 4
+test 5
 
-<script type="demo" width=420 height=220>
-setup ->
-  p = null
-  remove p
-demo ->
-  speed 1
-  rt 90
-  fd 100
-  lt 90
-  fd 100
-  p = new Turtle red
-  p.home()
-  p.lt 90
-  p.fd 100
-  p.rt 90
-  p.fd 100
+<script type="figure" width=420 height=220>
+rt 90
+fd 100
+lt 90
+fd 100
+p = new Turtle red
+p.home()
+p.lt 90
+p.fd 100
+p.rt 90
+p.fd 100
 </script>
