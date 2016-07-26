@@ -75,13 +75,11 @@ writeDemoFrame = (frame, code) ->
         }
       });
     }
-    function main(how) {
-      done(function() {
-	      $('body').append(
-	        '<a style="display:block;position:fixed;right:5px;bottom:5px;cursor:default">' +
-	        'click to replay</a>');
-      });
-    }
+    done(function() {
+      $('body').append(
+        '<a style="display:block;position:fixed;right:5px;bottom:5px;cursor:default">' +
+        'click to replay</a>');
+    });
     </script>
     </head>
     <body><script
