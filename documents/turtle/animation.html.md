@@ -52,6 +52,9 @@ t.fd 200
 </pre>
 
 <script type="demo">
+setup ->
+  t = null
+  remove t
 demo ->
   rt 90
   fd 200
@@ -63,3 +66,4 @@ demo ->
   t.lt 90
   t.fd 200
 </script>
+
