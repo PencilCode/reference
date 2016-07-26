@@ -73,7 +73,9 @@ go = ->
 go()
 </script>
 
-If the code ran sequentially, the turtle would have moved, and once it reached the end, it would have stopped and `bob` would have appeared and started moving. However, they were both created at the same time, and their movement queued at the same time. 
+If the code ran sequentially, the turtle would have moved, and once it reached the end, it would have stopped and `bob` would have appeared and started moving. 
+
+However, they were both created at the same time, and their movement queued at the same time, meaning that the queues were created and run at the same time. 
 
 Let's take a closer look at the code. 
 
