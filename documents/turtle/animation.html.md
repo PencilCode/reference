@@ -54,24 +54,23 @@ t.fd 100
 test 10
 
 <script type="figure" width=420 height=240>
-main ->
-  go = ->
-    rt 90
-    fd 100
-    lt 90
-    fd 100
-    t = new Turtle red
-    t.lt 90
-    t.fd 100
-    t.rt 90
-    t.fd 100
-    click (e) ->
-      await done defer()
+go = ->
+  rt 90
+  fd 100
+  lt 90
+  fd 100
+  t = new Turtle red
+  t.lt 90
+  t.fd 100
+  t.rt 90
+  t.fd 100
+  click (e) ->
+    if (!turtle.queue().length)
       speed(Infinity)
       pen(null)
       home()
       cs()
       speed(1)
       go()
-  go()
+go()
 </script>
