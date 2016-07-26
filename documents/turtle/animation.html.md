@@ -22,3 +22,10 @@ fd 200
 lt 90
 fd 200
 </pre>
+
+<script type="demo">
+rt 90
+fd 200
+lt 90
+fd 200
+</script>
