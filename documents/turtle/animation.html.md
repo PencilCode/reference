@@ -124,7 +124,7 @@ bob.rt 90
 bob.fd 100
 </pre>
 
-<script type="figure">
+<script type="figure" width=420 height=240>
 go = ->
   pen red
   rt 90
@@ -158,3 +158,5 @@ Now the queues look more like this:
 | pen blue       | fd 100      |
 | lt 90          |             |
 | fd 100         |             |
+
+This means when the turtle is running `pen red`, bob is already running `lt 90`, and `bob` finishes while the turtle is still running `pen blue`. 
