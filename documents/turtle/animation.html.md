@@ -54,7 +54,7 @@ t.fd 100
 test 7
 
 <script type="figure" width=420 height=220>
-go = ->
+demo2 ->
   rt 90
   fd 100
   lt 90
@@ -64,14 +64,4 @@ go = ->
   t.fd 100
   t.rt 90
   t.fd 100
-  click (e) ->
-    await done defer()
-    speed(Infinity)
-    pen(null)
-    home()
-    cs()
-    speed(1)
-    go()
-
-go()
 </script>
