@@ -218,3 +218,14 @@ In the queue, this `sync()` would look something like this:
 | pen blue       | ======      |
 | lt 90          | ======      |
 | fd 100         | fd 100      |
+
+`sync()` holds everything after it from being run until all the queues are empty up to it, then it continues. This only applies for the objects specified. 
+
+# The Problem
+
+Because all the code is run at once in the beginning, some commands may appear to fail, but they are actually just running in the wrong place. Fortunately, there are ways of fixing this. 
+
+
+### Example 5: The `.touches` Paradox
+
+Say you have 
