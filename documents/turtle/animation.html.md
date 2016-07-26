@@ -4,6 +4,8 @@ description: a form of coded artwork
 layout: reference
 ---
 
+*For information on how Pencil Code renders code, see [display](display.html).*
+
 Animation is one form of artwork that can be created in Pencil Code. It involves using objects (mostly [Turtles](Turtle.html) and [Sprites](Sprite.html), but could involve [Pencils](Pencil.html) as well) to create a scene, like in a play. As such, these objects are sometimes known as "actors". 
 
 While all commands are useful in Pencil Code, there are a few which are specifically designed to be used in animation to make life easier. 
