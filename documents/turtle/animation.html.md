@@ -56,11 +56,12 @@ setup ->
   t = null
   remove t
 demo ->
-  t = new Turtle red
+  
   rt 90
   fd 100
   lt 90
   fd 100
+  t = new Turtle red
   t.lt 90
   t.fd 100
   t.rt 90
