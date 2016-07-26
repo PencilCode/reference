@@ -179,9 +179,8 @@ bob.fd 100
 bob.rt 90
 sync(turtle, bob)
 
-<span data-dfnright="waits until all<br>other actions are<br>complete">bob.fd 100
+bob.fd 100
 fd 100
-</span>
 </pre>
 
 <script type="figure" width=420 height=240>
@@ -208,3 +207,14 @@ go = ->
       go()
 go()
 </script>
+
+In the queue, this `sync()` would look something like this: 
+
+| turtle's queue | bob's queue |
+|----------------|-------------|
+| pen red        | lt 90       |
+| rt 90          | fd 100      |
+| fd 100         | rt 90       |
+| pen blue       | &nbsp;      |
+| lt 90          | &nbsp;      |
+| fd 100         | fd 100      |
