@@ -250,9 +250,9 @@ For some reason, the command seems to have broken, right? Wrong. The value of `t
 
 ### Example 6: This isn't a Lie
 
-Here, try this. I think we'll all agree that `false` is the expected value, and here is an example that proves it. 
+This example is designed to prove that the `.touches` command does, in fact, work. `false` is the expected value in the example above, and the reason it's returning `true` is because of the time the check is being run. 
 
-By looping the check, we can guarantee that the falue returned by `touches bob` is the truth at that moment in time. 
+By looping the check, we can guarantee that the falue returned by `touches bob` is actual at that moment in time. 
 
 <pre class="examp">
 p = write ''
