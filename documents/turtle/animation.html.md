@@ -12,7 +12,7 @@ An animation queue is basically just a list of things that an object needs to do
 
 However, there are several commands that modify the way the queues are created and run. 
 
-#### Example 1: One Turtle
+### Example 1: One Turtle
 
 Let's say you wanted the turtle to turn right, move forward, turn left and move forward again. You would write the following code: 
 
@@ -34,7 +34,7 @@ It looks like the code runs sequentially---once the turtle finishes one command,
 
 But what if we add a second turtle?
 
-#### Example 2: Two Turtles, Same Code
+### Example 2: Two Turtles, Same Code
 
 Let's try creating another turtle named "t", and using the the same code for both turtles. 
 
