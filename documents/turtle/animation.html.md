@@ -14,5 +14,11 @@ However, there are several commands that modify the way the queues are created a
 
 ##### Example 1
 
-Let's say you wanted the turtle to move forward, turn right, and move forward again. You would write the following code: 
+Let's say you wanted the turtle to turn right, move forward, turn left and move forward again. You would write the following code: 
 
+<pre class="jumbo">
+rt 90
+fd 200
+lt 90
+fd 200
+</pre>
