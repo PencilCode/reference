@@ -103,3 +103,9 @@ And these queues translate to:
 | fd 100         | fd 100      |
 | lt 90          | rt 90       |
 | fd 100         | fd 100      |
+
+This code happens to have corresponding actions running at the same time, but what if we unbalance the queues?
+
+### Example 3: Unbalanced Queues
+
+If we have the same number of commands, the queues will run at the same time (as shown above). But if we have a different number of actions being queued, it
