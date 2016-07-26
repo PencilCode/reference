@@ -37,18 +37,18 @@ But what if we add a second turtle?
 
 ### Example 2: Two Turtles, Same Code
 
-Let's try creating another turtle named `t`, and using the the same code for both turtles, albiet in the reverse direction (moving in a "U" pattern). Let's also make `t` red for clarity. 
+Let's try creating another turtle named `bob`, and using the the same code for both turtles, albiet in the reverse direction (moving in a "U" pattern). Let's also make `bob` red for clarity. 
 
 <pre class="examp">
-t = new Turtle red
 rt 90
 fd 100
 lt 90
 fd 100
-t.lt 90
-t.fd 100
-t.rt 90
-t.fd 100
+bob = new Turtle red
+bob.lt 90
+bob.fd 100
+bob.rt 90
+bob.fd 100
 </pre>
 
 test 10
@@ -59,11 +59,11 @@ go = ->
   fd 100
   lt 90
   fd 100
-  t = new Turtle red
-  t.lt 90
-  t.fd 100
-  t.rt 90
-  t.fd 100
+  bob = new Turtle red
+  bob.lt 90
+  bob.fd 100
+  bob.rt 90
+  bob.fd 100
   click (e) ->
     if (!turtle.queue().length)
       speed(Infinity)
