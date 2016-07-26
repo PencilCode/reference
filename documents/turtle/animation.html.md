@@ -51,7 +51,7 @@ t.rt 90
 t.fd 100
 </pre>
 
-test 9
+test 10
 
 <script type="figure" width=420 height=240>
 go = ->
