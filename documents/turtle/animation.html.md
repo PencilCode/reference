@@ -54,7 +54,7 @@ t.fd 100
 test 8
 
 <script type="figure" width=420 height=220>
-demo2 ->
+demo ->
   rt 90
   fd 100
   lt 90
