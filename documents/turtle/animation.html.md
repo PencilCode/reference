@@ -147,3 +147,14 @@ go = ->
       go()
 go()
 </script>
+
+Now the queues look more like this: 
+
+| turtle's queue | bob's queue |
+|----------------|-------------|
+| pen red        | lt 90       |
+| rt 90          | fd 100      |
+| fd 100         | rt 90       |
+| pen blue       | fd 100      |
+| lt 90          |             |
+| fd 100         |             |
