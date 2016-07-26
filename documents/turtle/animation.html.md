@@ -179,8 +179,9 @@ bob.fd 100
 bob.rt 90
 sync(turtle, bob)
 
-<span data-dfnright="waits until all<br>other actions are<br>complete"></span>bob.fd 100
+<span data-dfnright="waits until all<br>other actions are<br>complete">bob.fd 100
 fd 100
+</span>
 </pre>
 
 <script type="figure" width=420 height=240>
