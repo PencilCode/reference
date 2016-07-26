@@ -51,8 +51,6 @@ bob.rt 90
 bob.fd 100
 </pre>
 
-test 10
-
 <script type="figure" width=420 height=240>
 go = ->
   rt 90
@@ -74,3 +72,25 @@ go = ->
       go()
 go()
 </script>
+
+If the code ran sequentially, the turtle would have moved, and once it reached the end, it would have stopped and `bob` would have appeared and started moving. However, they were both created at the same time, and their movement queued at the same time. 
+
+Let's take a closer look at the code. 
+
+<pre class="jumbo">
+<span data-dfnright="turtle's queue">rt 90
+fd 100
+lt 90
+fd 100
+</span>
+bob = new Turtle red
+<span data-dfnright="bob's queue">
+bob.lt 90
+bob.fd 100
+bob.rt 90
+bob.fd 100
+</span>
+</pre>
+
+And these queues translate to: 
+
