@@ -57,4 +57,4 @@ demo ->
     t.wear "gym.pencilcode.net/images/dog.png"
 </script>
 
-<!-- you can also use fade, mirror, etc. to change the look of the turtle -->
+<!-- you can also use fade, mirror, twist, etc. to change the look of the turtle -->
