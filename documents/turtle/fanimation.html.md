@@ -1,6 +1,6 @@
 ---
 title: frame-based animation
-description: frame-based animation in Pencil Code
+description: like frames of a movie
 layout: reference
 ---
 
