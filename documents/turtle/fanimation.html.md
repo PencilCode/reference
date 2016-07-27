@@ -42,7 +42,7 @@ advance = ->
 tick advance
 </pre>
 
-<script type="figure">
+<script type="figure" height=220px width=220px>
 ht()
 speed Infinity
 t = 0
