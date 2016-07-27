@@ -20,10 +20,8 @@ t.<span data-dfn="command after a dot">wear blue
 </pre>
 
 <script type="demo">
-sally = null
-setup ->
-  remove sally
 demo ->
+  ht()
   t = new Turtle pink
   pause 1
   plan ->
@@ -47,10 +45,8 @@ t.<span data-dfn="command after a dot">wear "http://gym.pencilcode.net/images/do
 </pre>
 
 <script type="demo" height=200>
-t = s = null
-setup ->
-  remove t, s
 demo ->
+  ht()
   s = new Turtle pink
   pause 1
   plan ->
