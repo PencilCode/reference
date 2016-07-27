@@ -54,7 +54,7 @@ demo ->
     t.pause 1
     t.fd 30
     t.pause 2
-    t.wear "https://objects.artspan.com/member/hbaiz/125/2224379.jpg"
+    t.wear "http://i.imgur.com/wWmfooo.png"
 </script>
 
 <!-- you can also use fade, mirror, twist, etc. to change the look of the turtle -->
