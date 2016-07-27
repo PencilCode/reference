@@ -6,7 +6,7 @@ layout: reference
 
 # Frame-Based Animation
 
-Frame-based animation is slightly more complicated than [queue-based animation](fanimation.html). It involves using loops to control elements on the page, allowing more certainty that the code is running when you want it to run. 
+Frame-based animation is slightly more complicated than [queue-based animation](qanimation.html). It involves using loops to control elements on the page, allowing more certainty that the code is running when you want it to run. 
 
 Frame-based animation will always involve setting [`speed Infinity`](speed.html)
 
