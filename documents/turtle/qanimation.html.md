@@ -11,3 +11,6 @@ This type of animation may seem very straightforward, but it has its drawbacks. 
 ## Speed
 
 No matter what the speed is set to with the [`speed`](speed.html) command, the animation will still be queue-based, unless it's set to `speed Infinity`, in which case it becomes [frame-based animation](fanimation.html). 
+
+## Examples of Queue-Based Animation
+
