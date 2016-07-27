@@ -24,6 +24,6 @@ Frame-based animation will always involve setting [`speed Infinity`](fanimation.
 
 However, there are drawbacks to this method as well. You need to always keep track of which loops are currently running, as when you run too many loops, it becomes difficult to debug because it is hard to keep track of which loops are affecting which objects. 
 
-# Mixing Frame- and Queue-Based Animation
+# Mixing Queue- and Frame-Based Animation
 
-Mixing frame- and queue-based animation is the most powerful form of animation possible with Pencil Code. By using this method, you can run code in the background, while still doing simple movements with the basic movement commands. 
+[Mixing queue- and frame-based animation](qfanimation.html) is the most powerful form of animation possible with Pencil Code. By using this method, you can run code in the background, while still doing simple movements with the basic movement commands. 
