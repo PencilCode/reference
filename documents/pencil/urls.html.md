@@ -82,7 +82,7 @@ $.post '/save/dir/filename',
 
 When loading a file via `/load/`, the response is formatted as JSON.
 For example, if you view
-(pencilcode.net/load/first)[http://pencilcode.net/load/first], you
+[pencilcode.net/load/first](http://pencilcode.net/load/first), you
 will see the following JSON data (though not indented nicely):
 
 ```
