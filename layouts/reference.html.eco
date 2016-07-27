@@ -13,4 +13,4 @@ layout: default
 
 <%- @content %>
 
-<a class="bottombar" href="#top">↑</a>
+<a class="back-to-top" href="#top">↑</a>
