@@ -12,7 +12,7 @@ However, there are drawbacks to this method as well. You need to always keep tra
 
 ## Examples of Frame-Based Animation
 
-#### An Analog Timer
+### An Analog Timer
 
 This timer resets the frame every second, erasing the entire screen and drawing it again each time. Because of `speed Infinity`, this happens instantly, with no visible delay. Because of the [`tick`](tick.html), each frame lasts for exactly one second. 
 
