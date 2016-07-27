@@ -39,6 +39,7 @@ advance = ->
   dot white, 40
   label t, labelSide: 'centered'
   t += 1
+
 tick advance
 </pre>
 
@@ -65,5 +66,6 @@ advance = ->
   dot white, 40
   label t, labelSide: 'centered'
   t += 1
+
 tick advance
 </script>
