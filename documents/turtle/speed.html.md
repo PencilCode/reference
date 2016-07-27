@@ -50,7 +50,7 @@ demo ->
     p.label 'click to see speed 10 again', 'bottom'
 </script>
 
-As fast as your computer can move (often looks instant):
+As fast as your computer can move (often looks instant, and thus is used in [frame-based animation](fanimation.html)):
 
 <pre class="jumbo">
 speed Infinity
