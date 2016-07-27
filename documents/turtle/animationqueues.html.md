@@ -1,6 +1,6 @@
 ---
-title: animation
-description: understanding animation queues
+title: animation queues
+description: understanding how animation queues work
 layout: reference
 ---
 
