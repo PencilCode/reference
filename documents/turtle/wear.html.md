@@ -54,7 +54,7 @@ demo ->
     t.pause 1
     t.fd 30
     t.pause 2
-    t.wear "http://gym.pencilcode.net/images/dog.png"
+    t.wear "gym.pencilcode.net/images/dog.png"
 </script>
 
 <!-- you can also use fade, mirror, etc. to change the look of the turtle -->
