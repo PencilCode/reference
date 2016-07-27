@@ -1,6 +1,6 @@
 ---
 title: queue-based animation
-description: queue-based animation in Pencil Code
+description: animation with to-do lists
 layout: reference
 ---
 
