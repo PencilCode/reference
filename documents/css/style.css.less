@@ -138,11 +138,6 @@ pre {
   color: #8300AD;
 }
 
-@media all and (max-width: 300px) {
-  .bottombar {
-    display: none;
-  }
-}
 .bottombar {
   box-sizing: border-box;
   position: fixed;
@@ -157,6 +152,11 @@ pre {
   border-radius: 10px 0px 0px 0px;
   font-size: 60pt;
   padding: 0px 25px;
+}
+@media screen and (max-width: 300px) {
+  .bottombar {
+    display: none;
+  }
 }
 
 a.bottombar:hover {
