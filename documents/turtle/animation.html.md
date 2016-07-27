@@ -6,7 +6,7 @@ layout: reference
 
 # Animation
 
-Animation in Pencil Code is pretty self-explanitory, however there are some twists that may throw people off at first. There are some things that need to be done in a specific way in order to work. 
+Animation in Pencil Code is pretty self-explanitory, however there are some twists that may throw you off at first. There are some things that need to be done in a specific way in order to work. 
 
 The point of this page is to give a general overview of what some of these quirks might be, and to help you understand what the problem is and how to fix it. 
 
