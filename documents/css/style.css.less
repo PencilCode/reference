@@ -157,6 +157,26 @@ a.bottombar:hover {
   color: white;
 }
 
+.back-to-top {
+  box-sizing: border-box;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  text-decoration: none;
+  display: block;
+  padding: 2px 3px;
+  background: dodgerblue;
+  color: #87ceeb;
+  z-index: 10;
+  border-radius: 0px 10px 0px 0px;
+  font-size: 60pt;
+}
+@media screen and (max-width: 835px) {
+  .back-to-top {
+    display: none;
+  }
+}
+
 .inline-right {
   display:inline-block;
   float:right;
