@@ -165,7 +165,7 @@ We can use the `sync()` command to make `bob` wait for the turtle so it doesn't 
 
 ### Example 4: Syncing with `sync()`
 
-The `sync()` command will allow us to hold movement of `bob` until the turtle has the same amount of work left in its queue. 
+The `sync()` command will allow us to hold movement of `bob` so that it and the turtle can finish together. 
 
 <pre class="examp">
 pen red
