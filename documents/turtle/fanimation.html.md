@@ -23,7 +23,7 @@ t = 0
 
 drawClock = ->
   cs()
-  #dot white, 10000
+  dot white, 10000
   for i in [1..60]
     pen lightgray
     fd 100
@@ -49,7 +49,7 @@ t = 0
 
 drawClock = ->
   cs()
-  #dot white, 10000
+  dot white, 10000
   for i in [1..60]
     pen lightgray
     fd 100
