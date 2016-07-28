@@ -4,7 +4,9 @@ description: understanding how animation queues work
 layout: reference
 ---
 
-When Pencil Code runs a program that moves a turtle slowly, it appears that the code runs one line per second, during the progress of the animation. It does not. Pencil Code actually runs all the code at once, then displays the animated results after it finishes by creating **animation queues**. 
+When Pencil Code runs a program that animates an object, it may appear that the code in the program runs one line per second, during the progress of the animation.  It does not.
+
+Pencil Code actually runs all the code that sets up an animation at once before the animation begins. Then it displays the animated results after the program finishes by using **animation queues**. 
 
 # Animation Queues
 
