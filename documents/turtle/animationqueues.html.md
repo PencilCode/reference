@@ -4,17 +4,17 @@ description: understanding how animation queues work
 layout: reference
 ---
 
-Many people think that Pencil Code runs code sequentially. It doesn't. Pencil Code actually runs all the code at once, then displays the results after it finishes by creating **animation queues**. 
+When Pencil Code runs a program that moves a turtle slowly, it appears that the code runs one line per second, during the progress of the animation. It does not. Pencil Code actually runs all the code at once, then displays the animated results after it finishes by creating **animation queues**. 
 
 # Animation Queues
 
-An animation queue is basically just a list of things that an object needs to do. Think of it as a schedule. It tells the object what it needs to do in the order it needs to do them, and each queue is, by default, independent of everyone else's. 
+An animation queue is a list of tasks that an object needs to do in the future, like a schedule. It tells the object what it needs to do in the order it needs to do them, and each object's queue is (by default) independent of every other object. 
 
-However, there are several commands that modify the way the queues are created and run. 
+There are several commands that modify the way the queues are created and run. 
 
 ### Example 1: One Turtle
 
-Let's say you wanted the turtle to turn right, move forward, turn left and move forward again. You would write the following code: 
+The following code tells the turtle to turn right, move forward, turn left and move forward again, and to animate it so that each step can be seen.
 
 <pre class="examp">
 rt 90
@@ -31,13 +31,11 @@ demo ->
   fd 100
 </script>
 
-It looks like the code runs sequentially---once the turtle finishes one command, it moves on to the next until the program is complete. 
-
-But what if we add a second turtle?
+It looks like the code run during the animation: once the turtle finishes one command, it appears that the next line of code runs until the program is complete. However, the code does not actually run during the animation, as we can tell if we add a second turtle.
 
 ### Example 2: Two Turtles, Same Code
 
-Let's try creating another turtle named `bob`, and using the the same code for both turtles, albiet in the reverse direction (moving in a "U" pattern). Let's also make `bob` red for clarity. 
+The following program creates a second turtle named `bob` and uses the the similar code for both turtles, turning in the reverse direction. The turtle `bob` is colored red for clarity. 
 
 <pre class="examp">
 rt 90
@@ -73,11 +71,13 @@ go = ->
 go()
 </script>
 
-If the code ran sequentially, the turtle would have moved, and once it reached the end, it would have stopped and `bob` would have appeared and started moving. 
+If the code ran sequentially during the animation, the main turtle would have moved, and once it reached the end, it would have stopped and `bob` would have appeared and started moving. 
 
-However, they were both created at the same time, and their movement queued at the same time, meaning that the queues were created and run at the same time. 
+However, the animation shows both turtles at the same time, and their movement runs simultaneously.
 
-Let's take a closer look at the code. 
+What happens is the code runs quickly before the animation starts.  Both turtles are created, and animation commands are added to each of their queues. Once the program is done, the animation begins, and the turtles move simultaneously by following the instructions in their queues.
+
+Let us take a closer look at the code. 
 
 <pre class="jumbo">
 <span data-dfnright="turtle's queue">rt 90
@@ -93,7 +93,7 @@ bob.fd 100
 </span>
 </pre>
 
-And these queues translate to: 
+After the program has finished running, neither turtle has moved yet. However, they both have animation queues which contain the following commands to animate in the future:
 
 | turtle's queue | bob's queue |
 |----------------|-------------|
@@ -106,7 +106,7 @@ This code happens to have corresponding actions running at the same time, but wh
 
 ### Example 3: Unbalanced Queues
 
-If we have the same number of commands, the queues will run at the same time (as shown above). However, if we have a different number of actions being queued, it desynchronizes the two turtles. 
+We have see above that if we use the same number of commands with two turtles, the queues will run at the same time. However, if we have a different number of actions being queued, it desynchronizes the two turtles. 
 
 <pre class="examp">
 pen red
@@ -159,9 +159,7 @@ Now the queues look more like this:
 
 This means when the turtle is running `pen red`, bob is already running `lt 90`, and `bob` finishes while the turtle is still running `pen blue`. 
 
-But wait! There's a command to fix this: [`sync()`](sync.html)
-
-We can use the `sync()` command to make `bob` wait for the turtle so it doesn't fall behind. 
+There is a command that can be used to synchronize queues again: [`sync()`](sync.html)
 
 ### Example 4: Syncing with `sync()`
 
