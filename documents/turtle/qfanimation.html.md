@@ -7,3 +7,102 @@ layout: reference
 [Queue-based animation](qanimation.html) and [frame-based animation](fanimation.html) may seem like completely different types of programming, but they are both based off the same concept. The only difference is that in queue-based animation you're seeing the results long after the code is completed, whereas in frame-based animation the program is run as a series of frames which are displayed immediately and instantaniously upon completion. 
 
 While it is sometimes difficult to do, mixing the two types of animation can make more complex code, along with a more seamless visual, possible. 
+
+<pre class="examp">
+speed 100
+ht()
+avx = 10 * random(normal)
+avy = 10 * random(normal)
+bvx = 10 * random(normal)
+bvy = 10 * random(normal)
+cvx = 10 * random(normal)
+cvy = 10 * random(normal)
+randpos = ->
+  [200 * random([-200..200]), 200 * random([-200..200])]
+remakea = ->
+  col = random color
+  a.wear col
+  a.pen col
+  a.turnto randpos()
+remakeb = ->
+  col = random color
+  b.wear col
+  b.pen col
+  b.turnto randpos()
+remakec = ->
+  col = random color
+  c.wear col
+  c.pen col
+  c.turnto randpos()
+a = new Turtle
+remakea()
+b = new Turtle
+remakeb()
+c = new Turtle
+remakec()
+while true
+  a.fd 200
+  remakea()
+  b.fd 200
+  remakeb()
+  c.fd 200
+  remakec()
+  if not a.touches window
+    a.home()
+  if not b.touches window
+    b.home()
+  if not c.touches window
+    c.home()
+  await done defer()
+</pre>
+
+<script type="demo">
+setup ->
+  
+demo ->
+  speed 100
+  ht()
+  avx = 10 * random(normal)
+  avy = 10 * random(normal)
+  bvx = 10 * random(normal)
+  bvy = 10 * random(normal)
+  cvx = 10 * random(normal)
+  cvy = 10 * random(normal)
+  randpos = ->
+    [200 * random([-200..200]), 200 * random([-200..200])]
+  remakea = ->
+    col = random color
+    a.wear col
+    a.pen col
+    a.turnto randpos()
+  remakeb = ->
+    col = random color
+    b.wear col
+    b.pen col
+    b.turnto randpos()
+  remakec = ->
+    col = random color
+    c.wear col
+    c.pen col
+    c.turnto randpos()
+  a = new Turtle
+  remakea()
+  b = new Turtle
+  remakeb()
+  c = new Turtle
+  remakec()
+  while true
+    a.fd 200
+    remakea()
+    b.fd 200
+    remakeb()
+    c.fd 200
+    remakec()
+    if not a.touches window
+      a.home()
+    if not b.touches window
+      b.home()
+    if not c.touches window
+      c.home()
+    await done defer()
+</script>
