@@ -10,7 +10,9 @@ refOrder: 5
 
 The turn is measured in degrees.
 
-<code class="jumbo">rt&nbsp;<span data-dfn="degrees">90</span></code>
+<pre class="jumbo">
+rt <span data-dfn="degrees">90</span>
+</pre>
 
 <script type="demo">
 p = new Pencil
