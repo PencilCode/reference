@@ -119,26 +119,26 @@ demo ->
   dot green, 20
   plan ->
     jumpto turtle
-    cross()
+    p.cross()
     label 'jumpto 50, 50', 'top'
     jumpto -75, -25
     dot purple, 20
   plan ->
     jumpto turtle
-    cross()
+    p.cross()
     jump 0, -8
     label 'jumpto -75, -25', 'bottom'
     jumpto 0, -50
     dot yellow, 20
   plan ->
     jumpto turtle
-    cross()
+    p.cross()
     label 'jumpto 0, -50', 'right'
     jumpto -125, 100
     dot blue, 20
   plan ->
     jumpto turtle
-    cross()
+    p.cross()
     label 'jumpto -125, 100', 'right'
 </script>
 
