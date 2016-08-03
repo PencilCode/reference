@@ -6,7 +6,7 @@ section: basic
 refOrder: 5
 ---
 
-<b>rt</b> pivots the turtle clockwise (<b>rt</b> stands for "right turn").
+`rt` pivots the turtle clockwise (<b>rt</b> stands for "right turn").
 
 The turn is measured in degrees.
 
@@ -72,7 +72,7 @@ demo ->
     remove p
 </script>
 
-Notice that the angle used by `rt` is the <em>exterior</em> angle.
+Notice that the angle used by `rt` is the *exterior* angle.
 The interior angle added to the exterior angle will be 180.
 For example, the 60 degree interior angle drawn by the program
 above corresponds to the 120 degree exterior angle swept out by
@@ -80,7 +80,7 @@ the turtle.
 
 <h3>Turning an Upside-Down Turtle</h3>
 
-<b>rt</b> turns right from the turtle&apos;s point of view, so
+`rt` turns right from the turtle's point of view, so
 if the turtle is facing downward, when it turns right from its
 point of view, it will end up facing left from your point of
 view.  The demo below can be clicked a few times to show
@@ -143,5 +143,5 @@ demo ->
 
 <h3>Drawing Curves</h3>
 
-rt can also be used to draw curves by using a second argument.
-Read the reference page on <a href="curves.html">curves</a>.
+`rt` can also be used to draw curves by using a second argument.
+Read the reference page on [arcs](arcs.html).
