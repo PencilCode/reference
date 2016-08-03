@@ -4,9 +4,9 @@ description: pauses the turtle
 layout: reference
 ---
 
-**pause** is used to pause the turtle for a specified number of seconds. 
+`pause` is used to pause the turtle for a specified number of seconds. 
 
-**pause** is one way you can slow a turtle down so other animations and actions can catch up. 
+`pause` is one way you can slow a turtle down so other animations and actions can catch up. 
 
 <!--- is pause actually supposed to be included in the tutorials? -->
 <!--- annotations -->
