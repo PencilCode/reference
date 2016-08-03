@@ -113,7 +113,7 @@ setup ->
   p.jumpto 0, 250
   p.moveto 0, -250
   p.jumpto -250, 0
-  p.moveto 250, 0 ->
+  p.moveto 250, 0
 demo ->
   jumpto 50, 50
   dot green, 20
