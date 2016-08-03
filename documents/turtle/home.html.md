@@ -44,21 +44,20 @@ demo ->
 
 In this example, we will create an arrow shape. Notice that we move backwards from the center of the page to draw the arrow. 
 
-<pre class="examp"><span data-dfnright="draw an arrow">
-  dot blue
-  label "home", 'top'
-  p = pen red, 2
-  p.bk 30
-  p.lt 45
-  p.bk 30
-  p.pause 1
-  p.home()
-  p.rt 45
-  p.bk 30
-  p.pause 1
-  p.home()
-  p.bk 40
-  </span>
+<pre class="examp">
+<span data-dfnright="draw an arrow">dot blue
+label "home", 'top'
+p = pen red, 2
+p.bk 30
+p.lt 45
+p.bk 30
+p.pause 1
+p.home()
+p.rt 45
+p.bk 30
+p.pause 1
+p.home()
+p.bk 40</span>
 </pre>
   
 <script type="demo" height=99>
