@@ -15,7 +15,7 @@ layout: reference
   fd 50
   lt 90
   pen blue
-  pause 4
+  pause 2
   fd 50
 </pre>
 
@@ -34,7 +34,7 @@ demo ->
   fd 50
   lt 90
   pen blue
-  pause 4
+  pause 2
   fd 50
 </script>
 
