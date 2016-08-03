@@ -7,7 +7,6 @@ layout: reference
 ## The Code
 
 <pre class="examp">
-speed 100
 ht()
 randpos = ->
   [200 * random([-200..200]), 200 * random([-200..200])]
@@ -97,7 +96,7 @@ This `while` loop creates all the motion in the code: moving the turtles, changi
 ## Output
 
 <script type="figure" width=500 height=500>
-speed 100
+speed 25
 ht()
 randpos = ->
   [random([-100..100]), random([-100..100])]
