@@ -11,12 +11,6 @@ While it is sometimes difficult to do, mixing the two types of animation can mak
 <pre class="examp">
 speed 100
 ht()
-avx = 10 * random(normal)
-avy = 10 * random(normal)
-bvx = 10 * random(normal)
-bvy = 10 * random(normal)
-cvx = 10 * random(normal)
-cvy = 10 * random(normal)
 randpos = ->
   [random([-100..100]), random([-100..100])]
 remakea = ->
@@ -47,12 +41,6 @@ while true
   remakeb()
   c.fd 200
   remakec()
-  if not a.touches window
-    a.home()
-  if not b.touches window
-    b.home()
-  if not c.touches window
-    c.home()
   await done defer()
 </pre>
 
@@ -62,12 +50,6 @@ setup ->
 demo ->
   speed 100
   ht()
-  avx = 10 * random(normal)
-  avy = 10 * random(normal)
-  bvx = 10 * random(normal)
-  bvy = 10 * random(normal)
-  cvx = 10 * random(normal)
-  cvy = 10 * random(normal)
   randpos = ->
     [random([-100..100]), random([-100..100])]
   remakea = ->
@@ -98,11 +80,5 @@ demo ->
     remakeb()
     c.fd 200
     remakec()
-    if not a.touches window
-      a.home()
-    if not b.touches window
-      b.home()
-    if not c.touches window
-      c.home()
     await done defer()
 </script>
