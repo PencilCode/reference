@@ -26,7 +26,7 @@ scale 1/<span data-dfn="the amount the object has already been scaled">x</span>
   p = pen brown, 2
   p.bk 30
   </span>
-  <span data-dfnright="return home">
+  <span data-dfn="return home">
   p.home()
   </span>
 </pre>
