@@ -18,7 +18,7 @@ bvy = 10 * random(normal)
 cvx = 10 * random(normal)
 cvy = 10 * random(normal)
 randpos = ->
-  [200 * random([-200..200]), 200 * random([-200..200])]
+  [random([-100..100]), random([-100..100])]
 remakea = ->
   col = random color
   a.wear col
@@ -69,7 +69,7 @@ demo ->
   cvx = 10 * random(normal)
   cvy = 10 * random(normal)
   randpos = ->
-    [200 * random([-200..200]), 200 * random([-200..200])]
+    [random([-100..100]), random([-100..100])]
   remakea = ->
     col = random color
     a.wear col
