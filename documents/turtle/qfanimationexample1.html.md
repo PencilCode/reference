@@ -93,3 +93,44 @@ while true
 ```
 
 This `while` loop creates all the motion in the code: moving the turtles, changing their colors and changing their destinations. Because of `await done defer()`, the loop runs every time the turtles finish moving. Because the conditional input is `true`, the loop will continue running until the code is stopped. 
+
+## Output
+
+<script type="demo">
+setup ->
+  
+demo ->
+  speed 100
+  ht()
+  randpos = ->
+    [random([-100..100]), random([-100..100])]
+  remakea = ->
+    col = random color
+    a.wear col
+    a.pen col
+    a.turnto randpos()
+  remakeb = ->
+    col = random color
+    b.wear col
+    b.pen col
+    b.turnto randpos()
+  remakec = ->
+    col = random color
+    c.wear col
+    c.pen col
+    c.turnto randpos()
+  a = new Turtle
+  remakea()
+  b = new Turtle
+  remakeb()
+  c = new Turtle
+  remakec()
+  while true
+    a.fd 200
+    remakea()
+    b.fd 200
+    remakeb()
+    c.fd 200
+    remakec()
+    await done defer()
+</script>
