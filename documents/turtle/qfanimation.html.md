@@ -46,4 +46,4 @@ while true
   await done defer()
 </script>
 
-For an explanation of this script, see its [info](qfanimationexample1.html) page. 
+*For a more detailed explanation of this script, see its [info](qfanimationexample1.html) page.*
