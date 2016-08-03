@@ -96,7 +96,7 @@ This `while` loop creates all the motion in the code: moving the turtles, changi
 
 ## Output
 
-<script type="demo">
+<script type="demo" width=300 height=300>
 setup ->
   
 demo ->
