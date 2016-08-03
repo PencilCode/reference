@@ -26,4 +26,4 @@ However, there are drawbacks to this method as well. You need to always keep tra
 
 ## Mixing Queue- and Frame-Based Animation
 
-[Mixing queue- and frame-based animation](qfanimation.html) is the most powerful form of animation possible with Pencil Code. By using this method, you can run code in the background, while still doing simple movements with the basic movement commands. 
+[Mixing queue- and frame-based animation](qfanimation.html) is the most powerful form of animation possible with Pencil Code. By using this method, you can run code in the background while still doing simple movements with the basic movement commands. 
