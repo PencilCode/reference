@@ -6,7 +6,7 @@ section: basic
 refOrder: 2
 ---
 
-<b>pen</b> will pick a drawing color
+`pen` will pick a drawing color
 When the turtle moves, it will trace out a line in the pen color.
 
 <pre class="jumbo">pen <span data-dfn="color">blueviolet</span></pre>
@@ -74,7 +74,7 @@ For all 140 standard named colors, see [the color table](colors.html).
 
 <h3>Thick Lines</h3>
 
-<b>pen</b> accepts an optional second argument, which is the width of the
+`pen` accepts an optional second argument, which is the width of the
 pen in pixels.  Remember that arguments need to be separated by
 a comma.
 
@@ -118,7 +118,7 @@ demo ->
 
 <h3>Line Cap Styles</h3>
 
-<b>pen</b> accepts an optional third argument, which is the name of
+`pen` accepts an optional third argument, which is the name of
 a line-cap style to use.
 
 | line-cap style    | pen shape    | example                                |
@@ -137,9 +137,9 @@ s.addClass 'turtlefield'
 p = new Pencil s
 p.cross = (s) ->
   @jump 0, -s
-  @move 0, 2 * s
+  @slide 0, 2 * s
   @jump -s, -s
-  @move 2 * s, 0
+  @slide 2 * s, 0
   @jump -s, 0
 plan ->
   p.pen black, 0.7
@@ -149,9 +149,9 @@ plan ->
     p.jumpto 50, j * 50 - 25
     p.cross 5
   p.jumpto -50, -60
-  p.move 0, -5
-  p.move 100, 0
-  p.move 0, 5
+  p.slide 0, -5
+  p.slide 100, 0
+  p.slide 0, 5
   p.jump -50, -5
   p.label "fd 100", 'bottom'
   p.pen null
@@ -195,7 +195,7 @@ useful for lining up rectangular shapes with line ends.
 <h3>Line Join Styles</h3>
 
 To control the appearance of corners, use the optional fourth argument
-of <b>pen</b>, which controls a line-join style to use.
+of `pen`, which controls a line-join style to use.
 
 | line-join style   | corners | example                                       |
 |-------------------|---------|-----------------------------------------------|
@@ -212,9 +212,9 @@ s = new Sprite
 p = new Pencil s
 p.cross = (s) ->
   @jump 0, -s
-  @move 0, 2 * s
+  @slide 0, 2 * s
   @jump -s, -s
-  @move 2 * s, 0
+  @slide 2 * s, 0
   @jump -s, 0
 p.pen black, 0.7
 
