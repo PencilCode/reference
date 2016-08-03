@@ -24,11 +24,8 @@ scale 1/<span data-dfn="the amount the object has already been scaled">x</span>
   dot red
   label "home", 'top'
   p = pen brown, 2
-  p.bk 30
-  </span>
-  <span data-dfn="return home">
-  p.home()
-  </span>
+  p.bk 30</span>
+  <span data-dfn="return home">p.home()</span>
 </pre>
   
 <script type="demo" height=99>
