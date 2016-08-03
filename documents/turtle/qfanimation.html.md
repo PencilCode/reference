@@ -8,6 +8,8 @@ layout: reference
 
 While it is sometimes difficult to do, mixing the two types of animation can make more complex code, along with a more seamless visual, possible. 
 
+The following example uses queues to make the turtles move, but each movement is queued each frame by the `while` loop.
+
 <script type="figure" width=500 height=500>
 speed 100
 ht()
