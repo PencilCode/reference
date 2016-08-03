@@ -82,3 +82,5 @@ demo ->
     remakec()
     await done defer()
 </script>
+
+For an explanation of this script, see its [info](qfanimationexample1.html) page. 
