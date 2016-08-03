@@ -96,7 +96,6 @@ This `while` loop creates all the motion in the code: moving the turtles, changi
 ## Output
 
 <script type="figure" width=500 height=500>
-speed 25
 ht()
 randpos = ->
   [random([-100..100]), random([-100..100])]
