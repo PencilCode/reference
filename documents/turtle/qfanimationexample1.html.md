@@ -49,13 +49,11 @@ while true
 
 ### Parts
 
-#### Functions
-
 There are four functions at work in this code: `randpos()`, `remakea()`, `remakeb()` and `remakec()`. 
 
 The last three are exactly the same except they each affect a different object. 
 
-##### `randpos()`
+#### `randpos()`
 
 ```coffeescript
 randpos = ->
@@ -64,7 +62,7 @@ randpos = ->
 
 Generates a random set of coordinates in a 200 by 200 box, centered on the origin. 
 
-##### `remakea()`
+#### `remakea()`
 
 ```coffeescript
 remakea = ->
@@ -78,7 +76,7 @@ This function changes the color and pen color of the `a` turtle and turns it to 
 
 This is the same for the `remakeb()` and `remakec()` functions, but affecting the `b` and `c` turtles respectively. 
 
-#### Loop
+#### `while` Loop
 
 ```coffeescript
 while true
