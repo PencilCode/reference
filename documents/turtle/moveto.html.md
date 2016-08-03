@@ -25,7 +25,7 @@ p = new Pencil
 p.cross = ->
   @pen black, 0.7
   @jump -5, 0
-  @move 10
+  @slide 10
   @jump -5, -5
   @fd 10
   @jump 0, -5
@@ -101,7 +101,7 @@ p = new Pencil
 p.cross = ->
   @pen black, 0.7
   @jump -5, 0
-  @move 10
+  @slide 10
   @jump -5, -5
   @fd 10
   @jump 0, -5
@@ -149,7 +149,7 @@ p = new Pencil
 p.cross = ->
   @pen black, 0.7
   @jump -5, 0
-  @move 10
+  @slide 10
   @jump -5, -5
   @fd 10
   @jump 0, -5
@@ -220,7 +220,7 @@ p = new Pencil
 p.cross = ->
   @pen black, 0.7
   @jump -5, 0
-  @move 10
+  @slide 10
   @jump -5, -5
   @fd 10
   @jump 0, -5
