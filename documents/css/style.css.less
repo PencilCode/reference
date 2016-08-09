@@ -101,6 +101,7 @@ code:not([class^="lang-"]) {
   border: 1px solid silver;
   color: #8300AD;
   white-space: pre;
+  text-decoration: none;
 }
 
 .jumbo, .examp {
@@ -223,14 +224,14 @@ b.edit {
   color: #ffffff;
 }
 
-/* unvisited code link */
-a:link code {
-  color: inherit;
-  text-decoration: none;
+a:link {
+    text-decoration: none;
 }
 
-/* visited code link */
-a:visited code {
-    color: inherit;
+a:visited {
     text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }
