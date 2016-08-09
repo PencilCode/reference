@@ -4,7 +4,7 @@ description: draws a dot under the turtle
 layout: reference
 ---
 
-<b>dot</b> can make a dot in any <a href="colors.html">color</a>.
+`dot` can make a dot in any <a href="colors.html">color</a>.
 It draws the dot under the turtle.
 
 <pre class="jumbo">
