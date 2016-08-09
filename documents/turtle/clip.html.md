@@ -6,7 +6,7 @@ layout: reference
 
 `clip` will remove all parts of an object outside the <b class="edit">something</b> boundary. 
 
-After drawing a custom sprite, `clip` can be used to make the sprite the shape of the drawing. 
+After drawing a custom sprite using [`drawon`](drawon.html), `clip` can be used to make the sprite the shape of the drawing. 
 
 <pre class="examp">
 c = new Sprite
