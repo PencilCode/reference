@@ -37,7 +37,7 @@ demo ->
 </script>
 
 ### Moving New Shapes
-We use [pen](pen.html), [dot](dot.html) and [sync](sync.html) to create and move  shapes in our next example. Sync makes the shapes move in sequence instead of at the same time. 
+We use [pen](pen.html), [dot](dot.html) and [sync](sync.html) to create and move  shapes in our next example. `sync` makes the shapes move in sequence instead of at the same time. 
 
 <!--- Check speedinfinity and whether sync correct -->
 <!--- What does null do (set to default?)  -->
