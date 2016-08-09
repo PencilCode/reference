@@ -8,6 +8,38 @@ layout: reference
 
 After drawing a custom sprite, `clip` can be used to make the sprite the shape of the drawing. 
 
+<pre class="examp">
+c = new Sprite
+pen red
+drawon c
+fd 100
+rt 90
+fd 100
+turnto 0, 0
+moveto 0, 0
+home()
+pen null
+plan ->
+  c.clip()
+</pre>
+
+<script type="demo">
+demo ->
+  speed 10
+  c = new Sprite
+  pen red
+  drawon c
+  fd 100
+  rt 90
+  fd 100
+  turnto 0, 0
+  moveto 0, 0
+  home()
+  pen null
+  plan ->
+    c.clip()
+</script>
+
 However, it does not clip concave areas. 
 
 <pre class="examp">
@@ -31,13 +63,11 @@ plan ->
 </pre>
 
 <script type="demo">
-setup ->
-  
 demo ->
   speed 10
   c = new Sprite
-  drawon c
   pen red
+  drawon c
   fd 100
   rt 90
   fd 50
