@@ -23,7 +23,7 @@ plan ->
   c.clip()
 </pre>
 
-<script type="demo" width=120 height=120>
+<script type="demo" width=250 height=250>
 demo ->
   speed 2
   c = new Sprite
@@ -62,7 +62,7 @@ plan ->
   c.clip()
 </pre>
 
-<script type="demo" width=120 height=120>
+<script type="demo" width=250 height=250>
 demo ->
   speed 2
   c = new Sprite
