@@ -36,6 +36,8 @@ demo ->
   t.dot orange, 100
 </script>
 
+Using [`clip`](clip.html), we could also make the sprite the shape of that dot. 
+
 ### Moving New Shapes
 We use [`pen`](pen.html), [`dot`](dot.html) and [`sync`](sync.html) to create and move  shapes in our next example. `sync` makes the shapes move in sequence instead of at the same time. 
 
