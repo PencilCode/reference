@@ -23,9 +23,9 @@ plan ->
   c.clip()
 </pre>
 
-<script type="demo">
+<script type="demo" width=120 height=120>
 demo ->
-  speed 10
+  speed 2
   c = new Sprite
   pen red
   drawon c
@@ -62,9 +62,9 @@ plan ->
   c.clip()
 </pre>
 
-<script type="demo">
+<script type="demo" width=120 height=120>
 demo ->
-  speed 10
+  speed 2
   c = new Sprite
   pen red
   drawon c
