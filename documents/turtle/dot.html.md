@@ -25,7 +25,7 @@ demo ->
 
 <h3>Bigger Dots</h3>
 
-<b>dot</b> accepts an optional second argument, which is the diameter of
+`dot` accepts an optional second argument, which is the diameter of
 the dot in pixels.  Remember that arguments need to be separated by
 a comma.
 
