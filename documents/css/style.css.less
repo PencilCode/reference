@@ -1,10 +1,12 @@
 @import "../../static/less/core";
 @import (less) "../../static/css/vendor/main.css";
-
-body, td, th {
+body,
+td,
+th {
   font-family: Lato;
   background: whitesmoke;
 }
+
 body {
   padding: 0 20px 36px 20px;
   left: 0;
@@ -14,10 +16,14 @@ body {
   margin-right: auto;
   margin-bottom: 240px;
 }
+
 label {
   user-select: none;
-  -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
 }
+
 table {
   border-collapse: collapse;
 }
@@ -25,18 +31,22 @@ table {
 input.collapse {
   display: none;
 }
+
 input.collapse + label:before {
   display: inline-block;
   width: 25px;
   content: '\25b6\00a0';
   text-align: right;
 }
+
 input.collapse + label + div {
   padding-bottom: 25px;
 }
+
 input.collapse + label:active:before {
   color: red
 }
+
 input.collapse + label:after {
   content: 'click to open';
   display: block;
@@ -46,36 +56,64 @@ input.collapse + label:after {
   font-size: 50%;
   height: 0;
 }
+
 input.collapse + label:hover:after {
   color: dimgray;
 }
+
 input.collapse + label + div {
   padding-left: 25px;
   transition: max-height 0.5s, opacity 0.25s, visibility 0.5s;
   overflow: hidden;
-  max-height:0;
+  max-height: 0;
   opacity: 0;
   visibility: hidden;
 }
+
 input.collapse:checked + label:before {
   content: '\25bc\00a0'
 }
+
 input.collapse:checked + label:after {
   display: none
 }
+
 input.collapse:checked + label + div {
   max-height: 1000px;
   opacity: 1;
   visibility: visible;
 }
-.h2 { font-size: 1.5em; font-weight: bold; }
-.h3 { font-size: 1.17em; font-weight: bold; }
-.h4 { font-weight: bold; }
 
-.reference ul { margin-top: 0; margin-bottom: 0; }
-.reference h2, .reference h3, .reference h4,
-.reference h5, .reference h6 { margin-bottom: 0 }
-.reference small { color: gray }
+.h2 {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.h3 {
+  font-size: 1.17em;
+  font-weight: bold;
+}
+
+.h4 {
+  font-weight: bold;
+}
+
+.reference ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.reference h2,
+.reference h3,
+.reference h4,
+.reference h5,
+.reference h6 {
+  margin-bottom: 0
+}
+
+.reference small {
+  color: gray
+}
 
 iframe.demo {
   width: 199px;
@@ -104,7 +142,8 @@ code:not([class^="lang-"]) {
   text-decoration: none;
 }
 
-.jumbo, .examp {
+.jumbo,
+.examp {
   text-align: left;
   padding: 2px 4px;
   display: inline-table;
@@ -113,24 +152,33 @@ code:not([class^="lang-"]) {
   color: #8300AD;
   white-space: pre;
 }
+
 .jumbo {
   font-size: 30px;
 }
+
 .examp {
   font-size: 15px;
 }
-.jumbo span, .examp span {
+
+.jumbo span,
+.examp span {
   line-height: normal;
 }
-.jumbo dfn, .examp dfn {
+
+.jumbo dfn,
+.examp dfn {
   color: dimgray;
   font-family: Arial;
   font-size: 16px;
   text-align: center;
 }
-pre.jumbo, pre.examp {
+
+pre.jumbo,
+pre.examp {
   margin: 0;
 }
+
 pre {
   background: white;
   padding: 2px 4px;
@@ -172,6 +220,7 @@ a.bottombar:hover {
   border-radius: 0px 10px 0px 0px;
   font-size: 60pt;
 }
+
 @media screen and (max-width: 835px) {
   .back-to-top {
     display: none;
@@ -179,8 +228,8 @@ a.bottombar:hover {
 }
 
 .inline-right {
-  display:inline-block;
-  float:right;
+  display: inline-block;
+  float: right;
   text-decoration: inherit;
 }
 
@@ -205,30 +254,38 @@ a.bottombar:hover {
   border-bottom: 1px solid silver;
 }
 
+
 /* Side-by-Side Elements (flex box) */
+
 .container {
-    display: flex;
-    justify-content: space-between;
-    justify-content: space-around;
+  display: flex;
+  justify-content: space-between;
+  justify-content: space-around;
 }
+
 .fixed {
-    width: auto;
-    padding-left: 8px;
-    padding-right: 8px;
+  width: auto;
+  padding-left: 8px;
+  padding-right: 8px;
 }
+
 .flex-item {
-    flex-grow: 1;
+  flex-grow: 1;
 }
+
 b.edit {
   background-color: #ff0000;
   color: #ffffff;
 }
+
 a:link {
-    text-decoration: none;
+  text-decoration: none;
 }
+
 a:visited {
-    text-decoration: none;
+  text-decoration: none;
 }
+
 a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
