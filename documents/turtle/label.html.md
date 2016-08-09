@@ -6,7 +6,7 @@ layout: reference
 
 `label` writes text at the turtle position.
 
-<code class="jumbo">label <span data-dfnup="quote">'</span><span data-dfn="text">You are here.</span><span data-dfnup="quote">'</span></code>
+<pre class="jumbo">label <span data-dfnup="quote">'</span><span data-dfn="text">You are here.</span><span data-dfnup="quote">'</span></pre>
 
 <script type="demo" height=99>
 demo ->
@@ -26,7 +26,7 @@ quoted.  The string may contain [HTML](http://www.w3schools.com/html/default.asp
 <b>label</b> can create a larger label with an optional second argument.
 Remember the comma.
 
-<code class="jumbo">label <span data-dfn="string">'Hi'</span><span data-note="comma">,</span>&nbsp;<span data-dfn="size">100</span></code>
+<pre class="jumbo">label <span data-dfn="string">'Hi'</span><span data-note="comma">,</span>&nbsp;<span data-dfn="size">100</span></pre>
 
 <script type="demo" width=249>
 demo ->
