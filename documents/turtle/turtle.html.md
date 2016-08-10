@@ -14,7 +14,7 @@ a period:
 
 <pre class="jumbo">
 sally = new Turtle <span data-dfnup="optional color">orange</span>
-sally<span data-dfn="command after a dot">.fd 50</span>
+sally.<span data-dfn="command after a dot">fd 50</span>
 </pre>
 
 <script type="demo">
