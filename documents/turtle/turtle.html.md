@@ -36,10 +36,7 @@ demo ->
 Any number of turtles can be created.  Be sure to use a different
 name for each turtle.
 
-Turtles receive their commands to move instantly, and then
-after receving commands, they all begin moving at the same time.
-In the next example, `r` is given its commands before
-`b`, but they both start moving at the same time.
+Turtles receive their commands to move instantly, and after receving commands, they all begin moving at the same time. (For more info about this, see [animation queues](animationqueues.html).) In the next example, `r` is given its commands before `b`, but they both start moving at the same time. 
 
 <pre class="examp">
 <span data-dfnright="for r">r = new Turtle red
@@ -70,7 +67,7 @@ demo ->
 
 ### Changing the Turtle
 
-Use [wear](wear.html) to change the turtle’s shell to a different color or replace its shell with an image.
+Use [`wear`](wear.html) to change the turtle’s shell to a different color or replace its shell with an image.
 
 <pre class="examp">
 car = new Turtle
@@ -90,4 +87,4 @@ demo ->
 </script>
 
 
-See [Sprite](sprite.html) to make a blank "turtle" that you can draw yourself using [drawon](drawon.html).
+See [Sprite](sprite.html) to make a blank turtle-like object that you can draw yourself using [`drawon`](drawon.html).
