@@ -4,9 +4,9 @@ description: creates a new turtle
 layout: reference
 ---
 
-**new Turtle** creates a new turtle.
+`new Turtle` creates a new turtle.
 
-**new Turtle** can create a new turtle with any [color](colors.html) shell. 
+`new Turtle` can create a new turtle with any [color](colors.html) shell. 
 
 Name the turtle by setting a variable.  Once the turtle has a variable
 name like `sally`, the turtle can be moved by coding a command after
