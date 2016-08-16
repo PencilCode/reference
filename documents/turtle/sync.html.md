@@ -31,6 +31,8 @@ p.fd 100
 <!--- which ones shold be null? -->
 <!--- demo - turtle and hare race -->
 <script type="demo">
+setup ->
+
 demo ->
   r = new Turtle red
   g = new Turtle green
