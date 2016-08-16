@@ -11,5 +11,5 @@ t.distance(<span data-dfnup="distance to coordinates (3, 4)">3, 4</span>)
 </pre>
 
 <pre class="jumbo">
-t.distance(<span data-dfnup="distance to object s">s</span>
+t.distance(<span data-dfnup="distance to object s">s</span>)
 </pre>
