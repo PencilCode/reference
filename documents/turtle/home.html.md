@@ -7,7 +7,7 @@ layout: reference
 <!-- any arguments in brackets? -->
 `home` returns the turtle to the starting position and scales it back to its original size. 
 
-`home` acts almost like the [jumpto](jumpto.html), [turnto](turnto.html), and [scale](scale.html) commands all in one command. 
+`home` acts almost like the [`jumpto`](jumpto.html), [`turnto`](turnto.html), and [`scale`](scale.html) commands all in one command. 
 
 Using each command individually would look something like this: 
 
