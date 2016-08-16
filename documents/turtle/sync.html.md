@@ -31,9 +31,6 @@ If you want to correct sprite timing by synchronizing with other sprites, you wo
 <!--- which ones shold be null? -->
 <!--- demo - turtle and hare race -->
 <script type="demo">
-t = null
-setup ->
-  remove r, g, p
 demo ->
   r = new Turtle red
   g = turtle green
