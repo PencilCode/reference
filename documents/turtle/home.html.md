@@ -77,4 +77,4 @@ demo ->
   p.bk 40
 </script>
 
-You can use [jumpto](jumpto.html) to make the turtle jump to specified x and y coordinates on a page.
+You can use [`jumpto`](jumpto.html) to make the turtle jump to specified x and y coordinates on a page.
