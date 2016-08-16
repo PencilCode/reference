@@ -4,11 +4,13 @@ description: synchronizes turtles
 layout: reference
 ---
 
-**sync** is used to synchronize turtles or sprites. 
+`sync` is used to synchronize turtles or sprites. 
 
-**sync** If you want to correct sprite timing by synchronizing with other sprites, you can list the sprites you want to sync with using the "sync" command
+If you want to correct sprite timing by synchronizing with other sprites, you would use `sync`. 
 
-The "sync" command will make any listed sprites pause until all of them reach that same point in the animation, before proceeding to any animation commands after the sync command. 
+`sync` will make any listed sprites pause until all of them reach that same point in the animation before proceeding to any animation commands after it. 
+
+`sync` is one of the commands that manipulates [animation queues](animationqueues.html). 
 
 <!--- annotations -->
 <!--- turtle and hare race demo -->
@@ -46,4 +48,4 @@ demo ->
   p.fd 100
 </script>
 
-You can also control an element's speed and timing by using [speed](speed.html) to set the number of moves per second and [pause](pause.html) to pause a turtle while other turtles perform actions. 
+You can also control an element's speed and timing by using [`speed`](speed.html) to set the number of moves per second and [`pause`](pause.html) to pause a turtle while other turtles perform actions. 
