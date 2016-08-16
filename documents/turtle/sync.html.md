@@ -16,7 +16,7 @@ If you want to correct sprite timing by synchronizing with other sprites, you wo
 <!--- turtle and hare race demo -->
 <pre class="jumbo">
 r = new Turtle red
-g = turtle green
+g = new Turtle green
 p = new Turtle purple
 r.bk 100
 g.fd 100
@@ -33,7 +33,7 @@ p.fd 100
 <script type="demo">
 demo ->
   r = new Turtle red
-  g = turtle green
+  g = new Turtle green
   p = new Turtle purple
   r.bk 100
   g.fd 100
