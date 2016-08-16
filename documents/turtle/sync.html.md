@@ -15,17 +15,17 @@ If you want to correct sprite timing by synchronizing with other sprites, you wo
 <!--- annotations -->
 <!--- turtle and hare race demo -->
 <pre class="jumbo">
-  r = new Turtle red
-  g = turtle green
-  p = new Turtle purple
-  r.bk 100
-  g.fd 100
-  g.rt 90
-  g.fd 100
-  sync r, g, p
-  r.fd 100
-  g.fd 100
-  p.fd 100
+r = new Turtle red
+g = turtle green
+p = new Turtle purple
+r.bk 100
+g.fd 100
+g.rt 90
+g.fd 100
+sync r, g, p
+r.fd 100
+g.fd 100
+p.fd 100
 </pre>
 
 <!--- which ones shold be null? -->
