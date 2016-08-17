@@ -10,6 +10,34 @@ Control the speed of the turtle using `speed`.
 
 `speed` is one of the commands used for controlling [animation](animation.html). 
 
+<h3>Default Speed</h3>
+
+The starting default speed for turtles is one move per second.
+The program below does not specify a speed, so it takes one second to
+draw each dot, and another second to move forward between
+each dot.  Since the program repeats those two motions 8 times, the
+turtle takes 8&times;2=16 seconds total to complete its animation.
+
+<pre class="examp">
+for [1..8]
+  dot random(color), 10
+  fd 25
+</pre>
+
+<script type="demo" width=249 height=99>
+setup ->
+  moveto -100, 0
+  rt 90
+demo ->
+  for [1..8]
+    dot random(color), 10
+    fd 25
+  plan ->
+    p = new Pencil
+    p.bk 5
+    p.label 'click to see default speed again', 'bottom'
+</script>
+
 Five moves per second:
 
 <pre class="jumbo">
@@ -52,7 +80,7 @@ demo ->
     p.label 'click to see speed 10 again', 'bottom'
 </script>
 
-As fast as your computer can move (often looks instant, and thus is used in [frame-based animation](fanimation.html)):
+As fast as your computer can compute (often looks instant, and thus is used in [frame-based animation](fanimation.html)):
 
 <pre class="jumbo">
 speed Infinity
@@ -71,34 +99,6 @@ demo ->
     p = new Pencil
     p.bk 5
     p.label 'click to see speed Infinity again', 'bottom'
-</script>
-
-<h3>Default Speed</h3>
-
-The starting default speed for turtles is one move per second.
-The program below does not specify a speed, so it takes one second to
-draw each dot, and another second to move forward between
-each dot.  Since the program repeats those two motions 8 times, the
-turtle takes 8&times;2=16 seconds total to complete its animation.
-
-<pre class="examp">
-for [1..8]
-  dot random(color), 10
-  fd 25
-</pre>
-
-<script type="demo" width=249 height=99>
-setup ->
-  moveto -100, 0
-  rt 90
-demo ->
-  for [1..8]
-    dot random(color), 10
-    fd 25
-  plan ->
-    p = new Pencil
-    p.bk 5
-    p.label 'click to see default speed again', 'bottom'
 </script>
 
 <h3>Turtles with Diffent Speeds</h3>
