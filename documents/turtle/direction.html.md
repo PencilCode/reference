@@ -4,7 +4,7 @@ description: angle to an object
 layout: reference
 ---
 
-`direction` returns the [angle](angle.html) to an object from the starting position (facing straight up). 
+`direction` returns the [angle](angles.html) to an object from the starting position (facing straight up). 
 
 <pre class="jumbo">
 t.direction(p)
