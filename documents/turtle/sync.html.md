@@ -30,20 +30,19 @@ p.fd 100
 
 <!--- which ones shold be null? -->
 <!--- demo - turtle and hare race -->
-<script type="demo" height=240 width=340>
-demo ->
-  speed 1
-  r = new Turtle red
-  g = new Turtle green
-  p = new Turtle purple
-  r.bk 100
-  g.fd 100
-  g.rt 90
-  g.fd 100
-  sync r, g, p
-  r.fd 100
-  g.fd 100
-  p.fd 100
+<script type="figure" height=240 width=340>
+speed 1
+r = new Turtle red
+g = new Turtle green
+p = new Turtle purple
+r.bk 100
+g.fd 100
+g.rt 90
+g.fd 100
+sync r, g, p
+r.fd 100
+g.fd 100
+p.fd 100
 </script>
 
 You can also control an element's speed and timing by using [`speed`](speed.html) to set the number of moves per second and [`pause`](pause.html) to pause a turtle while other turtles perform actions. 
