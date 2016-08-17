@@ -87,7 +87,7 @@ tick 200, ->
   d.turnto lastmousemove
   d.fd 80
   d.home()
-  p.html "direction to mouse: " + direction(lastmousemove)
+  p.html "direction to mouse: " + (direction(lastmousemove)-direction())
   await done defer()
   c.remove()
 </script>
