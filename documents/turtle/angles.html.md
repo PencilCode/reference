@@ -94,7 +94,7 @@ tick 200, ->
 
 ###Interior vs Exterior Angles
 
-It is important to note that the angles used by commands (such as [lt](lt.html) and [rt](rt.html)) are *exterior* angles. The only case in which the interion and exterior angles are the same is when drawing a 90 degree angle. 
+It is important to note that the angles used by commands (such as [lt](lt.html) and [rt](rt.html)) are *exterior* angles. The only case in which the interior and exterior angles are the same is when drawing a 90 degree angle. 
 
 To draw an (interior) angle of a certain degree, you need to find the exterior angle to use in the code. The exterior angle is equal to 180 degrees minus the desired interior angle. 
 
