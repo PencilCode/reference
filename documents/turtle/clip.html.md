@@ -40,7 +40,7 @@ demo ->
     c.clip()
 </script>
 
-However, it does not clip concave areas. 
+However, it does not clip concave areas. This is because they are within the <b class="edit">something</b> boundary. 
 
 <pre class="examp">
 c = new Sprite
