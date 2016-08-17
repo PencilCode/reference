@@ -30,7 +30,7 @@ p.fd 100
 
 <!--- which ones shold be null? -->
 <!--- demo - turtle and hare race -->
-<script type="figure" height=240 width=380>
+<script type="figure" height=240 width=420>
 ht()
 r = new Turtle red
 g = new Turtle green
