@@ -44,4 +44,6 @@ demo ->
     width: 75
 </script>
 
-Sprites can be used as new actors when creating [animations](animation.html). 
+Sprites can also be made to wear images using [`wear`](wear.html). 
+
+Sprites can be used as new actors when creating animations. 
