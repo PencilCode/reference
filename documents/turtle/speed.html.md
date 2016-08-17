@@ -6,7 +6,9 @@ section: drawing
 refOrder: 0
 ---
 
-Control the speed of the turtle using <code>speed</code>.
+Control the speed of the turtle using `speed`.
+
+`speed` is one of the commands used for controlling [animation](animation.html). 
 
 Five moves per second:
 
