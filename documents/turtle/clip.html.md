@@ -4,7 +4,7 @@ description: fitting to the edges
 layout: reference
 ---
 
-`clip` will remove all parts of an object outside the <b class="edit">something</b> boundary. 
+`clip` will remove all parts of an object outside the [convex hull](https://en.wikipedia.org/wiki/Convex_hull.html). 
 
 After drawing a custom sprite using [`drawon`](drawon.html), `clip` can be used to make the sprite the shape of the drawing. 
 
@@ -40,7 +40,7 @@ demo ->
     c.clip()
 </script>
 
-However, it does not clip concave areas. This is because they are within the <b class="edit">something</b> boundary. 
+However, it does not clip concave areas. This is because they are within the convex hull. 
 
 <pre class="examp">
 c = new Sprite
