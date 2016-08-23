@@ -33,14 +33,14 @@ $(document).ready(function(){
 	// Display the "back to top" button if the view is scrolled down
 	$(window).scroll(function(){
 		if ($(this).scrollTop() > 100) {
-			$('.back-to-top').fadeIn();
+			$('.scrollToTop').fadeIn();
 		} else {
-			$('.back-to-top').fadeOut();
+			$('.scrollToTop').fadeOut();
 		}
 	});
 	
 	// Click event to scroll to top
-	$('.back-to-top').click(function(){
+	$('.scrollToTop').click(function(){
 		$('html, body').animate({scrollTop : 0},800);
 		return false;
 	});
