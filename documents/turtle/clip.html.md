@@ -8,6 +8,8 @@ layout: reference
 
 Essentially, the convex hull looks like the edge of a rubber band wrapped around an object. 
 
+In the image below, the red border represents the convex hull. Note that it does not reach into the indentation in the triangle. 
+
 <img src="http://i.imgur.com/Hpmkgin.png" width=500>
 
 After drawing a custom sprite using [`drawon`](drawon.html), `clip` can be used to make the sprite the shape of the drawing. 
