@@ -18,6 +18,7 @@
 
 <%- @getBlock('scripts').add(@site.scripts).toHTML() %>
 <script>
+// Press Ctrl+E to go to the GitHub source page
 window.addEventListener('keydown', function(e) {
   if (e.which == 'E'.charCodeAt(0) && e.ctrlKey) {
     var editor = window.open(
@@ -25,6 +26,25 @@ window.addEventListener('keydown', function(e) {
         "pcredit");
     editor.focus();
   }
+});
+
+$(document).ready(function(){
+	
+	// Display the "back to top" button if the view is scrolled down
+	$(window).scroll(function(){
+		if ($(this).scrollTop() > 100) {
+			$('.back-to-top').fadeIn();
+		} else {
+			$('.back-to-top').fadeOut();
+		}
+	});
+	
+	// Click event to scroll to top
+	$('.back-to-top').click(function(){
+		$('html, body').animate({scrollTop : 0},800);
+		return false;
+	});
+	
 });
 </script>
 </body>
