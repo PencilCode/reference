@@ -11,6 +11,8 @@ layout: default
 
 <h1><%= @document.title %> <small><%= @document.description %></small></h1>
 
+
 <%- @content %>
 
-<a class="scrollToTop" href="#top">↑</a>
+<a class="scrollToTop" href="#
+">↑</a>
