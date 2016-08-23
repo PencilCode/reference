@@ -8,7 +8,7 @@ layout: reference
 
 Essentially, the convex hull looks like the edge of a rubber band wrapped around an object. 
 
-<img src="http://i.imgur.com/sTxZ08R.png">
+<img src="http://i.imgur.com/mDkiYOB.png">
 
 After drawing a custom sprite using [`drawon`](drawon.html), `clip` can be used to make the sprite the shape of the drawing. 
 
