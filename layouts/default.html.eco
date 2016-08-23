@@ -28,24 +28,22 @@ window.addEventListener('keydown', function(e) {
   }
 });
 
-$(document).ready(function(){
-	
-	// Display the "back to top" button if the view is scrolled down
-	$(window).scroll(function(){
-		if ($(this).scrollTop() > 100) {
-			$('.scrollToTop').fadeIn();
-		} else {
-			$('.scrollToTop').fadeOut();
-		}
-	});
-	
-	// Click event to scroll to top
-	$('.scrollToTop').click(function(){
-		$('html, body').animate({scrollTop : 0},800);
-		return false;
-	});
-	
+
+// Display the "back to top" button if the view is scrolled down
+$(window).scroll(function(){
+	if ($(this).scrollTop() > 100) {
+		$('.scrollToTop').fadeIn();
+	} else {
+		$('.scrollToTop').fadeOut();
+	}
 });
+
+// Click event to scroll to top
+$('.scrollToTop').click(function(){
+	$('html, body').animate({scrollTop : 0},800);
+	return false;
+});
+
 </script>
 </body>
 </html>
