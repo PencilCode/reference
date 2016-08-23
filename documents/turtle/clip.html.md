@@ -4,7 +4,9 @@ description: fitting to the edges
 layout: reference
 ---
 
-`clip` will remove all parts of an object outside the [convex hull](https://en.wikipedia.org/wiki/Convex_hull.html). 
+`clip` will remove all parts of an object outside the [convex hull](https://en.wikipedia.org/wiki/Convex_hull). 
+
+Essentially, the convex hull is the edge of a rubber band wrapped around an object. 
 
 After drawing a custom sprite using [`drawon`](drawon.html), `clip` can be used to make the sprite the shape of the drawing. 
 
