@@ -6,9 +6,10 @@ section: drawing
 refOrder: 0
 ---
 
-```
-This file still needs to be written by Robert!!!!
-```
+`turnto` is used to turn the turtle toward a position. 
 
-The turtle starts pointing straight up, which is the `0` direction.
-`turnto 90` turns the turtle straight right.
+Unlike [`lt`](lt.html) and [`rt`](rt.html), `turnto` does not depend on the turtle's current rotation. Instead it accepts an object name, position or an absolute [angle](angles.html). 
+
+`turnto 90` turns the turtle straight right no matter its initial direction. 
+
+`turnto lastmousemove` will turn the turtle to face the mouse. 
