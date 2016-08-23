@@ -13,4 +13,4 @@ layout: default
 
 <%- @content %>
 
-<a class="back-to-top" href="#top">↑</a>
+<a class="scrollToTop" href="#top">↑</a>
