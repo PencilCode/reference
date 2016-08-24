@@ -14,7 +14,7 @@ However, there are drawbacks to this method as well. You need to always keep tra
 
 ### An Analog Timer
 
-This timer resets the frame every second, erasing the entire screen and drawing it again each time. Because of `speed Infinity`, this happens instantly, with no visible delay. Because of the [`tick`](tick.html), each frame lasts for exactly one second. 
+This timer resets the frame every second, erasing the entire screen and drawing it again each time. Because of `speed Infinity`, this happens instantly with no visible delay. The loop runs 1 time per second because of the [`forever`](forever.html) loop with the `1` arguement (indicating 1 loop per second). 
 
 <pre class="examp">
 ht()
@@ -40,10 +40,11 @@ advance = ->
   label t, labelSide: 'centered'
   t += 1
 
-tick advance
+forever 1, ->
+  advance
 </pre>
 
-<script type="figure" height=220px width=220px>
+<script type="figure" height=220 width=220>
 ht()
 speed Infinity
 t = 0
@@ -67,5 +68,6 @@ advance = ->
   label t, labelSide: 'centered'
   t += 1
 
-tick advance
+forever 1, ->
+  advance
 </script>
