@@ -18,7 +18,8 @@ forever ->
 </pre>
 
 <pre class="jumbo">
-forever <span data-dfnup="loops per second">fps,</span> -><span data-dfnright="code to run">  ...
+forever <span data-dfnup="loops per second">fps,</span> ->
+<span data-dfnright="code to run">  ...
   ...
   ...</span>
 </pre>
