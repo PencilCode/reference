@@ -8,7 +8,7 @@ layout: reference
 <code>click</code> is an [event-handler](event.html) function. When a user clicks on the screen with the mouse, a function is called and an action is performed.
 ---
 
-###Syntax
+### Syntax
 
 <pre class="examp">
 click (<span data-dfn="position">e</span>) -> 
