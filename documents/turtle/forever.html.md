@@ -6,7 +6,7 @@ layout: reference
 
 A `forever` loop runs as many times per second as possible, capping at around 30. 
 
-A `forever` loop will continue to run until [`stop`](stop.html) is used or the code execution is terminated. 
+A `forever` loop will continue to run until [`stop()`](stop.html) is used or the code execution is terminated. 
 
 ### Syntax
 
