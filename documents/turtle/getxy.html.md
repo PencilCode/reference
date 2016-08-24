@@ -26,7 +26,7 @@ click (e) ->
 
 Because `getxy()` returns an [array](array.html), it is very easy to get either the `x` or `y` coordinate without getting the other as well. 
 
-The following example will only return the `x` value because of `getxy()[0]`. `getxy()[0]` would return the `y` value. 
+The following example will only return the `x` value because of `getxy()[0]`. `getxy()[1]` would return the `y` value. 
 
 <pre class="examp">
 p = write ''
