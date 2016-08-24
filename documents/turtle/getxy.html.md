@@ -41,7 +41,7 @@ click (e) ->
 p = write ''
 forever ->
   x = getxy()[0]
-  p.text "x =" + x
+  p.text "x = " + x
 click (e) ->
   moveto e
 </script>
