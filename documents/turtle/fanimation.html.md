@@ -69,5 +69,5 @@ advance = ->
   t += 1
 
 forever 1, ->
-  advance
+  advance()
 </script>
