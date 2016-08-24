@@ -10,11 +10,26 @@ A `forever` loop will continue to run until [`stop`](stop.html) is used or the c
 
 Unlike [`tick`](tick.html), multiple forever loops can be running simultaniously.
 
+<pre class="examp">
+  forever ->
+    if pressed 'w'
+      fd 5
+  forever ->
+    if pressed 'a'
+      lt 5
+  forever ->
+    if pressed 'd'
+      rt 5
+  forever ->
+    if pressed 's'
+      bk 5
+</pre>
+
 <script type="demo" caption="Parallel Forever Loops">
 demo ->
   forever ->
-  if pressed 'w'
-    fd 5
+    if pressed 'w'
+      fd 5
   forever ->
     if pressed 'a'
       lt 5
@@ -26,15 +41,30 @@ demo ->
       bk 5
 </script>
 
+<pre class="examp">
+  forever ->
+    if pressed 'w'
+      fd 5
+    if pressed 'a'
+      lt 5
+    if pressed 'd'
+      rt 5
+    if pressed 's'
+      bk 5
+
+</pre>
+
 <script type="demo" caption="Single Forever Loop">
 demo ->
   forever ->
-  if pressed 'w'
-    fd 5
-  if pressed 'a'
-    lt 5
-  if pressed 'd'
-    rt 5
-  if pressed 's'
-    bk 5
+    if pressed 'w'
+      fd 5
+    if pressed 'a'
+      lt 5
+    if pressed 'd'
+      rt 5
+    if pressed 's'
+      bk 5
 </script>
+
+A `forever` loop accepts an additional arguement to specify the number of times per second it should run. 
