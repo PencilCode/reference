@@ -8,6 +8,24 @@ A `forever` loop runs as many times per second as possible, capping at around 30
 
 A `forever` loop will continue to run until [`stop`](stop.html) is used or the code execution is terminated. 
 
+### Syntax
+
+<pre class="jumbo">
+forever ->
+  <span data-dfnright="code to run">...
+  ...
+  ...</span>
+</pre>
+
+<pre class="jumbo">
+forever <span data-dfnup="loops per second">fps,</span> ->
+  <span data-dfnright="code to run">...
+  ...
+  ...</span>
+</pre>
+
+If the loops per second arguement is used, a comma is required after it before the `->`. 
+
 Unlike [`tick`](tick.html), multiple forever loops can be running simultaniously.
 
 <pre class="examp">
@@ -66,5 +84,3 @@ demo ->
     if pressed 's'
       bk 5
 </script>
-
-A `forever` loop accepts an additional arguement to specify the number of times per second it should run. 
