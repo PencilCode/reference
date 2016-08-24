@@ -29,7 +29,7 @@ Because `getxy()` returns an [array](array.html), it is very easy to get either 
 <pre class="examp">
 p = write ''
 forever ->
-  x = jim.getxy()[0]
+  x = getxy()[0]
   p.text x
 click (e) ->
   moveto e
@@ -38,7 +38,7 @@ click (e) ->
 <script type="figure">
 p = write ''
 forever ->
-  x = jim.getxy()[0]
+  x = getxy()[0]
   p.text x
 click (e) ->
   moveto e
