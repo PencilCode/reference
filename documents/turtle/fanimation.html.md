@@ -71,3 +71,30 @@ advance = ->
 forever 1, ->
   advance()
 </script>
+
+<script type="figure" height=220 width=220>
+ht()
+speed Infinity
+t = 0
+
+drawClock = ->
+  cs()
+  dot white, 10000
+  for i in [1..60]
+    pen lightgray
+    fd 100
+    bk 100
+    rt 6
+
+advance = ->
+  drawClock()
+  pen red
+  fd 100
+  bk 100
+  rt 6
+  dot white, 40
+  label t, labelSide: 'centered'
+  t += 1
+
+tick advance
+</script>
