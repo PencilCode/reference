@@ -43,7 +43,7 @@ forever ->
     bk 2
 </pre>
 
-<script type="demo" caption="Parallel Forever Loops">
+<script type="demo" caption="Parallel Forever Loops" width=500 height=400>
 demo ->
   forever ->
     if pressed 'w'
@@ -71,7 +71,7 @@ forever ->
     bk 2
 </pre>
 
-<script type="demo" caption="Single Forever Loop">
+<script type="demo" caption="Single Forever Loop" width=500 height=400>
 demo ->
   forever ->
     if pressed 'w'
