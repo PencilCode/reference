@@ -29,18 +29,18 @@ If the loops per second arguement is used, a comma is required after it before t
 Unlike [`tick`](tick.html), multiple forever loops can be running simultaniously.
 
 <pre class="examp">
-  forever ->
-    if pressed 'w'
-      fd 5
-  forever ->
-    if pressed 'a'
-      lt 5
-  forever ->
-    if pressed 'd'
-      rt 5
-  forever ->
-    if pressed 's'
-      bk 5
+forever ->
+  if pressed 'w'
+    fd 5
+forever ->
+  if pressed 'a'
+    lt 5
+forever ->
+  if pressed 'd'
+    rt 5
+forever ->
+  if pressed 's'
+    bk 5
 </pre>
 
 <script type="demo" caption="Parallel Forever Loops">
@@ -60,16 +60,15 @@ demo ->
 </script>
 
 <pre class="examp">
-  forever ->
-    if pressed 'w'
-      fd 5
-    if pressed 'a'
-      lt 5
-    if pressed 'd'
-      rt 5
-    if pressed 's'
-      bk 5
-
+forever ->
+  if pressed 'w'
+    fd 5
+  if pressed 'a'
+    lt 5
+  if pressed 'd'
+    rt 5
+  if pressed 's'
+    bk 5
 </pre>
 
 <script type="demo" caption="Single Forever Loop">
@@ -83,4 +82,45 @@ demo ->
       rt 5
     if pressed 's'
       bk 5
+</script>
+
+### IDs
+
+Every `forever` loop has its own unique ID that is created when it is first called. This can be used in the [stop](stop.html) command to only stop a specific loop. 
+
+The ID can be found using the following method. 
+
+<pre class="examp">
+forever ->
+  if pressed 'w'
+    fd 5
+forever ->
+  if pressed 'a'
+    lt 5
+forever ->
+  if pressed 'd'
+    rt 5
+id = forever ->
+  if pressed 's'
+    bk 5
+button 'Stop Backwards Loop', ->
+  stop(id)
+</pre>
+
+<script type="demo" width=500 height=400>
+demo ->
+  forever ->
+    if pressed 'w'
+      fd 5
+  forever ->
+    if pressed 'a'
+      lt 5
+  forever ->
+    if pressed 'd'
+      rt 5
+  id = forever ->
+    if pressed 's'
+      bk 5
+  button 'Stop Backwards Loop', ->
+    stop(id)
 </script>
