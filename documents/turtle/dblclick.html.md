@@ -8,7 +8,7 @@ layout: reference
 `dblclick` is an [event-handler](event.html) function. When a user clicks on the screen with the mouse, a function is called and an action is performed.
 ---
 
-`dblclick` is the same as `click` in every way except the way it's called. `click` runs every time the mouse is clicked, whereas `dblclick` responds only if the mouse is quickly clicked twice. 
+`dblclick` is the same as [`click`](click.html) in every way except the way it's called. [`click`](click.html) runs every time the mouse is clicked, whereas `dblclick` responds only if the mouse is quickly clicked twice. 
 ### Syntax
 
 <pre class="examp">
@@ -19,9 +19,9 @@ dblclick (<span data-dfn="position">e</span>) ->
   #...</span>
 </pre>
 
-* `e` is the location the mouse was clicked. This can be used as a location in commands such as [moveto](moveto.html), [jumpto](jumpto.html), [turnto](turnto.html), etc.
+* `e` is the location the mouse was clicked. This can be used as a location in commands such as [`moveto`](moveto.html), [`jumpto`](jumpto.html), [`turnto`](turnto.html), etc.
 
-Below is the same code found on the `click` page, but it uses `dblclick` instead. 
+Below is the same code found on the [`click`](click.html) page, but it uses `dblclick` instead. 
 
 <pre class="examp">
 speed Infinity
