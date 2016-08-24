@@ -32,7 +32,7 @@ The following example will only return the `x` value because of `getxy()[0]`. `g
 p = write ''
 forever ->
   x = getxy()[0]
-  p.text x
+  p.text "x =" + x
 click (e) ->
   moveto e
 </pre>
@@ -41,7 +41,7 @@ click (e) ->
 p = write ''
 forever ->
   x = getxy()[0]
-  p.text x
+  p.text "x =" + x
 click (e) ->
   moveto e
 </script>
