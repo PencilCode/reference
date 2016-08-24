@@ -12,7 +12,7 @@ layout: reference
 <span data-dfnup="object">jim</span>.getxy()
 </pre>
 
-The position will be the array `[x, y]`, representing the `x` and `y` coordinates of the object. 
+The position will be the [array](array.html) `[x, y]`, representing the `x` and `y` coordinates of the object. 
 
 Click the example below to see the turtle's position.
 
@@ -20,6 +20,26 @@ Click the example below to see the turtle's position.
 p = write ''
 forever ->
   p.html "[" + getxy()[0] + ", " + getxy()[1] + "]"
+click (e) ->
+  moveto e
+</script>
+
+Because `getxy()` returns an [array](array.html), it is very easy to get either the `x` or `y` coordinate without getting the other as well. 
+
+<pre class="examp">
+p = write ''
+forever ->
+  x = jim.getxy()[0]
+  p.text x
+click (e) ->
+  moveto e
+</pre>
+
+<script type="figure">
+p = write ''
+forever ->
+  x = jim.getxy()[0]
+  p.text x
 click (e) ->
   moveto e
 </script>
