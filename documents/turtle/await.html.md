@@ -16,7 +16,28 @@ await <span data-dfnup="a function to run">function()</span> defer(<span data-df
 
 `await read defer()` is an easy way to wait for an input from the user. 
 
+Input the following commands to control the turtle.
 
+fd: move forward 50<br>
+bk: move backward 50<br>
+rt: turn right 15<br>
+lt: turn left 15
+
+<pre class="examp">
+p = write ''
+while x isnt 'done'
+  await read 'Input: ', defer(x)
+  
+  if x is 'fd'
+    fd 50
+  if x is 'bk'
+    bk 50
+  if x is 'lt'
+    lt 15
+  if x is 'rt'
+    rt 15
+  ct()
+</pre>
 
 ## `await done defer()`
 
