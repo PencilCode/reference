@@ -81,9 +81,9 @@ click (e) ->
 
 ### Drawing while Moving
 
-<code>movexy</code> will trace lines if a pen is being used.  It allows
+`movexy` will trace lines if a pen is being used.  It allows
 lines to be drawn between any points without worrying about the angle
-and distance of the turtle.  <code>movexy</code> does not affect the
+and distance of the turtle.  `movexy` does not affect the
 turtle rotation, only its position.
 
 </script>
@@ -138,7 +138,7 @@ demo ->
 
 ### Limiting Motion
 
-When passing a single location object to <code>movexy</code>, it supports
+When passing a single location object to `movexy`, it supports
 an optional second argument limiting the distance of the motion.  When the
 second argument is given, the turtle will move towards the location, but
 no farther than the limiting distance in pixels.
@@ -161,7 +161,7 @@ demo ->
     movexy lastmouse, 10
 </script>
 
-In all these uses, <code>movexy</code> moves the turtle without changing
+In all these uses, `movexy` moves the turtle without changing
 its direction (the way it's facing).
 
 Blah blah - let's compare moveto and movexy
