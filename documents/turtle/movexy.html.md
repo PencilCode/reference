@@ -164,7 +164,7 @@ demo ->
 In all these uses, `movexy` moves the turtle without changing
 its direction (the way it's facing).
 
-Blah blah - let's compare moveto and movexy
+Blah blah - let's compare [`moveto`](moveto.html) and `movexy`
 
 ### `moveto` versus `movexy`
 
