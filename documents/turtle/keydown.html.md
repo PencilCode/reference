@@ -31,15 +31,14 @@ click (e) ->
   moveto e
 </pre>
 
-<script type="demo">
-demo ->
+<script type="figure">
+pen red
+keydown '1', ->
   pen red
-  keydown '1', ->
-    pen red
-  keydown '2', ->
-    pen green
-  keydown '3', ->
-    pen blue
-  click (e) ->
-    moveto e
+keydown '2', ->
+  pen green
+keydown '3', ->
+  pen blue
+click (e) ->
+  moveto e
 </script>
