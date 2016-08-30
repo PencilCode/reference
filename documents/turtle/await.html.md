@@ -40,7 +40,7 @@ while x isnt 'done'
   ct()
 </pre>
 
-<script type="figure">
+<script type="figure" width=500 height=450>
 p = write ''
 while x isnt 'done'
   await read 'Input: ', defer(x)
