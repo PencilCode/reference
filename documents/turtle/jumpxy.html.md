@@ -1,6 +1,6 @@
 ---
 title: jumpxy
-description: moves the turtle by an xy offset 
+description: jump by an x y offset without drawing 
 layout: reference
 section: drawing
 refOrder: 0
