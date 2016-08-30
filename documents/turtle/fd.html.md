@@ -4,13 +4,15 @@ description: moves the turtle forward
 layout: reference
 ---
 
-<b>fd</b> moves the turtle forward. It is the opposite counterpart to [bk](bk.html). 
+`fd` moves the turtle forward. It is the opposite counterpart to [bk](bk.html). 
 
 The distance is measured in pixels.
 
-<code class="jumbo">fd&nbsp;<span data-dfn="distance">100</span></code>
+<pre class="jumbo">
+fd <span data-dfn="distance">100</span>
+</pre>
 
-<script type="demo" width=99>
+<script type="demo" width=100>
 setup ->
   bk 50
 demo ->
@@ -31,13 +33,15 @@ demo ->
     remove p
 </script>
 
-If a <a href="pen.html">pen</a> is selected, the turtle will draw a line as it moves.
+If a [`pen`](pen.html) is selected, the turtle will draw a line as it moves.
 
-<pre class="jumbo"><span data-dfn="pick a pen">pen red</span>
+<pre class="jumbo">
+<span data-dfn="pick a pen">pen red</span>
 
-fd <span data-dfn="longer">200</a></pre>
+fd <span data-dfn="longer">200</a>
+</pre>
 
-<script type="demo" width=99 height=249>
+<script type="demo" width=100 height=250>
 setup ->
   bk 100
 demo ->
@@ -61,9 +65,11 @@ demo ->
 
 If the turtle is turned, it will move in the direction it points.
 
-<pre class="jumbo" data-before="pen purple"><span data-dfn="turn the turtle">rt 45</span>
+<pre class="jumbo" data-before="pen purple">
+<span data-dfn="turn the turtle">rt 45</span>
 
-fd <span data-dfn="shorter">75</span></pre>
+fd <span data-dfn="shorter">75</span>
+</pre>
 
 <script type="demo">
 setup ->
@@ -97,12 +103,11 @@ demo ->
     p.move 20, -75/2
     p.lt 90
     p.label '75 pixels'
-
 </script>
 
 <h3>Turtle Distances</h3>
 
-<b>fd 100</b> moves about an inch on a typical screen, because
+`fd 100` moves about an inch on a typical screen, because
 most computers fit about 100 pixels in an inch.  The graph paper
 background is equivalent to a 1/4 inch grid: it has one square per
 25 pixels.
