@@ -27,7 +27,6 @@ lt: turn left 15
 p = write ''
 while x isnt 'done'
   await read 'Input: ', defer(x)
-  
   if x is 'fd'
     fd 50
   if x is 'bk'
@@ -38,6 +37,21 @@ while x isnt 'done'
     rt 15
   ct()
 </pre>
+
+<script type="figure">
+p = write ''
+while x isnt 'done'
+  await read 'Input: ', defer(x)
+  if x is 'fd'
+    fd 50
+  if x is 'bk'
+    bk 50
+  if x is 'lt'
+    lt 15
+  if x is 'rt'
+    rt 15
+  ct()
+</script>
 
 ## `await done defer()`
 
