@@ -191,5 +191,3 @@ demo ->
   j.label "moveto", 'right'
   j.moveto 50, 100
 </script>
-
-
