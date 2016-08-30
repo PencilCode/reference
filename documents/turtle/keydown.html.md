@@ -19,3 +19,27 @@ keydown '<span data-dfnup="key to activate">w</span>', -><span data-dfnright="co
 
 In the following script, pressing `1` runs `pen red`, `2` runs `pen green`, and `3` runs `pen blue`. The turtle moves to wherever the mouse is clicked using [`click`](click.html). 
 
+<pre class="examp">
+pen red
+keydown '1', ->
+  pen red
+keydown '2', ->
+  pen green
+keydown '3', ->
+  pen blue
+click (e) ->
+  moveto e
+</pre>
+
+<script type="demo">
+demo ->
+  pen red
+  keydown '1', ->
+    pen red
+  keydown '2', ->
+    pen green
+  keydown '3', ->
+    pen blue
+  click (e) ->
+    moveto e
+</script>
