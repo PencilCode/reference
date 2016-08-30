@@ -176,7 +176,7 @@ demo ->
   dot blue, 30
   label "x50, y100", 'top'
   fd 50
-  home
+  home()
   s = new Turtle
   s.label "movexy", 'left'
   s.pen blue
