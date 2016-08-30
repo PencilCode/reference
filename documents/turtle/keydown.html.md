@@ -9,8 +9,8 @@ layout: reference
 ### Syntax
 
 <pre class="jumbo">
-keydown '<span data-dfnup="key to activate">w</span>', -><span data-dfnright="code to run">
-  ...
+keydown '<span data-dfnup="key to activate">w</span>', ->
+<span data-dfnright="code to run">  ...
   ...
   ...</span>
 </pre>
