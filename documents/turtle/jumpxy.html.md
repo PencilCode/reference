@@ -74,6 +74,7 @@ p.label 'x', 'top'
 p.jumpto 0, 115
 p.label 'y', 'right'
 click (e) ->
+  home()
   $('#where').text "#{e.x}, #{e.y}"
   $('#where').jumpto e.x, e.y
   jumpxy e.x, e.y
