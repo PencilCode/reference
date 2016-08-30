@@ -168,7 +168,7 @@ Blah blah - let's compare moveto and movexy
 
 ### `moveto` versus `movexy`
 
-<script type="demo" width=299 height=249>
+<script type="demo" width=299 height=350>
 setup ->
   pen null
 demo ->
