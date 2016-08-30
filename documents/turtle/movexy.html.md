@@ -96,7 +96,7 @@ movexy 0, -50
 movexy <span data-dfn="x">-125</span>, <span data-dfn="y">100</span>
 </pre>
 
-<script type="demo" width=299 height=249>
+<script type="demo" width=400 height=249>
 p = new Pencil
 p.cross = ->
   @pen black, 0.7
