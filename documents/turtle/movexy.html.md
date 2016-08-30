@@ -81,7 +81,7 @@ click (e) ->
 
 ### Drawing while Moving
 
-`movexy` will trace lines if a pen is being used.  It allows
+Unlike [`jumpxy`](jumpxy.html), `movexy` will trace lines if a pen is being used.  It allows
 lines to be drawn between any points without worrying about the angle
 and distance of the turtle.  `movexy` does not affect the
 turtle rotation, only its position.
