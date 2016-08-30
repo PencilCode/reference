@@ -11,7 +11,12 @@ layout: reference
 <pre class="jumbo">
 await <span data-dfnup="a function to run">function()</span> defer(<span data-dfn="return value">x</span>)
 </pre>
+
 * The function can be anything that returns a value. The most commonly used values include inputs (`read`, `readnum`, `keydown`, etc.) and `done`. 
+
+`await read defer()` is an easy way to wait for an input from the user. 
+
+
 
 ## `await done defer()`
 
