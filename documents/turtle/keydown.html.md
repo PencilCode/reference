@@ -31,7 +31,7 @@ click (e) ->
   moveto e
 </pre>
 
-<script type="figure">
+<script type="figure" width=500 height=450>
 pen red
 keydown '1', ->
   pen red
