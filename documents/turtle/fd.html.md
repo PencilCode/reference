@@ -96,11 +96,11 @@ demo ->
     p.rt 45
     p.jump 10
     p.pen black, .7
-    p.move 5
+    p.slide 5
     p.fd 75
-    p.move -5
+    p.slide -5
     p.pen null
-    p.move 20, -75/2
+    p.slide 20, -75/2
     p.lt 90
     p.label '75 pixels'
 </script>
