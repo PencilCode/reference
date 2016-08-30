@@ -170,8 +170,8 @@ setup ->
 demo ->
   jumpto 50, 100
   dot blue, 30
-  label "x50, y100", 'top'
-  fd 50
+  fd 20
+  label "50, 100", 'top'
   home()
   s = new Turtle
   s.label "jumpxy", 'left'
@@ -186,5 +186,3 @@ demo ->
   j.label "jumpto", 'right'
   j.moveto 50, 100
 </script>
-
-
