@@ -165,7 +165,9 @@ In all these uses, <code>movexy</code> moves the turtle without changing
 its direction (the way it's facing).
 
 Blah blah - let's compare moveto and movexy
-### moveto versus movexy
+
+### `moveto` versus `movexy`
+
 <script type="demo" width=299 height=249>
 setup ->
   pen null
