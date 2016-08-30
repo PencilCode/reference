@@ -16,7 +16,9 @@ await <span data-dfnup="a function to run">function()</span> defer(<span data-df
 
 `await read defer()` is an easy way to wait for an input from the user. 
 
-Input the following commands to control the turtle.
+### Simple Turtle Control Menu
+
+Input the following commands to control the turtle in the example below.
 
 fd: move forward 50<br>
 bk: move backward 50<br>
