@@ -19,7 +19,7 @@ A vector represented as an array of two numbers can be used.
 `movexy [x, y]` is treated the same as
 `movexy x, y`.
 
-<script type="figure" width=299 height=249>
+<script type="figure" width=300 height=250>
 turtle.css opacity: 0.3, turtlePenStyle: silver, turtlePenDown: true
 p = new Pencil
 p.cross = ->
@@ -96,7 +96,7 @@ movexy 0, -50
 movexy <span data-dfn="x">-125</span>, <span data-dfn="y">100</span>
 </pre>
 
-<script type="demo" width=500 height=249>
+<script type="demo" width=500 height=250>
 p = new Pencil
 p.cross = ->
   @pen black, 0.7
@@ -152,7 +152,7 @@ forever 2, ->
   movexy lastmouse, <span data-dfn="limiting distance">10</span>
 </pre>
 
-<script type="demo" width=299 height=249>
+<script type="demo" width=300 height=250>
 setup ->
   stop()
 demo ->
@@ -168,7 +168,7 @@ Blah blah - let's compare moveto and movexy
 
 ### `moveto` versus `movexy`
 
-<script type="demo" width=299 height=350>
+<script type="demo" width=300 height=350>
 setup ->
   pen null
 demo ->
