@@ -14,4 +14,4 @@ a = img '<span data-dfn="name or url">tree</span>'
 
 * The name can be anything, and if it is found on the [Wikimedia Commons](https://commons.wikimedia.org/wiki/Category:Images), then it is displayed. Otherwise, the result is the Pencil Code pencil. 
 
-<img href="http://pencilcode.net/image/vpencil-20-64.png">
+<img src="http://pencilcode.net/image/vpencil-20-64.png">
