@@ -4,10 +4,12 @@ description: draws a box under the turtle
 layout: reference
 ---
 
-<b>box</b> can make a square box in any <a href="colors.html">color</a>.
+`box` can make a square box in any [color](colors.html).
 It draws the box under the turtle.
 
-<code class="jumbo">box <span data-dfn="color">blue</span></code>
+<pre class="jumbo">
+box <span data-dfn="color">blue</span>
+</pre>
 
 <script type="demo" height=99>
 demo ->
@@ -23,11 +25,13 @@ demo ->
 
 <h3>Bigger Boxes</h3>
 
-<b>box</b> accepts an optional second argument, which is the side
+`box` accepts an optional second argument, which is the side
 length of the box in pixels.  Remember that arguments need to be
 separated by a comma.
 
-<code default class="jumbo">box <span data-dfn="color">wheat</span><span data-note="comma">,</span>&nbsp;<span data-dfn="size">100</span></code>
+<pre default class="jumbo">
+box <span data-dfn="color">wheat</span><span data-note="comma">,</span>&nbsp;<span data-dfn="size">100</span>
+</pre>
 
 <script type="demo">
 demo ->
@@ -54,7 +58,4 @@ demo ->
 
 <h3>Other Shapes</h3>
 
-<p>Move the turtle using <a href="fd.html">fd</a> to draw boxes in
-different places.  Use <a href="dot.html">box</a> to draw a dot
-instead of a box. Other shapes can be drawn using
-<a href="pen.html">pen</a>.
+Move the turtle using [`fd`](fd.html) to draw boxes in different places. Use [`dot`](dot.html) to draw a dot instead of a box. Other shapes can be drawn using[`pen`](pen.html). 
