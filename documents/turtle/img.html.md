@@ -9,5 +9,5 @@ Pencil Code allows images to be used very easily. Images can be worn by objects 
 ### Syntax
 
 <pre class="jumbo">
-a = img 'tree'
+a = img '<span data-dfn="name or url">tree</span>'
 </pre>
