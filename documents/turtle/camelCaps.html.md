@@ -7,7 +7,7 @@ layout: reference
 Most programming languages (including CoffeeScript and Javascript) are
 <b>case-sensitive</b>:
 
-<code class="jumbo">tag<span data-dfn="uppercase">N</span>ame&nbsp;&ne;&nbsp;tag<span data-dfn="lowercase">n</span>ame</code>
+<pre class="jumbo">tag<span data-dfn="uppercase">N</span>ame&nbsp;&ne;&nbsp;tag<span data-dfn="lowercase">n</span>ame</pre>
 
 It is important to pay attention to
 the capitalization of standard names.
@@ -62,12 +62,12 @@ values for the "white-space" property include "pre-wrap"
 
 Some inconsistencies have to do with acronyms:
 
-<code class="jumbo">encode<span data-dfn="acronym">URI</span><span data-dfnup="capitalized">Component</span></code>
+<pre class="jumbo">encode<span data-dfn="acronym">URI</span><span data-dfnup="capitalized">Component</span></pre>
 
 In camelCase names, acronyms are usually fully-capitalized, but not always.
 In this standard function name, we see two approaches within the same name:
 
-<code class="jumbo"><span data-dfn="all-caps">XML</span><span data-dfnup="another acronym">Http</span>Request</code>
+<pre class="jumbo"><span data-dfn="all-caps">XML</span><span data-dfnup="another acronym">Http</span>Request</pre>
 
 All the different conventions mean that you need to do a little extra
 work when using a new set of names.  If you cannot remember the
