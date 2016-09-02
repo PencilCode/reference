@@ -87,4 +87,4 @@ demo ->
 </script>
 
 
-See [Sprite](sprite.html) to make a blank turtle-like object that you can draw yourself using [`drawon`](drawon.html).
+See [`Sprite`](Sprite.html) to make a blank turtle-like object that you can draw yourself using [`drawon`](drawon.html).
