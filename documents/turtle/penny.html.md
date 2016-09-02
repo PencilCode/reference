@@ -76,7 +76,7 @@ demo ->
 
 ### Changing the Turtle
 
-Use [wear](wear.html) to change the turtle’s shell to a different color or replace its shell with an image.
+Use [`wear`](wear.html) to change the turtle’s shell to a different color or replace its shell with an image.
 
 <pre class="examp">
 car = new Turtle
@@ -96,4 +96,4 @@ demo ->
 </script>
 
 
-See [Sprite](sprite.html) to make a blank "turtle" that you can draw yourself using [drawon](drawon.html).
+See [`Sprite`](Sprite.html) to make a blank "turtle" that you can draw yourself using [`drawon`](drawon.html).
