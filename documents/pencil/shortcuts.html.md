@@ -109,20 +109,20 @@ The Pencil Code editor has quite a few keyboard shortcuts available to use. Some
 
 ## Other
 
-| Windows/Linux        | Mac                        | Action                 |
-|----------------------|----------------------------|------------------------|
-| Ctrl+]               | Command+]                  | Indent selected lines  |
-| Ctrl+Shift+[         | Command+Shift+[            | Outdent selected lines |
-| Ctrl+Z               | Command+Z                  | Undo                   |
-| Ctrl+Shift+Z, Ctrl+Y | Command+Shift+Z, Command+Y | Redo                   |
+| Windows/Linux        | Mac                        | Action                                             |
+|----------------------|----------------------------|----------------------------------------------------|
+| Ctrl+]               | Command+]                  | Indent selected lines                              |
+| Ctrl+Shift+[         | Command+Shift+[            | Outdent selected lines                             |
+| Ctrl+Z               | Command+Z                  | Undo                                               |
+| Ctrl+Shift+Z, Ctrl+Y | Command+Shift+Z, Command+Y | Redo                                               |
 | Ctrl+,               | Command+,                  | Show the settings menu<sup>[1](#myfootnote1)</sup> |
-| Ctrl+/               | Command+/                  | Toggle comment         |
-| Ctrl+T               | Ctrl+T                     | Transpose letters      |
-| Ctrl+Enter           | Command+Enter              | Enter full screen      |
-| Ctrl+Shift+U         | Ctrl+Shift+U               | Change to lower case   |
-| Ctrl+U               | Ctrl+U                     | Change to upper case   |
-| Ctrl+Shift+E         | Command+Shift+E            | Macros replay          |
-| Ctrl+Alt+E           | ---                        | Macros recording       |
-| ---                  | Ctrl+L                     | Center selection       |
+| Ctrl+/               | Command+/                  | Toggle comment                                     |
+| Ctrl+T               | Ctrl+T                     | Transpose letters                                  |
+| Ctrl+Enter           | Command+Enter              | Run code                                           |
+| Ctrl+Shift+U         | Ctrl+Shift+U               | Change to lower case                               |
+| Ctrl+U               | Ctrl+U                     | Change to upper case                               |
+| Ctrl+Shift+E         | Command+Shift+E            | Macros replay                                      |
+| Ctrl+Alt+E           | ---                        | Macros recording                                   |
+| ---                  | Ctrl+L                     | Center selection                                   |
 
 <a name="myfootnote1">1</a>: The setttings menu doesn't really work at the moment. It just appears as a giant vheckbox on the right side of the screen. 
