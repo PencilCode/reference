@@ -23,6 +23,8 @@ demo ->
     opacity: .3
 </script>
 
+Dots can be drawn on other objects using [`drawon`](drawon.html). 
+
 <h3>Bigger Dots</h3>
 
 `dot` accepts an optional second argument, which is the diameter of
