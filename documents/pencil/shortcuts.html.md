@@ -124,4 +124,4 @@ The Pencil Code editor has quite a few keyboard shortcuts available to use. Some
 | Ctrl+Alt+E           | ---                        | Macros recording                                   |
 | ---                  | Ctrl+L                     | Center selection                                   |
 
-<a name="myfootnote1">1</a>: The setttings menu doesn't really work at the moment. It just appears as a giant vheckbox on the right side of the screen. 
+<a name="myfootnote1">1</a>: The setttings menu doesn't really work at the moment. It just appears as a giant checkbox on the right side of the screen. 
