@@ -58,7 +58,7 @@ demo ->
 
 <h3>Other Shapes</h3>
 
-<p>Move the turtle using [fd](fd.html) to draw dots in
-different places.  Use [box](box.html) to draw a box
+<p>Move the turtle using [`fd`](fd.html) to draw dots in
+different places.  Use [`box`](box.html) to draw a box
 instead of a dot. Other shapes can be drawn using
-[pen](pen.html).
+[`pen`](pen.html).
