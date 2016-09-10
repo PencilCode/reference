@@ -117,7 +117,6 @@ The Pencil Code editor has quite a few keyboard shortcuts available to use. Some
 | Ctrl+Shift+Z, Ctrl+Y | Command+Shift+Z, Command+Y | Redo                                               |
 | Ctrl+,               | Command+,                  | Show the settings menu<sup>[1](#myfootnote1)</sup> |
 | Ctrl+/               | Command+/                  | Toggle comment                                     |
-| Ctrl+T               | Ctrl+T                     | Transpose letters                                  |
 | Ctrl+Enter           | Command+Enter              | Run code                                           |
 | Ctrl+Shift+U         | Ctrl+Shift+U               | Change to lower case                               |
 | Ctrl+U               | Ctrl+U                     | Change to upper case                               |
