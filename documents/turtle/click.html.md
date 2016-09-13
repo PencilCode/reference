@@ -27,7 +27,7 @@ In this example, clicking on the screen moves the turtle to the position that wa
 
 Notice that we have specified `speed Infinity` in order to keep up with the speed of the mouse clicks.  
 
-<pre class="examp">
+<pre class="jumbo">
   speed Infinity
   click <span data-dfn="function">(e)</span> -> moveto e
 </pre>
