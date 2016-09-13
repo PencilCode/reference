@@ -69,7 +69,7 @@ click ->
   label a, { fontSize: 60, fontFamily: "Consolas" }
 </script>
 
-Note that, in the above example, if you click fast enough, you can actually select the label. This is because a [label](label.html) is actually an [HTML](http://www.w3schools.com/html/default.asp) element. 
+Note that, in the above example, if you click fast enough, you can actually select the label. This is because a [`label`](label.html) is actually an [HTML](http://www.w3schools.com/html/default.asp) element. 
 
 <!-- another example, see: http://activity.pencilcode.net/home/worksheet/clickmove.html -->
 
