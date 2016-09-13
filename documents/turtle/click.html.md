@@ -10,7 +10,7 @@ layout: reference
 
 ### Syntax
 
-<pre class="examp">
+<pre class="jumbo">
 click (<span data-dfn="position">e</span>) -> 
   <span data-dfnright="code to run">  #line 1
   #line 2
