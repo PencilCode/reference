@@ -9,7 +9,9 @@ refOrder: 2
 `pen` will pick a drawing color
 When the turtle moves, it will trace out a line in the pen color.
 
-<pre class="jumbo">pen <span data-dfn="color">blueviolet</span></pre>
+<pre class="jumbo">
+pen <span data-dfn="color">blueviolet</span>
+</pre>
 
 <script type="demo" height=99>
 p = new Pencil
@@ -78,7 +80,9 @@ For all 140 standard named colors, see [the color table](colors.html).
 pen in pixels.  Remember that arguments need to be separated by
 a comma.
 
-<code class="jumbo">pen <span data-dfn="color">pink</span><span data-note="comma">,</span>&nbsp;<span data-dfn="size">20</span></code>
+<pre class="jumbo">
+pen <span data-dfn="color">pink</span><span data-note="comma">,</span>&nbsp;<span data-dfn="size">20</span>
+</pre>
 
 <script type="demo" height=99>
 p = new Pencil
