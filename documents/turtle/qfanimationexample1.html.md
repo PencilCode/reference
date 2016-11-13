@@ -91,7 +91,7 @@ while true
 
 This `while` loop creates all the motion in the code: moving the turtles, changing their colors and changing their destinations. All of these actions are run in animation queues created by the loop. Because of `await done defer()`, the loop runs every time the turtles finish moving. Because the conditional input is `true`, the loop will continue running until the code is stopped. 
 
-## Output
+## Output (Normal Speed)
 
 <script type="figure" width=500 height=500>
 ht()
