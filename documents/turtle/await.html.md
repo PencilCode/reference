@@ -57,6 +57,6 @@ while x isnt 'done'
 
 ## `await done defer()`
 
-`await done defer()` is probably the most commonly used form of `await`. 
+`await done defer()` is the most commonly used form of `await`, rivaled only by [`await read`](read.html) and [`await readnum`](readnum.html). 
 
-`await done defer()` is used to prevent everything after our from running until everything before it is done. However, `await done defer()` is not just a simple pause. 
+`await done defer()` is used to prevent everything after it from running until everything before it is done. However, `await done defer()` is not just a simple pause. 
